@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-openei-country
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-openei-country/README.txt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-openei-country/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-openei-country/positive.nt
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-openei-country/spec.xml
+END

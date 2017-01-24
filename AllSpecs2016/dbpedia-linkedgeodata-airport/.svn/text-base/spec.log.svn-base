@@ -1,0 +1,39 @@
+13.06.2012 14:42:57 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: dbpedia
+Var: ?a
+Prefixes: {lgdp=http://linkedgeodata.org/property/, lgdo=http://linkedgeodata.org/ontology/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-owl=http://dbpedia.org/ontology/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, foaf=http://xmlns.com/foaf/0.1/, umbel-sc=http://umbel.org/umbel/sc/, owl=http://www.w3.org/2002/07/owl#, dbpedia=http://dbpedia.org/ontology/, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, linkedgeodata=http://linkedgeodata.org/triplify/}
+Endpoint: http://dbpedia.org/sparql/
+Graph: null
+Restrictions: [?a rdf:type dbpedia-owl:Airport]
+Properties: [rdfs:label, wgs84:lat, wgs84:long]
+Functions: {rdfs:label=lowercase, wgs84:lat=number, wgs84:long=number}
+Page size: 1000
+Type: sparql
+
+13.06.2012 14:42:57 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: linkedgeodata
+Var: ?b
+Prefixes: {lgdp=http://linkedgeodata.org/property/, lgdo=http://linkedgeodata.org/ontology/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-owl=http://dbpedia.org/ontology/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, foaf=http://xmlns.com/foaf/0.1/, umbel-sc=http://umbel.org/umbel/sc/, owl=http://www.w3.org/2002/07/owl#, dbpedia=http://dbpedia.org/ontology/, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, linkedgeodata=http://linkedgeodata.org/triplify/}
+Endpoint: http://linkedgeodata.org/sparql/
+Graph: null
+Restrictions: [?b rdf:type lgdo:Aerodrome]
+Properties: [rdfs:label, wgs84:lat, wgs84:long]
+Functions: {rdfs:label=lowercase, wgs84:lat=number, wgs84:long=number}
+Page size: 1000
+Type: sparql
+
+13.06.2012 14:42:57 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+13.06.2012 14:42:57 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:194): Found cached data. Loading data from file E:\Work\Java\LIMES\cache\102229170.ser
+13.06.2012 14:42:59 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:200): Cached data loaded successfully from file E:\Work\Java\LIMES\cache\102229170.ser
+13.06.2012 14:42:59 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:201): Size = 10432
+13.06.2012 14:42:59 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:140): Loading target data ...
+13.06.2012 14:42:59 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:194): Found cached data. Loading data from file E:\Work\Java\LIMES\cache\-1995851800.ser
+13.06.2012 14:43:05 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:200): Cached data loaded successfully from file E:\Work\Java\LIMES\cache\-1995851800.ser
+13.06.2012 14:43:05 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:201): Size = 37769
+13.06.2012 14:43:05 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:153): Getting links ...
+13.06.2012 14:43:29 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:156): Got links in 23207ms.
+13.06.2012 14:43:29 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:21): Getting serializer with name NT
+13.06.2012 14:43:29 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:27): Serializer with name NT not found. Using .nt as default format.
+13.06.2012 14:43:29 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:160): Using N3Serializer to serialize
+13.06.2012 14:43:29 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:179): Returned 7309 links above acceptance threshold.
+13.06.2012 14:43:29 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:180): Returned 0 links to review.
+13.06.2012 14:43:29 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:187): Mapping carried out in 31.917 seconds
+13.06.2012 14:43:29 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:188): Done.

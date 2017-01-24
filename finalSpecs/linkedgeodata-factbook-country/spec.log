@@ -1,0 +1,48 @@
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: factbook
+Var: ?a
+Prefixes: {lgdp=http://linkedgeodata.org/property/, lgdo=http://linkedgeodata.org/ontology/, dbpedia-owl=http://dbpedia.org/ontology/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, foaf=http://xmlns.com/foaf/0.1/, geonames=http://www.geonames.org/ontology#, airport=http://airports.dataincubator.org/schema/, rdfs=http://www.w3.org/2000/01/rdf-schema#, umbel-sc=http://umbel.org/umbel/sc/, dbp=http://dbpedia.org/property/, xsd=http://www.w3.org/2001/XMLSchema#, dbpedia=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, factbook=http://www4.wiwiss.fu-berlin.de/factbook/ns#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, linkedgeodata=http://linkedgeodata.org/triplify/}
+Endpoint: http://www4.wiwiss.fu-berlin.de/factbook/sparql
+Graph: null
+Restrictions: [?a a factbook:Country]
+Properties: [factbook:internetcountrycode]
+Functions: {factbook:internetcountrycode=replace(.,)->lowercase}
+Page size: 1000
+Type: sparql
+
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: linkedgeodata
+Var: ?b
+Prefixes: {lgdp=http://linkedgeodata.org/property/, lgdo=http://linkedgeodata.org/ontology/, dbpedia-owl=http://dbpedia.org/ontology/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, foaf=http://xmlns.com/foaf/0.1/, geonames=http://www.geonames.org/ontology#, airport=http://airports.dataincubator.org/schema/, rdfs=http://www.w3.org/2000/01/rdf-schema#, umbel-sc=http://umbel.org/umbel/sc/, dbp=http://dbpedia.org/property/, xsd=http://www.w3.org/2001/XMLSchema#, dbpedia=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, factbook=http://www4.wiwiss.fu-berlin.de/factbook/ns#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, linkedgeodata=http://linkedgeodata.org/triplify/}
+Endpoint: http://linkedgeodata.org/sparql/
+Graph: null
+Restrictions: [?b a lgdo:Country]
+Properties: [lgdp:country_code_iso3166_1_alpha_2]
+Functions: {lgdp:country_code_iso3166_1_alpha_2=lowercase}
+Page size: 1000
+Type: sparql
+
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:194): Found cached data. Loading data from file E:\Work\Java\LIMES\cache\-1514444565.ser
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:200): Cached data loaded successfully from file E:\Work\Java\LIMES\cache\-1514444565.ser
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:201): Size = 237
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:140): Loading target data ...
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:194): Found cached data. Loading data from file E:\Work\Java\LIMES\cache\831096723.ser
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:200): Cached data loaded successfully from file E:\Work\Java\LIMES\cache\831096723.ser
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:201): Size = 214
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:153): Getting links ...
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:44): Running EdJoin with thresold 0.9
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:55): Starting PPJoinPlus
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:69): term1=?a.factbook:internetcountrycode
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:70): term2=?b.lgdp:country_code_iso3166_1_alpha_2
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:129): Filling objects from source knowledge base.
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:145): Filling objects from target knowledge base.
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.qTokenizer(EDJoin.java:279): Computed 459 qgrams
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:247): Got 201 links.
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:248): Done.
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:156): Got links in 66ms.
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:21): Getting serializer with name NT
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:27): Serializer with name NT not found. Using .nt as default format.
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:160): Using N3Serializer to serialize
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:179): Returned 201 links above acceptance threshold.
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:180): Returned 0 links to review.
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:187): Mapping carried out in 0.355 seconds
+12.06.2012 01:11:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:188): Done.

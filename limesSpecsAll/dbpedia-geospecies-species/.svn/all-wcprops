@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-geospecies-species
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-geospecies-species/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-geospecies-species/positive.nt
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-geospecies-species/spec.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-geospecies-species/README.txt
+END

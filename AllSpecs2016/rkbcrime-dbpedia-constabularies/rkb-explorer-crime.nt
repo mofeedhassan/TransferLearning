@@ -1,0 +1,43 @@
+<http://crime.rkbexplorer.com/id/staffordshire-police> <http://www.w3.org/2000/01/rdf-schema#label> "Staffordshire Police" .
+<http://crime.rkbexplorer.com/id/cumbria-constabulary> <http://www.w3.org/2000/01/rdf-schema#label> "Cumbria Constabulary" .
+<http://crime.rkbexplorer.com/id/greater-manchester-police> <http://www.w3.org/2000/01/rdf-schema#label> "Greater Manchester Police" .
+<http://crime.rkbexplorer.com/id/durham-constabulary> <http://www.w3.org/2000/01/rdf-schema#label> "Durham Constabulary" .
+<http://crime.rkbexplorer.com/id/surrey-police> <http://www.w3.org/2000/01/rdf-schema#label> "Surrey Police" .
+<http://crime.rkbexplorer.com/id/thames-valley-police> <http://www.w3.org/2000/01/rdf-schema#label> "Thames Valley Police" .
+<http://crime.rkbexplorer.com/id/dyfed-powys-police> <http://www.w3.org/2000/01/rdf-schema#label> "Dyfed-Powys Police" .
+<http://crime.rkbexplorer.com/id/lancashire-constabulary> <http://www.w3.org/2000/01/rdf-schema#label> "Lancashire Constabulary" .
+<http://crime.rkbexplorer.com/id/humberside-police> <http://www.w3.org/2000/01/rdf-schema#label> "Humberside Police" .
+<http://crime.rkbexplorer.com/id/kent-police> <http://www.w3.org/2000/01/rdf-schema#label> "Kent Police" .
+<http://crime.rkbexplorer.com/id/metropolitan-police> <http://www.w3.org/2000/01/rdf-schema#label> "Metropolitan Police" .
+<http://crime.rkbexplorer.com/id/dorset-police> <http://www.w3.org/2000/01/rdf-schema#label> "Dorset Police" .
+<http://crime.rkbexplorer.com/id/norfolk-constabulary> <http://www.w3.org/2000/01/rdf-schema#label> "Norfolk Constabulary" .
+<http://crime.rkbexplorer.com/id/northumbria-police> <http://www.w3.org/2000/01/rdf-schema#label> "Northumbria Police" .
+<http://crime.rkbexplorer.com/id/gloucestershire-constabulary> <http://www.w3.org/2000/01/rdf-schema#label> "Gloucestershire Constabulary" .
+<http://crime.rkbexplorer.com/id/west-yorkshire-police> <http://www.w3.org/2000/01/rdf-schema#label> "West Yorkshire Police" .
+<http://crime.rkbexplorer.com/id/essex-police> <http://www.w3.org/2000/01/rdf-schema#label> "Essex Police" .
+<http://crime.rkbexplorer.com/id/cambridgeshire-constabulary> <http://www.w3.org/2000/01/rdf-schema#label> "Cambridgeshire Constabulary" .
+<http://crime.rkbexplorer.com/id/cheshire-constabulary> <http://www.w3.org/2000/01/rdf-schema#label> "Cheshire Constabulary" .
+<http://crime.rkbexplorer.com/id/merseyside-police> <http://www.w3.org/2000/01/rdf-schema#label> "Merseyside Police" .
+<http://crime.rkbexplorer.com/id/sussex-police> <http://www.w3.org/2000/01/rdf-schema#label> "Sussex Police" .
+<http://crime.rkbexplorer.com/id/warwickshire-police> <http://www.w3.org/2000/01/rdf-schema#label> "Warwickshire Police" .
+<http://crime.rkbexplorer.com/id/derbyshire-constabulary> <http://www.w3.org/2000/01/rdf-schema#label> "Derbyshire Constabulary" .
+<http://crime.rkbexplorer.com/id/west-midlands-police> <http://www.w3.org/2000/01/rdf-schema#label> "West Midlands Police" .
+<http://crime.rkbexplorer.com/id/wiltshire-police> <http://www.w3.org/2000/01/rdf-schema#label> "Wiltshire Police" .
+<http://crime.rkbexplorer.com/id/gwent-police> <http://www.w3.org/2000/01/rdf-schema#label> "Gwent Police" .
+<http://crime.rkbexplorer.com/id/hertfordshire-constabulary> <http://www.w3.org/2000/01/rdf-schema#label> "Hertfordshire Constabulary" .
+<http://crime.rkbexplorer.com/id/nottinghamshire-police> <http://www.w3.org/2000/01/rdf-schema#label> "Nottinghamshire Police" .
+<http://crime.rkbexplorer.com/id/west-mercia-police> <http://www.w3.org/2000/01/rdf-schema#label> "West Mercia Police" .
+<http://crime.rkbexplorer.com/id/north-yorkshire-police> <http://www.w3.org/2000/01/rdf-schema#label> "North Yorkshire Police" .
+<http://crime.rkbexplorer.com/id/northamptonshire-police> <http://www.w3.org/2000/01/rdf-schema#label> "Northamptonshire Police" .
+<http://crime.rkbexplorer.com/id/suffolk-constabulary> <http://www.w3.org/2000/01/rdf-schema#label> "Suffolk Constabulary" .
+<http://crime.rkbexplorer.com/id/south-yorkshire> <http://www.w3.org/2000/01/rdf-schema#label> "South Yorkshire" .
+<http://crime.rkbexplorer.com/id/devon-and-cornwall-constabulary> <http://www.w3.org/2000/01/rdf-schema#label> "Devon and Cornwall Constabulary" .
+<http://crime.rkbexplorer.com/id/bedfordshire-police> <http://www.w3.org/2000/01/rdf-schema#label> "Bedfordshire Police" .
+<http://crime.rkbexplorer.com/id/north-wales-police> <http://www.w3.org/2000/01/rdf-schema#label> "North Wales Police" .
+<http://crime.rkbexplorer.com/id/lincolnshire-police> <http://www.w3.org/2000/01/rdf-schema#label> "Lincolnshire Police" .
+<http://crime.rkbexplorer.com/id/leicestershire-constabulary> <http://www.w3.org/2000/01/rdf-schema#label> "Leicestershire Constabulary" .
+<http://crime.rkbexplorer.com/id/south-wales-police> <http://www.w3.org/2000/01/rdf-schema#label> "South Wales Police" .
+<http://crime.rkbexplorer.com/id/cleveland-police> <http://www.w3.org/2000/01/rdf-schema#label> "Cleveland Police" .
+<http://crime.rkbexplorer.com/id/hampshire-constabulary> <http://www.w3.org/2000/01/rdf-schema#label> "Hampshire Constabulary" .
+<http://crime.rkbexplorer.com/id/city-of-london-police> <http://www.w3.org/2000/01/rdf-schema#label> "City of London Police" .
+<http://crime.rkbexplorer.com/id/avon-and-somerset-constabulary> <http://www.w3.org/2000/01/rdf-schema#label> "Avon and Somerset Constabulary" .

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE LIMES
+  SYSTEM "limes.dtd">
+<LIMES>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/1999/02/22-rdf-syntax-ns#</NAMESPACE>
+      <LABEL>rdf</LABEL>
+   </PREFIX>
+   
+   <PREFIX>
+      <NAMESPACE>http://linkedgeodata.org/property/</NAMESPACE>
+      <LABEL>lgdp</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://linkedgeodata.org/ontology/</NAMESPACE>
+      <LABEL>lgdo</LABEL>
+   </PREFIX>
+   <PREFIX>
+    <NAMESPACE>http://www4.wiwiss.fu-berlin.de/factbook/ns#</NAMESPACE>
+      <LABEL>factbook</LABEL>
+   </PREFIX>
+   <SOURCE>
+      <ID>thefactbook</ID>
+      <ENDPOINT>http://lod.openlinksw.com/sparql</ENDPOINT>
+      <VAR>?a</VAR>
+      <PAGESIZE>1000</PAGESIZE>
+      <RESTRICTION>?a rdf:type factbook:Country.</RESTRICTION>
+      <PROPERTY>factbook:internetcountrycode AS replace(.,)->lowercase</PROPERTY>
+   </SOURCE>
+   <TARGET>
+      <ID>linkedgeodata</ID>
+      <ENDPOINT>http://linkedgeodata.org/sparql/</ENDPOINT>
+      <VAR>?b</VAR>
+      <PAGESIZE>1000</PAGESIZE>
+      <RESTRICTION>?b rdf:type lgdo:Country</RESTRICTION>
+      <PROPERTY>lgdp:country_code_iso3166_1_alpha_2 AS lowercase</PROPERTY>
+   </TARGET>
+   <METRIC>levenshtein(a.factbook:internetcountrycode, b.lgdp:country_code_iso3166_1_alpha_2)</METRIC>
+   <ACCEPTANCE>
+      <THRESHOLD>0.9</THRESHOLD>
+      <FILE>accept.nt</FILE>
+      <RELATION>owl:sameAs</RELATION>
+   </ACCEPTANCE>
+   <REVIEW>
+      <THRESHOLD>0.9</THRESHOLD>
+      <FILE>review.nt</FILE>
+      <RELATION>owl:sameAs</RELATION>
+   </REVIEW>
+   <EXECUTION>Simple</EXECUTION>
+   <OUTPUT>NT</OUTPUT>
+</LIMES>

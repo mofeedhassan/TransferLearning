@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-openlibrary-bookauthor
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sources/!svn/ver/1242/TransferLearning/specs/dbpedia-openlibrary-bookauthor/spec.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/sources/!svn/ver/1242/TransferLearning/specs/dbpedia-openlibrary-bookauthor/README.txt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-openlibrary-bookauthor/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-openlibrary-bookauthor/positive.nt
+END

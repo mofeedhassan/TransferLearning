@@ -1,0 +1,44 @@
+13.06.2012 14:49:01 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: EPO
+Var: ?a
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpediaowl=http://dbpedia.org/ontology/, akt=http://www.aktors.org/ontology/portal#, dbp=http://dbpedia.org/property/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, skos=http://www.w3.org/2004/02/skos/core#, epo=http://epo.publicdata.eu/ebd/ontology/, sw=http://vocab.sciencewise.info/ontology#}
+Endpoint: http://epo.publicdata.eu/sparql
+Graph: null
+Restrictions: [?a rdf:type epo:Country]
+Properties: [rdfs:label]
+Functions: {rdfs:label=lowercase}
+Page size: 1000
+Type: sparql
+
+13.06.2012 14:49:01 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: DBpedia
+Var: ?b
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpediaowl=http://dbpedia.org/ontology/, akt=http://www.aktors.org/ontology/portal#, dbp=http://dbpedia.org/property/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, skos=http://www.w3.org/2004/02/skos/core#, epo=http://epo.publicdata.eu/ebd/ontology/, sw=http://vocab.sciencewise.info/ontology#}
+Endpoint: http://dbpedia.org/sparql
+Graph: null
+Restrictions: [?b rdf:type dbpediaowl:Country]
+Properties: [rdfs:label]
+Functions: {rdfs:label=lowercase}
+Page size: 1000
+Type: sparql
+
+13.06.2012 14:49:01 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+13.06.2012 14:49:01 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:194): Found cached data. Loading data from file E:\Work\Java\LIMES\cache\-1376120316.ser
+13.06.2012 14:49:01 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:206): No cached data found for EPO
+13.06.2012 14:49:01 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+13.06.2012 14:49:01 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:81): Properties are [rdfs:label]
+13.06.2012 14:49:01 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:126): Query issued is 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpediaowl: <http://dbpedia.org/ontology/>
+PREFIX akt: <http://www.aktors.org/ontology/portal#>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX epo: <http://epo.publicdata.eu/ebd/ontology/>
+PREFIX sw: <http://vocab.sciencewise.info/ontology#>
+SELECT DISTINCT ?a ?v0
+WHERE {
+?a rdf:type epo:Country .
+?a rdfs:label ?v0 .
+}
+13.06.2012 14:49:01 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Querying the endpoint.
+13.06.2012 14:49:01 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 0 to 1000

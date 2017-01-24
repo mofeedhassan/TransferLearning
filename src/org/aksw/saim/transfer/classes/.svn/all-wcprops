@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/sources/!svn/ver/1550/TransferLearning/src/org/aksw/saim/transfer/classes
+END
+SamplingBasedClassSimilarity.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/sources/!svn/ver/1550/TransferLearning/src/org/aksw/saim/transfer/classes/SamplingBasedClassSimilarity.java
+END
+LabelBasedClassSimilarity.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/sources/!svn/ver/1550/TransferLearning/src/org/aksw/saim/transfer/classes/LabelBasedClassSimilarity.java
+END
+UriBasedClassSimilarity.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/sources/!svn/ver/1545/TransferLearning/src/org/aksw/saim/transfer/classes/UriBasedClassSimilarity.java
+END
+ClassSimilarity.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/sources/!svn/ver/1278/TransferLearning/src/org/aksw/saim/transfer/classes/ClassSimilarity.java
+END

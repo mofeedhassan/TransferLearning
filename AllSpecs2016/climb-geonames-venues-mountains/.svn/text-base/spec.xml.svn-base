@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE LIMES
+  SYSTEM "limes.dtd">
+<LIMES>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/1999/02/22-rdf-syntax-ns#</NAMESPACE>
+      <LABEL>rdf</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://climb.dataincubator.org/vocabs/climb/</NAMESPACE>
+      <LABEL>climb</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.geonames.org/ontology#</NAMESPACE>
+      <LABEL>geonames</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/2003/01/geo/wgs84_pos#</NAMESPACE>
+      <LABEL>geo</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/2002/07/owl#</NAMESPACE>
+      <LABEL>owl</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/2000/01/rdf-schema#</NAMESPACE>
+      <LABEL>rdfs</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://purl.org/dc/terms/</NAMESPACE>
+      <LABEL>dcterms</LABEL>
+   </PREFIX>
+   <SOURCE>
+      <ID>data-incubator-climb</ID>
+      <ENDPOINT>http://api.talis.com/stores/climb/services/sparql</ENDPOINT>
+      <VAR>?a</VAR>
+      <PAGESIZE>1000</PAGESIZE>
+      <RESTRICTION>?a rdf:type climb:Venue .</RESTRICTION>
+      <PROPERTY>rdfs:label AS lowercase</PROPERTY>
+      <PROPERTY>geo:lat AS number</PROPERTY>
+      <PROPERTY>geo:long AS number</PROPERTY>	  
+   </SOURCE>
+   <TARGET>
+      <ID>geonames-semantic-web</ID>
+      <ENDPOINT>http://api.talis.com/stores/geonames/services/sparql</ENDPOINT>
+      <VAR>?b</VAR>
+      <PAGESIZE>1000</PAGESIZE>
+      <RESTRICTION>?b rdf:type geonames:Feature</RESTRICTION>
+	  <RESTRICTION>?b geonames:inCountry &lt;http://www.geonames.org/countries/#GB&gt;</RESTRICTION>
+	  <RESTRICTION>?b geonames:featureClass geonames:T</RESTRICTION>
+      <PROPERTY>geonames:name</PROPERTY>
+      <PROPERTY>geo:lat AS number</PROPERTY>
+	  <PROPERTY>geo:long AS number</PROPERTY>
+   </TARGET>
+   <METRIC>AND(trigrams(a.rdfs:label, b.dbpp:name)|0.5, euclidean(a.geo:long|geo:lat, b.geo:long|geo:lat)|0.9)</METRIC>
+   <ACCEPTANCE>
+      <THRESHOLD>0.5</THRESHOLD>
+      <FILE>accept.nt</FILE>
+      <RELATION/>
+   </ACCEPTANCE>
+   <REVIEW>
+      <THRESHOLD>0.5</THRESHOLD>
+      <FILE>review.nt</FILE>
+      <RELATION/>
+   </REVIEW>
+   <EXECUTION>Simple</EXECUTION>
+   <OUTPUT>NT</OUTPUT>
+</LIMES>

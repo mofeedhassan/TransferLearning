@@ -1,0 +1,74 @@
+25.05.2012 01:20:02 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: dbpedia_FU
+Var: ?a
+Prefixes: {lgdp=http://linkedgeodata.org/property/, dc=http://purl.org/dc/terms/, lgdo=http://linkedgeodata.org/ontology/, dbpedia-owl=http://dbpedia.org/ontology/, mo=http://purl.org/ontology/mo/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, foaf=http://xmlns.com/foaf/0.1/, linkedmdb=http://data.linkedmdb.org/resource/movie/, dbpedia-prop=http://dbpedia.org/property/, yago=http://dbpedia.org/class/yago/, hcterms=http://purl.org/uF/hCard/terms/, rdfs=http://www.w3.org/2000/01/rdf-schema#, v=http://www.w3.org/2006/vcard/ns#, dctype=http://purl.org/dc/dcmitype/, umbel-sc=http://umbel.org/umbel/sc/, dbpedia=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, linkedgeodata=http://linkedgeodata.org/triplify/, skos=http://www.w3.org/2004/02/skos/core#}
+Endpoint: http://dbpedia.org/sparql
+Graph: null
+Restrictions: [?a rdf:type dbpedia-owl:Book]
+Properties: [rdfs:label, dbpedia-prop:name]
+Functions: {rdfs:label=lowercase, dbpedia-prop:name=lowercase}
+Page size: 1000
+Type: sparql
+
+25.05.2012 01:20:02 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: gutenberg
+Var: ?b
+Prefixes: {lgdp=http://linkedgeodata.org/property/, dc=http://purl.org/dc/terms/, lgdo=http://linkedgeodata.org/ontology/, dbpedia-owl=http://dbpedia.org/ontology/, mo=http://purl.org/ontology/mo/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, foaf=http://xmlns.com/foaf/0.1/, linkedmdb=http://data.linkedmdb.org/resource/movie/, dbpedia-prop=http://dbpedia.org/property/, yago=http://dbpedia.org/class/yago/, hcterms=http://purl.org/uF/hCard/terms/, rdfs=http://www.w3.org/2000/01/rdf-schema#, v=http://www.w3.org/2006/vcard/ns#, dctype=http://purl.org/dc/dcmitype/, umbel-sc=http://umbel.org/umbel/sc/, dbpedia=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, linkedgeodata=http://linkedgeodata.org/triplify/, skos=http://www.w3.org/2004/02/skos/core#}
+Endpoint: http://www4.wiwiss.fu-berlin.de/gutendata/sparql
+Graph: null
+Restrictions: [?b rdf:type dctype:Text]
+Properties: [rdfs:label, dc:alternative]
+Functions: {rdfs:label=lowercase, dc:alternative=lowercase}
+Page size: 1000
+Type: sparql
+
+25.05.2012 01:20:02 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+25.05.2012 01:20:02 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:193): Found cached data. Loading data from file E:\Work\Java\LIMES\cache\153577279.ser
+25.05.2012 01:20:04 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:199): Cached data loaded successfully from file E:\Work\Java\LIMES\cache\153577279.ser
+25.05.2012 01:20:04 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:200): Size = 23235
+25.05.2012 01:20:04 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:140): Loading target data ...
+25.05.2012 01:20:04 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:193): Found cached data. Loading data from file E:\Work\Java\LIMES\cache\-1825177790.ser
+25.05.2012 01:20:04 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:199): Cached data loaded successfully from file E:\Work\Java\LIMES\cache\-1825177790.ser
+25.05.2012 01:20:04 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:200): Size = 500
+25.05.2012 01:20:04 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:153): Getting links ...
+25.05.2012 01:20:04 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:44): Running EdJoin with thresold 0.25
+25.05.2012 01:20:04 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:55): Starting PPJoinPlus
+25.05.2012 01:20:04 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:69): term1=?a.rdfs:label
+25.05.2012 01:20:04 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:70): term2=?b.rdfs:label
+25.05.2012 01:20:04 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:129): Filling objects from source knowledge base.
+25.05.2012 01:20:04 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:145): Filling objects from target knowledge base.
+25.05.2012 01:20:04 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.qTokenizer(EDJoin.java:279): Computed 28042 qgrams
+25.05.2012 01:20:09 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:247): Got 1 links.
+25.05.2012 01:20:09 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:248): Done.
+25.05.2012 01:20:09 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:44): Running EdJoin with thresold 0.25
+25.05.2012 01:20:09 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:55): Starting PPJoinPlus
+25.05.2012 01:20:09 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:69): term1=?a.rdfs:label
+25.05.2012 01:20:09 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:70): term2=?b.dc:alternative
+25.05.2012 01:20:09 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:129): Filling objects from source knowledge base.
+25.05.2012 01:20:09 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:145): Filling objects from target knowledge base.
+25.05.2012 01:20:09 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.qTokenizer(EDJoin.java:279): Computed 27804 qgrams
+25.05.2012 01:20:14 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:247): Got 0 links.
+25.05.2012 01:20:14 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:248): Done.
+25.05.2012 01:20:14 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:44): Running EdJoin with thresold 0.25
+25.05.2012 01:20:14 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:55): Starting PPJoinPlus
+25.05.2012 01:20:14 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:69): term1=?a.dbpedia-prop:name
+25.05.2012 01:20:14 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:70): term2=?b.rdfs:label
+25.05.2012 01:20:14 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:129): Filling objects from source knowledge base.
+25.05.2012 01:20:14 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:145): Filling objects from target knowledge base.
+25.05.2012 01:20:14 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.qTokenizer(EDJoin.java:279): Computed 13192 qgrams
+25.05.2012 01:20:20 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:247): Got 70 links.
+25.05.2012 01:20:20 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:248): Done.
+25.05.2012 01:20:20 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:44): Running EdJoin with thresold 0.25
+25.05.2012 01:20:20 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:55): Starting PPJoinPlus
+25.05.2012 01:20:20 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:69): term1=?a.dbpedia-prop:name
+25.05.2012 01:20:20 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:70): term2=?b.dc:alternative
+25.05.2012 01:20:20 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:129): Filling objects from source knowledge base.
+25.05.2012 01:20:20 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:145): Filling objects from target knowledge base.
+25.05.2012 01:20:20 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.qTokenizer(EDJoin.java:279): Computed 12952 qgrams
+25.05.2012 01:20:27 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:247): Got 0 links.
+25.05.2012 01:20:27 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:248): Done.
+25.05.2012 01:20:27 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:156): Got links in 22841ms.
+25.05.2012 01:20:27 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:21): Getting serializer with name TAB
+25.05.2012 01:20:27 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:160): Using TabSeparatedSerializer to serialize
+25.05.2012 01:20:27 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:179): Returned 99 links above acceptance threshold.
+25.05.2012 01:20:27 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:180): Returned 0 links to review.
+25.05.2012 01:20:27 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:187): Mapping carried out in 24.677 seconds
+25.05.2012 01:20:27 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:188): Done.

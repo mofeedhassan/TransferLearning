@@ -1,0 +1,39 @@
+25.05.2012 00:36:58 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: datasemanticweborg
+Var: ?a
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, foaf=http://xmlns.com/foaf/0.1/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#}
+Endpoint: http://data.semanticweb.org/sparql
+Graph: null
+Restrictions: [?a rdf:type foaf:Person]
+Properties: [foaf:name]
+Functions: {foaf:name=lowercase}
+Page size: -1
+Type: sparql
+
+25.05.2012 00:36:58 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: DBLP
+Var: ?b
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, foaf=http://xmlns.com/foaf/0.1/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#}
+Endpoint: http://dblp.l3s.de/d2r/sparql
+Graph: null
+Restrictions: [?b rdf:type foaf:Agent]
+Properties: [foaf:name]
+Functions: {foaf:name=lowercase}
+Page size: 1000
+Type: sparql
+
+25.05.2012 00:36:58 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+25.05.2012 00:36:58 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:193): Found cached data. Loading data from file E:\Work\Java\LIMES\cache\192552019.ser
+25.05.2012 00:36:59 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:199): Cached data loaded successfully from file E:\Work\Java\LIMES\cache\192552019.ser
+25.05.2012 00:36:59 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:200): Size = 8979
+25.05.2012 00:36:59 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:140): Loading target data ...
+25.05.2012 00:36:59 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:193): Found cached data. Loading data from file E:\Work\Java\LIMES\cache\-1407023235.ser
+25.05.2012 00:36:59 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:199): Cached data loaded successfully from file E:\Work\Java\LIMES\cache\-1407023235.ser
+25.05.2012 00:36:59 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:200): Size = 10000
+25.05.2012 00:36:59 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:153): Getting links ...
+25.05.2012 00:37:00 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:156): Got links in 307ms.
+25.05.2012 00:37:00 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:21): Getting serializer with name NT
+25.05.2012 00:37:00 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:27): Serializer with name NT not found. Using .nt as default format.
+25.05.2012 00:37:00 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:160): Using N3Serializer to serialize
+25.05.2012 00:37:00 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:179): Returned 21 links above acceptance threshold.
+25.05.2012 00:37:00 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:180): Returned 0 links to review.
+25.05.2012 00:37:00 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:187): Mapping carried out in 1.941 seconds
+25.05.2012 00:37:00 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:188): Done.

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-sider-drug
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/sources/!svn/ver/1520/TransferLearning/finalSpecs/dbpedia-sider-drug/spec.xml
+END
+spec.log
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-sider-drug/spec.log
+END
+accept.nt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-sider-drug/accept.nt
+END
+review.nt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-sider-drug/review.nt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-sider-drug/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-sider-drug/positive.nt
+END
+fixme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-sider-drug/fixme.txt
+END

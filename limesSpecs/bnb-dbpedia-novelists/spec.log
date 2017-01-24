@@ -1,0 +1,61 @@
+22.05.2012 09:13:23 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: bluk-bnb
+Var: ?a
+Prefixes: {metoffice=http://metoffice.dataincubator.org/vocabs/metoffice/, climb=http://climb.dataincubator.org/vocabs/climb/, ov=http://open.vocab.org/terms/, dgadmingeo=http://statistics.data.gov.uk/def/administrative-geography/, dbpediaowl=http://dbpedia.org/ontology/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, foaf=http://xmlns.com/foaf/0.1/, spatial=http://data.ordnancesurvey.co.uk/ontology/spatialrelations/, yago=http://dbpedia.org/class/yago/, bibliographic=http://data.bl.uk/schema/bibliographic#, geonames=http://www.geonames.org/ontology#, postcode=http://data.ordnancesurvey.co.uk/ontology/postcode/, dcterms=http://purl.org/dc/terms/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpp=http://dbpedia.org/property/, traffic=http://transport.data.gov.uk/def/traffic/, gazetteer=http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/, naptan=http://transport.data.gov.uk/def/naptan/, rail=http://ontologi.es/rail/vocab#, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, admingeo=http://data.ordnancesurvey.co.uk/ontology/admingeo/, skos=http://www.w3.org/2004/02/skos/core#}
+Endpoint: http://bnb.data.bl.uk/sparql
+Graph: 0
+Restrictions: [?a a foaf:Person ; bibliographic:has_created ?work ]
+Properties: [bibliographic:has_created/dcterms:title, foaf:name, bibliographic:hasCreated/bibo:isbn10]
+Functions: {foaf:name=, bibliographic:has_created/dcterms:title=, bibliographic:hasCreated/bibo:isbn10=}
+Page size: 1000
+Type: sparql
+
+22.05.2012 09:13:23 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: dbpedia
+Var: ?b
+Prefixes: {metoffice=http://metoffice.dataincubator.org/vocabs/metoffice/, climb=http://climb.dataincubator.org/vocabs/climb/, ov=http://open.vocab.org/terms/, dgadmingeo=http://statistics.data.gov.uk/def/administrative-geography/, dbpediaowl=http://dbpedia.org/ontology/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, foaf=http://xmlns.com/foaf/0.1/, spatial=http://data.ordnancesurvey.co.uk/ontology/spatialrelations/, yago=http://dbpedia.org/class/yago/, bibliographic=http://data.bl.uk/schema/bibliographic#, geonames=http://www.geonames.org/ontology#, postcode=http://data.ordnancesurvey.co.uk/ontology/postcode/, dcterms=http://purl.org/dc/terms/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpp=http://dbpedia.org/property/, traffic=http://transport.data.gov.uk/def/traffic/, gazetteer=http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/, naptan=http://transport.data.gov.uk/def/naptan/, rail=http://ontologi.es/rail/vocab#, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, admingeo=http://data.ordnancesurvey.co.uk/ontology/admingeo/, skos=http://www.w3.org/2004/02/skos/core#}
+Endpoint: http://dbpedia.org/sparql
+Graph: 0
+Restrictions: [?novel dbpediaowl:author ?b .]
+Properties: [dbpediaowl:author/dbpp:name[@lang='en'], foaf:name, dbpediaowl:author/dbpp:isbn]
+Functions: {dbpediaowl:author/dbpp:name[@lang='en']=, foaf:name=, dbpediaowl:author/dbpp:isbn=}
+Page size: 1000
+Type: sparql
+
+22.05.2012 09:13:23 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+22.05.2012 09:13:23 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:205): No cached data found for bluk-bnb
+22.05.2012 09:13:23 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+22.05.2012 09:13:23 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:85): Properties are [bibliographic:has_created/dcterms:title, foaf:name, bibliographic:hasCreated/bibo:isbn10]
+22.05.2012 09:13:23 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:130): Query issued is 
+PREFIX metoffice: <http://metoffice.dataincubator.org/vocabs/metoffice/>
+PREFIX climb: <http://climb.dataincubator.org/vocabs/climb/>
+PREFIX ov: <http://open.vocab.org/terms/>
+PREFIX dgadmingeo: <http://statistics.data.gov.uk/def/administrative-geography/>
+PREFIX dbpediaowl: <http://dbpedia.org/ontology/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX spatial: <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/>
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX bibliographic: <http://data.bl.uk/schema/bibliographic#>
+PREFIX geonames: <http://www.geonames.org/ontology#>
+PREFIX postcode: <http://data.ordnancesurvey.co.uk/ontology/postcode/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpp: <http://dbpedia.org/property/>
+PREFIX traffic: <http://transport.data.gov.uk/def/traffic/>
+PREFIX gazetteer: <http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/>
+PREFIX naptan: <http://transport.data.gov.uk/def/naptan/>
+PREFIX rail: <http://ontologi.es/rail/vocab#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?a ?v0 ?v1 ?v2
+WHERE {
+?a a foaf:Person ; bibliographic:has_created ?work .
+?a bibliographic:has_created ?w1 .
+?w1 dcterms:title ?v0 .
+?a foaf:name ?v1 .
+?a bibliographic:hasCreated ?w1 .
+?w1 bibo:isbn10 ?v2 .
+}
+22.05.2012 09:13:23 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:132): Querying the endpoint.
+22.05.2012 09:13:23 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:140): Getting statements 0 to 1000

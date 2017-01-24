@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/sources/!svn/ver/1336/TransferLearning/specs/drugbank-dailymed-ingredients
+END
+spec.limes.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/sources/!svn/ver/1242/TransferLearning/specs/drugbank-dailymed-ingredients/spec.limes.xml
+END
+negative.ttl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/sources/!svn/ver/1336/TransferLearning/specs/drugbank-dailymed-ingredients/negative.ttl
+END
+positive.ttl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/sources/!svn/ver/1336/TransferLearning/specs/drugbank-dailymed-ingredients/positive.ttl
+END

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE LIMES
+  SYSTEM "limes.dtd">
+<LIMES>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/2002/07/owl#</NAMESPACE>
+      <LABEL>owl</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/1999/02/22-rdf-syntax-ns#</NAMESPACE>
+      <LABEL>rdf</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/2000/01/rdf-schema#</NAMESPACE>
+      <LABEL>rdfs</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://vocab.sciencewise.info/ontology#</NAMESPACE>
+      <LABEL>sw</LABEL>
+   </PREFIX>
+   <SOURCE>
+      <ID>Sciencewise</ID>
+      <ENDPOINT>http://sparql.sciencewise.info</ENDPOINT>
+      <GRAPH>1000</GRAPH>
+      <VAR>?a</VAR>
+      <PAGESIZE>1000</PAGESIZE>
+      <RESTRICTION>?a &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://vocab.sciencewise.info/ontology#Concept&gt; .</RESTRICTION>
+      <PROPERTY>&lt;http://www.w3.org/2004/02/skos/core#definition&gt;</PROPERTY>
+   </SOURCE>
+   <TARGET>
+      <ID>DBpedia</ID>
+      <ENDPOINT>http://dbpedia.org/sparql</ENDPOINT>
+      <GRAPH>1000</GRAPH>
+      <VAR>?b</VAR>
+      <PAGESIZE>1000</PAGESIZE>
+      <RESTRICTION>?b &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://www.w3.org/2002/07/owl#Thing&gt; .</RESTRICTION>
+      <PROPERTY>&lt;http://xmlns.com/foaf/0.1/page&gt;</PROPERTY>
+   </TARGET>
+   <METRIC/>
+   <EXECUTION>Simple</EXECUTION>
+   <OUTPUT/>
+</LIMES>

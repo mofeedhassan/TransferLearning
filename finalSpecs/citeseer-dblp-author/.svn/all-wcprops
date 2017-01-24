@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/citeseer-dblp-author
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/citeseer-dblp-author/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/citeseer-dblp-author/positive.nt
+END
+fixme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/citeseer-dblp-author/fixme.txt
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/sources/!svn/ver/1503/TransferLearning/finalSpecs/citeseer-dblp-author/spec.xml
+END
+spec.log
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/citeseer-dblp-author/spec.log
+END
+accept.nt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/citeseer-dblp-author/accept.nt
+END
+review.nt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/citeseer-dblp-author/review.nt
+END

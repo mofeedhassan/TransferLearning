@@ -1,0 +1,51 @@
+22.05.2012 09:51:48 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: data-incubator-climb
+Var: ?a
+Prefixes: {climb=http://climb.dataincubator.org/vocabs/climb/, ov=http://open.vocab.org/terms/, dgadmingeo=http://statistics.data.gov.uk/def/administrative-geography/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, yago=http://dbpedia.org/class/yago/, geonames=http://www.geonames.org/ontology#, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpp=http://dbpedia.org/property/, traffic=http://transport.data.gov.uk/def/traffic/, gazetteer=http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/, naptan=http://transport.data.gov.uk/def/naptan/, rail=http://ontologi.es/rail/vocab#, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, admingeo=http://data.ordnancesurvey.co.uk/ontology/admingeo/, skos=http://www.w3.org/2004/02/skos/core#}
+Endpoint: http://api.talis.com/stores/climb/services/sparql
+Graph: 0
+Restrictions: [?a a climb:Venue ]
+Properties: [geo:lat, geo:long]
+Functions: {geo:long=, geo:lat=}
+Page size: 1000
+Type: sparql
+
+22.05.2012 09:51:48 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: linked-railway-data-project
+Var: ?b
+Prefixes: {climb=http://climb.dataincubator.org/vocabs/climb/, ov=http://open.vocab.org/terms/, dgadmingeo=http://statistics.data.gov.uk/def/administrative-geography/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, yago=http://dbpedia.org/class/yago/, geonames=http://www.geonames.org/ontology#, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpp=http://dbpedia.org/property/, traffic=http://transport.data.gov.uk/def/traffic/, gazetteer=http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/, naptan=http://transport.data.gov.uk/def/naptan/, rail=http://ontologi.es/rail/vocab#, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, admingeo=http://data.ordnancesurvey.co.uk/ontology/admingeo/, skos=http://www.w3.org/2004/02/skos/core#}
+Endpoint: http://sparql.sindice.com/sparql
+Graph: 0
+Restrictions: [?b a rail:Station .]
+Properties: [geo:lat, geo:long]
+Functions: {geo:long=, geo:lat=}
+Page size: 1000
+Type: sparql
+
+22.05.2012 09:51:48 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+22.05.2012 09:51:48 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:205): No cached data found for data-incubator-climb
+22.05.2012 09:51:48 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+22.05.2012 09:51:48 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:85): Properties are [geo:lat, geo:long]
+22.05.2012 09:51:48 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:130): Query issued is 
+PREFIX climb: <http://climb.dataincubator.org/vocabs/climb/>
+PREFIX ov: <http://open.vocab.org/terms/>
+PREFIX dgadmingeo: <http://statistics.data.gov.uk/def/administrative-geography/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX geonames: <http://www.geonames.org/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpp: <http://dbpedia.org/property/>
+PREFIX traffic: <http://transport.data.gov.uk/def/traffic/>
+PREFIX gazetteer: <http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/>
+PREFIX naptan: <http://transport.data.gov.uk/def/naptan/>
+PREFIX rail: <http://ontologi.es/rail/vocab#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?a ?v0 ?v1
+WHERE {
+?a a climb:Venue .
+?a geo:lat ?v0 .
+?a geo:long ?v1 .
+}
+22.05.2012 09:51:48 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:132): Querying the endpoint.
+22.05.2012 09:51:48 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:140): Getting statements 0 to 1000

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE LIMES
+  SYSTEM "limes.dtd">
+<LIMES>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/1999/02/22-rdf-syntax-ns#</NAMESPACE>
+      <LABEL>rdf</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/2000/01/rdf-schema#</NAMESPACE>
+      <LABEL>rdfs</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://xmlns.com/foaf/0.1/</NAMESPACE>
+      <LABEL>foaf</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://dbpedia.org/property/</NAMESPACE>
+      <LABEL>dbpprop</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://dbpedia.org/ontology/</NAMESPACE>
+      <LABEL>dbpedia-owl</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://linkedgeodata.org/ontology/</NAMESPACE>
+      <LABEL>lgdo</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://linkedgeodata.org/property/</NAMESPACE>
+      <LABEL>lgdp</LABEL>
+   </PREFIX>
+   <SOURCE>
+      <ID>geonames</ID>
+      <ENDPOINT>http://linkedgeodata.org/sparql/</ENDPOINT>
+      <GRAPH>0</GRAPH>
+      <VAR>?a</VAR>
+      <PAGESIZE>1000</PAGESIZE>
+      <RESTRICTION>{?a rdf:type lgdo:Embassy}</RESTRICTION>
+      <PROPERTY>lgdp:country</PROPERTY>
+   </SOURCE>
+   <TARGET>
+      <ID>dbpedia</ID>
+      <ENDPOINT>http://live.dbpedia.org/sparql/</ENDPOINT>
+      <GRAPH>0</GRAPH>
+      <VAR>?b</VAR>
+      <PAGESIZE>1000</PAGESIZE>
+      <RESTRICTION>{?b rdf:type dbpedia-owl:Country}</RESTRICTION>
+      <PROPERTY>dbpprop:cctld[@lang = 'en']</PROPERTY>
+   </TARGET>
+   <METRIC>MAX(Jaro(a.lgdp:country, b.dbpprop:cctld[@lang = 'en']))</METRIC>
+   <ACCEPTANCE>
+      <THRESHOLD>0.90</THRESHOLD>
+      <FILE>embasssy_accepted_links.nt</FILE>
+      <RELATION/>
+   </ACCEPTANCE>
+   <REVIEW>
+      <THRESHOLD>0.90</THRESHOLD>
+      <FILE>embasssy_accepted_links.nt</FILE>
+      <RELATION/>
+   </REVIEW>
+   <EXECUTION>Simple</EXECUTION>
+   <OUTPUT>TAB</OUTPUT>
+</LIMES>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE LIMES
+  SYSTEM "limes.dtd">
+<LIMES>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/1999/02/22-rdf-syntax-ns#</NAMESPACE>
+      <LABEL>rdf</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://dbpedia.org/property/</NAMESPACE>
+      <LABEL>dbp</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://epo.publicdata.eu/ebd/ontology/</NAMESPACE>
+      <LABEL>epo</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/2002/07/owl#</NAMESPACE>
+      <LABEL>owl</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/2004/02/skos/core#</NAMESPACE>
+      <LABEL>skos</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/2000/01/rdf-schema#</NAMESPACE>
+      <LABEL>rdfs</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://dbpedia.org/ontology/</NAMESPACE>
+      <LABEL>dbpediaowl</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://vocab.sciencewise.info/ontology#</NAMESPACE>
+      <LABEL>sw</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.aktors.org/ontology/portal#</NAMESPACE>
+      <LABEL>akt</LABEL>
+   </PREFIX>
+   <SOURCE>
+      <ID>EPO</ID>
+      <ENDPOINT>http://epo.publicdata.eu/sparql</ENDPOINT>
+      <GRAPH>1000</GRAPH>
+      <VAR>?a</VAR>
+      <PAGESIZE>1000</PAGESIZE>
+      <RESTRICTION>?a rdf:type epo:Country</RESTRICTION>
+      <PROPERTY>rdfs:label</PROPERTY>
+   </SOURCE>
+   <TARGET>
+      <ID>DBpedia</ID>
+      <ENDPOINT>http://dbpedia.org/sparql</ENDPOINT>
+      <GRAPH>1000</GRAPH>
+      <VAR>?b</VAR>
+      <PAGESIZE>1000</PAGESIZE>
+      <RESTRICTION>?b rdf:type dbpediaowl:Country</RESTRICTION>
+      <PROPERTY>rdfs:label</PROPERTY>
+   </TARGET>
+   <METRIC/>
+   <EXECUTION>Simple</EXECUTION>
+   <OUTPUT/>
+</LIMES>

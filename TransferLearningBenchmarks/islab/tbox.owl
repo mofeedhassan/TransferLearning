@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY tbox "http://islab.dico.unimi.it/iimb/tbox.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://islab.dico.unimi.it/iimb/tbox.owl#"
+     xml:base="http://islab.dico.unimi.it/iimb/tbox.owl"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:tbox="http://islab.dico.unimi.it/iimb/tbox.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#cogito-Name -->
+
+    <owl:DatatypeProperty rdf:about="#cogito-Name"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#cogito-domain -->
+
+    <owl:DatatypeProperty rdf:about="#cogito-domain"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#cogito-first_sentence -->
+
+    <owl:DatatypeProperty rdf:about="#cogito-first_sentence"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#cogito-tag -->
+
+    <owl:DatatypeProperty rdf:about="#cogito-tag"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-area -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-area"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-birthdate -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-birthdate"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-birthname -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-birthname"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-birthplace -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-birthplace"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-branding -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-branding"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-caps-goals -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-caps-goals"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-city -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-city"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-cityofbirth -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-cityofbirth"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-class -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-class"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-clubname -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-clubname"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-clubs -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-clubs"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-company_name -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-company_name"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-company_type -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-company_type"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-coordinates -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-coordinates"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-countryofbirth -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-countryofbirth"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-currentclub -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-currentclub"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-dateofbirth -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-dateofbirth"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-debutyear -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-debutyear"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-format -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-format"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-foundation -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-foundation"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-founded -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-founded"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-frequency -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-frequency"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-fullname -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-fullname"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-ground -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-ground"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-height -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-height"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-homepage -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-homepage"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-industry -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-industry"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-key_people -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-key_people"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-league -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-league"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-leftarm1 -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-leftarm1"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-location -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-location"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-name -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-name"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-nationality -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-nationality"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-owner -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-owner"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-playername -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-playername"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-position -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-position"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-products -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-products"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-rightarm1 -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-rightarm1"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-slogan -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-slogan"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-teams -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-teams"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-type -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-type"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-website -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-website"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-years -->
+
+    <owl:DatatypeProperty rdf:about="#wikipedia-years"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#actor -->
+
+    <owl:Class rdf:about="#actor">
+        <rdfs:subClassOf rdf:resource="#person"/>
+        <owl:disjointWith rdf:resource="#item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#business_firm -->
+
+    <owl:Class rdf:about="#business_firm">
+        <rdfs:subClassOf rdf:resource="#organization"/>
+        <owl:disjointWith rdf:resource="#item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#item -->
+
+    <owl:Class rdf:about="#item">
+        <owl:disjointWith rdf:resource="#sportsperson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#organization -->
+
+    <owl:Class rdf:about="#organization"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#person -->
+
+    <owl:Class rdf:about="#person"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#sportsperson -->
+
+    <owl:Class rdf:about="#sportsperson">
+        <rdfs:subClassOf rdf:resource="#person"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.${svn.Revision}) http://owlapi.sourceforge.net -->
+

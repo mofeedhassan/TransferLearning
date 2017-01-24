@@ -1,0 +1,173 @@
+13.06.2012 14:47:36 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: dbpedia
+Var: ?a
+Prefixes: {lgdp=http://linkedgeodata.org/property/, dc=http://purl.org/dc/terms/, diseasome=http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/, lgdo=http://linkedgeodata.org/ontology/, dbpedia-owl=http://dbpedia.org/ontology/, mo=http://purl.org/ontology/mo/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, foaf=http://xmlns.com/foaf/0.1/, linkedmdb=http://data.linkedmdb.org/resource/movie/, dbpedia-prop=http://dbpedia.org/property/, yago=http://dbpedia.org/class/yago/, hcterms=http://purl.org/uF/hCard/terms/, geonames=http://www.geonames.org/ontology#, rdfs=http://www.w3.org/2000/01/rdf-schema#, v=http://www.w3.org/2006/vcard/ns#, dctype=http://purl.org/dc/dcmitype/, umbel-sc=http://umbel.org/umbel/sc/, sider=http://www4.wiwiss.fu-berlin.de/sider/resource/sider/, dbpedia=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, linkedgeodata=http://linkedgeodata.org/triplify/, skos=http://www.w3.org/2004/02/skos/core#}
+Endpoint: http://dbpedia.org/sparql
+Graph: null
+Restrictions: [?a rdf:type dbpedia:Disease]
+Properties: [foaf:name, rdfs:label]
+Functions: {rdfs:label=lowercase, foaf:name=lowercase}
+Page size: 1000
+Type: sparql
+
+13.06.2012 14:47:36 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: sider
+Var: ?b
+Prefixes: {lgdp=http://linkedgeodata.org/property/, dc=http://purl.org/dc/terms/, diseasome=http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/, lgdo=http://linkedgeodata.org/ontology/, dbpedia-owl=http://dbpedia.org/ontology/, mo=http://purl.org/ontology/mo/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, foaf=http://xmlns.com/foaf/0.1/, linkedmdb=http://data.linkedmdb.org/resource/movie/, dbpedia-prop=http://dbpedia.org/property/, yago=http://dbpedia.org/class/yago/, hcterms=http://purl.org/uF/hCard/terms/, geonames=http://www.geonames.org/ontology#, rdfs=http://www.w3.org/2000/01/rdf-schema#, v=http://www.w3.org/2006/vcard/ns#, dctype=http://purl.org/dc/dcmitype/, umbel-sc=http://umbel.org/umbel/sc/, sider=http://www4.wiwiss.fu-berlin.de/sider/resource/sider/, dbpedia=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, linkedgeodata=http://linkedgeodata.org/triplify/, skos=http://www.w3.org/2004/02/skos/core#}
+Endpoint: http://www4.wiwiss.fu-berlin.de/sider/sparql
+Graph: null
+Restrictions: [?b rdf:type sider:side_effects]
+Properties: [rdfs:label, sider:sideEffectName]
+Functions: {rdfs:label=lowercase, sider:sideEffectName=lowercase}
+Page size: 1000
+Type: sparql
+
+13.06.2012 14:47:36 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+13.06.2012 14:47:36 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:206): No cached data found for dbpedia
+13.06.2012 14:47:36 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+13.06.2012 14:47:36 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:81): Properties are [foaf:name, rdfs:label]
+13.06.2012 14:47:36 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:126): Query issued is 
+PREFIX lgdp: <http://linkedgeodata.org/property/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX diseasome: <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/>
+PREFIX lgdo: <http://linkedgeodata.org/ontology/>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX linkedmdb: <http://data.linkedmdb.org/resource/movie/>
+PREFIX dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX hcterms: <http://purl.org/uF/hCard/terms/>
+PREFIX geonames: <http://www.geonames.org/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX v: <http://www.w3.org/2006/vcard/ns#>
+PREFIX dctype: <http://purl.org/dc/dcmitype/>
+PREFIX umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX sider: <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/>
+PREFIX dbpedia: <http://dbpedia.org/ontology/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX linkedgeodata: <http://linkedgeodata.org/triplify/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?a ?v0 ?v1
+WHERE {
+?a rdf:type dbpedia:Disease .
+?a foaf:name ?v0 .
+?a rdfs:label ?v1 .
+}
+13.06.2012 14:47:36 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Querying the endpoint.
+13.06.2012 14:47:36 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 0 to 1000
+13.06.2012 14:47:38 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 1000 to 2000
+13.06.2012 14:47:38 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 2000 to 3000
+13.06.2012 14:47:39 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 3000 to 4000
+13.06.2012 14:47:40 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 4000 to 5000
+13.06.2012 14:47:41 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 5000 to 6000
+13.06.2012 14:47:43 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 6000 to 7000
+13.06.2012 14:47:44 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 7000 to 8000
+13.06.2012 14:47:44 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 8000 to 9000
+13.06.2012 14:47:45 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 9000 to 10000
+13.06.2012 14:47:45 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 10000 to 11000
+13.06.2012 14:47:46 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 11000 to 12000
+13.06.2012 14:47:46 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 12000 to 13000
+13.06.2012 14:47:47 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 13000 to 14000
+13.06.2012 14:47:48 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 14000 to 15000
+13.06.2012 14:47:48 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 15000 to 16000
+13.06.2012 14:47:48 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 16000 to 17000
+13.06.2012 14:47:49 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 17000 to 18000
+13.06.2012 14:47:50 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 18000 to 19000
+13.06.2012 14:47:50 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 19000 to 20000
+13.06.2012 14:47:51 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 20000 to 21000
+13.06.2012 14:47:52 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 21000 to 22000
+13.06.2012 14:47:53 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 22000 to 23000
+13.06.2012 14:47:54 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:223): Retrieved 21451 triples and 4179 entities.
+13.06.2012 14:47:54 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:224): Retrieving statements took 17.726 seconds.
+13.06.2012 14:47:54 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.saveToFile(HybridCache.java:155): Serializing 4179 objects to E:\Work\Java\LIMES\cache\-309348385.ser
+13.06.2012 14:47:54 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:140): Loading target data ...
+13.06.2012 14:47:54 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:194): Found cached data. Loading data from file E:\Work\Java\LIMES\cache\-39074006.ser
+13.06.2012 14:47:54 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:206): No cached data found for sider
+13.06.2012 14:47:54 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+13.06.2012 14:47:54 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:81): Properties are [rdfs:label, sider:sideEffectName]
+13.06.2012 14:47:54 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:126): Query issued is 
+PREFIX lgdp: <http://linkedgeodata.org/property/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX diseasome: <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/>
+PREFIX lgdo: <http://linkedgeodata.org/ontology/>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX linkedmdb: <http://data.linkedmdb.org/resource/movie/>
+PREFIX dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX hcterms: <http://purl.org/uF/hCard/terms/>
+PREFIX geonames: <http://www.geonames.org/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX v: <http://www.w3.org/2006/vcard/ns#>
+PREFIX dctype: <http://purl.org/dc/dcmitype/>
+PREFIX umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX sider: <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/>
+PREFIX dbpedia: <http://dbpedia.org/ontology/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX linkedgeodata: <http://linkedgeodata.org/triplify/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?b ?v0 ?v1
+WHERE {
+?b rdf:type sider:side_effects .
+?b rdfs:label ?v0 .
+?b sider:sideEffectName ?v1 .
+}
+13.06.2012 14:47:54 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Querying the endpoint.
+13.06.2012 14:47:54 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 0 to 1000
+13.06.2012 14:47:55 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 1000 to 2000
+13.06.2012 14:47:56 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 2000 to 3000
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 3000 to 4000
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:223): Retrieved 2400 triples and 1737 entities.
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:224): Retrieving statements took 2.377 seconds.
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.saveToFile(HybridCache.java:155): Serializing 1737 objects to E:\Work\Java\LIMES\cache\-39074006.ser
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:153): Getting links ...
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:44): Running EdJoin with thresold 0.33
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:55): Starting PPJoinPlus
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:69): term1=?a.foaf:name
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:70): term2=?b.rdfs:label
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:129): Filling objects from source knowledge base.
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:145): Filling objects from target knowledge base.
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.qTokenizer(EDJoin.java:279): Computed 5805 qgrams
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:247): Got 1 links.
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:248): Done.
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:44): Running EdJoin with thresold 0.33
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:55): Starting PPJoinPlus
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:69): term1=?a.rdfs:label
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:70): term2=?b.rdfs:label
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:129): Filling objects from source knowledge base.
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:145): Filling objects from target knowledge base.
+13.06.2012 14:47:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.qTokenizer(EDJoin.java:279): Computed 19017 qgrams
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:247): Got 0 links.
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:248): Done.
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:44): Running EdJoin with thresold 0.33
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:55): Starting PPJoinPlus
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:69): term1=?a.foaf:name
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:70): term2=?b.sider:sideEffectName
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:129): Filling objects from source knowledge base.
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:145): Filling objects from target knowledge base.
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.qTokenizer(EDJoin.java:279): Computed 5860 qgrams
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:247): Got 1 links.
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:248): Done.
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:44): Running EdJoin with thresold 0.33
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:55): Starting PPJoinPlus
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:69): term1=?a.rdfs:label
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:70): term2=?b.sider:sideEffectName
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:129): Filling objects from source knowledge base.
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:145): Filling objects from target knowledge base.
+13.06.2012 14:47:58 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.qTokenizer(EDJoin.java:279): Computed 19052 qgrams
+13.06.2012 14:47:59 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:247): Got 0 links.
+13.06.2012 14:47:59 INFO  [main] de.uni_leipzig.simba.mapper.atomic.EDJoin.getMapping(EDJoin.java:248): Done.
+13.06.2012 14:47:59 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:156): Got links in 1846ms.
+13.06.2012 14:47:59 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:21): Getting serializer with name NT
+13.06.2012 14:47:59 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:27): Serializer with name NT not found. Using .nt as default format.
+13.06.2012 14:47:59 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:160): Using N3Serializer to serialize
+13.06.2012 14:47:59 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:179): Returned 56 links above acceptance threshold.
+13.06.2012 14:47:59 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:180): Returned 0 links to review.
+13.06.2012 14:47:59 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:187): Mapping carried out in 22.682 seconds
+13.06.2012 14:47:59 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:188): Done.

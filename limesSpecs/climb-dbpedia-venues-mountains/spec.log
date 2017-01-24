@@ -1,0 +1,44 @@
+22.05.2012 09:20:10 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: data-incubator-climb
+Var: ?a
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, climb=http://climb.dataincubator.org/vocabs/climb/, dbpp=http://dbpedia.org/property/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#, dcterms=http://purl.org/dc/terms/}
+Endpoint: http://api.talis.com/stores/climb/services/sparql
+Graph: 0
+Restrictions: [?a rdf:type climb:Venue ]
+Properties: [rdfs:label, geo:lat, geo:long]
+Functions: {rdfs:label=, geo:long=, geo:lat=}
+Page size: 1000
+Type: sparql
+
+22.05.2012 09:20:10 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: dbpedia
+Var: ?b
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, climb=http://climb.dataincubator.org/vocabs/climb/, dbpp=http://dbpedia.org/property/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#, dcterms=http://purl.org/dc/terms/}
+Endpoint: http://dbpedia.org/sparql
+Graph: 0
+Restrictions: [?b dcterms:subject <http://dbpedia.org/resource/Category:Marilyns_of_Scotland> ; dbpp:name ?name ; geo:lat ?lat .]
+Properties: [dbpp:name, geo:lat, geo:long]
+Functions: {dbpp:name=, geo:long=, geo:lat=}
+Page size: 1000
+Type: sparql
+
+22.05.2012 09:20:10 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+22.05.2012 09:20:10 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:205): No cached data found for data-incubator-climb
+22.05.2012 09:20:10 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+22.05.2012 09:20:11 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:85): Properties are [rdfs:label, geo:lat, geo:long]
+22.05.2012 09:20:11 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:130): Query issued is 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX climb: <http://climb.dataincubator.org/vocabs/climb/>
+PREFIX dbpp: <http://dbpedia.org/property/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX geonames: <http://www.geonames.org/ontology#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT DISTINCT ?a ?v0 ?v1 ?v2
+WHERE {
+?a rdf:type climb:Venue .
+?a rdfs:label ?v0 .
+?a geo:lat ?v1 .
+?a geo:long ?v2 .
+}
+22.05.2012 09:20:11 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:132): Querying the endpoint.
+22.05.2012 09:20:11 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:140): Getting statements 0 to 1000

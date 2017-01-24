@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-sider-sideEffect
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/sources/!svn/ver/1242/TransferLearning/specs/dbpedia-sider-sideEffect/spec.xml
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-sider-sideEffect/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-sider-sideEffect/positive.nt
+END

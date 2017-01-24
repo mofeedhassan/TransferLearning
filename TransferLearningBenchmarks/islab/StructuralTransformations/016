@@ -1,0 +1,2972 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY abox "http://islab.dico.unimi.it/iimb/abox.owl#" >
+    <!ENTITY tbox "http://islab.dico.unimi.it/iimb/tbox.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://islab.dico.unimi.it/iimb/abox.owl#"
+     xml:base="http://islab.dico.unimi.it/iimb/abox.owl"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:abox="http://islab.dico.unimi.it/iimb/abox.owl#"
+     xmlns:tbox="http://islab.dico.unimi.it/iimb/tbox.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about="">
+        <owl:imports rdf:resource="http://islab.dico.unimi.it/iimb/016/tbox.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#cogito-Name -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;cogito-Name"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#cogito-domain -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;cogito-domain"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#cogito-first_sentence -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;cogito-first_sentence"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#cogito-tag -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;cogito-tag"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-area -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-area"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-birthdate -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-birthdate"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-birthname -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-birthname"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-birthplace -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-birthplace"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-branding -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-branding"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-caps-goals -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-caps-goals"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-city -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-city"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-cityofbirth -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-cityofbirth"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-class -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-class"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-clubname -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-clubname"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-clubs -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-clubs"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-company_name -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-company_name"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-company_type -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-company_type"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-coordinates -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-coordinates"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-countryofbirth -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-countryofbirth"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-currentclub -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-currentclub"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-dateofbirth -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-dateofbirth"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-format -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-format"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-foundation -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-foundation"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-founded -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-founded"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-frequency -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-frequency"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-fullname -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-fullname"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-ground -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-ground"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-height -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-height"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-homepage -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-homepage"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-industry -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-industry"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-key_people -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-key_people"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-league -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-league"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-leftarm1 -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-leftarm1"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-location -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-location"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-name -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-name"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-nationality -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-nationality"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-owner -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-owner"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-playername -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-playername"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-position -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-position"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-products -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-products"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-rightarm1 -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-rightarm1"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-slogan -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-slogan"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-teams -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-teams"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-type -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-type"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-website -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-website"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#wikipedia-years -->
+
+    <owl:DatatypeProperty rdf:about="&tbox;wikipedia-years"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#actor -->
+
+    <owl:Class rdf:about="&tbox;actor"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#business_firm -->
+
+    <owl:Class rdf:about="&tbox;business_firm"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/tbox.owl#sportsperson -->
+
+    <owl:Class rdf:about="&tbox;sportsperson"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1010455071511803593 -->
+
+    <tbox:sportsperson rdf:about="#ID1010455071511803593">
+        <tbox:wikipedia-countryofbirth rdf:datatype="&xsd;string">Australia</tbox:wikipedia-countryofbirth>
+        <tbox:wikipedia-currentclub rdf:datatype="&xsd;string">Cronulla Sharks</tbox:wikipedia-currentclub>
+        <tbox:wikipedia-fullname rdf:datatype="&xsd;string">Danny Nutley</tbox:wikipedia-fullname>
+        <tbox:wikipedia-position rdf:datatype="&xsd;string">Prop</tbox:wikipedia-position>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1024608258978041662 -->
+
+    <tbox:actor rdf:about="#ID1024608258978041662">
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Jean Alexander</tbox:wikipedia-name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Jean Alexander (born February 24, 1926 in Liverpool, then Lancashire now Merseyside, England) is an English television actress.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-location rdf:datatype="&xsd;string"
+            >Liverpool, England</tbox:wikipedia-location>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string"
+            >broadcasting events</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1057023230845018103 -->
+
+    <tbox:actor rdf:about="#ID1057023230845018103">
+        <tbox:wikipedia-location rdf:datatype="&xsd;string"
+            >London, England England</tbox:wikipedia-location>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">politics</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1133799011605341698 -->
+
+    <tbox:sportsperson rdf:about="#ID1133799011605341698">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Haninder Dhillon</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Haninder Dhillon (born 27 October 1976, India) is a Canadian cricket player.</tbox:cogito-first_sentence>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID11929364249656481 -->
+
+    <tbox:sportsperson rdf:about="#ID11929364249656481"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1221470233232797197 -->
+
+    <tbox:sportsperson rdf:about="#ID1221470233232797197">
+        <tbox:wikipedia-nationality rdf:datatype="&xsd;string">Canada</tbox:wikipedia-nationality>
+        <tbox:wikipedia-position rdf:datatype="&xsd;string">Left Wing</tbox:wikipedia-position>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Ryan Ready (born November 7, 1978 in Peterborough, Ontario) is a Canadian professional ice hockey left winger.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1241114178222387317 -->
+
+    <tbox:business_firm rdf:about="#ID1241114178222387317">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Drexel Burnham Lambert</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Drexel Burnham Lambert was a major Wall Street investment banking firm, which first rose to prominence and then was driven into bankruptcy in the 1980s by its involvement in illegal activities in the junk bond market, driven by Drexel employee Michael Milken.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1265715868366966223 -->
+
+    <tbox:sportsperson rdf:about="#ID1265715868366966223">
+        <tbox:wikipedia-caps-goals rdf:datatype="&xsd;string"
+            >? (?), 33 (19), 27 (3), 33 (10), 32 (15), 25 (14), 31 (20), 109 (46), 31 (7), 31 (6)</tbox:wikipedia-caps-goals>
+        <tbox:wikipedia-clubs rdf:datatype="&xsd;string"
+            >Cinisi, Milazzo, Messina, Tricase, Campobasso, Giugliano, Brindisi, Catanzaro, Catania, Mantova</tbox:wikipedia-clubs>
+        <tbox:wikipedia-playername rdf:datatype="&xsd;string">Giorgio Corona</tbox:wikipedia-playername>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Giorgio Corona</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Giorgio Corona (born May 15, 1974 in Palermo) is an Italian football striker currently playing with Mantova.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-countryofbirth rdf:datatype="&xsd;string">Italy</tbox:wikipedia-countryofbirth>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1323444582181385917 -->
+
+    <tbox:actor rdf:about="#ID1323444582181385917">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Ali Zaker (Bangla:) (also written as Aly Zaker) is a famous actor in Bangladeshi television drama and theatre.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1357201895693975856 -->
+
+    <tbox:business_firm rdf:about="#ID1357201895693975856">
+        <tbox:wikipedia-founded rdf:datatype="&xsd;string">1936</tbox:wikipedia-founded>
+        <tbox:wikipedia-league rdf:datatype="&xsd;string"
+            >Armenian Premier League</tbox:wikipedia-league>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >FC Lori Vanadzor is an Armenian football club from Vanadzor.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-fullname rdf:datatype="&xsd;string"
+            >Football Club Lori Vanadzor</tbox:wikipedia-fullname>
+        <tbox:wikipedia-ground rdf:datatype="&xsd;string"
+            >Lori Stadium,, Vanadzor</tbox:wikipedia-ground>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Lori Vanadzor</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+        <tbox:wikipedia-rightarm1 rdf:datatype="&xsd;string">ffffff</tbox:wikipedia-rightarm1>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1473731392964353222 -->
+
+    <tbox:sportsperson rdf:about="#ID1473731392964353222">
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cricket</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1503356003596666700 -->
+
+    <tbox:business_firm rdf:about="#ID1503356003596666700">
+        <tbox:wikipedia-type rdf:datatype="&xsd;string"
+            >Medical Education and Research institute</tbox:wikipedia-type>
+        <tbox:wikipedia-city rdf:datatype="&xsd;string">varanasi</tbox:wikipedia-city>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1516401863873732381 -->
+
+    <tbox:sportsperson rdf:about="#ID1516401863873732381">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Marvin Philip</tbox:cogito-Name>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1538735304415858475 -->
+
+    <tbox:sportsperson rdf:about="#ID1538735304415858475">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Konrad Giering</tbox:cogito-Name>
+        <tbox:wikipedia-dateofbirth rdf:datatype="&xsd;string"
+            >September 14, 1987</tbox:wikipedia-dateofbirth>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1617487840963434469 -->
+
+    <tbox:actor rdf:about="#ID1617487840963434469">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Aki Tomosaki</tbox:cogito-Name>
+        <tbox:wikipedia-location rdf:datatype="&xsd;string"
+            >Akita Prefecture, Japan</tbox:wikipedia-location>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1634151402169621196 -->
+
+    <tbox:sportsperson rdf:about="#ID1634151402169621196">
+        <tbox:cogito-domain rdf:datatype="&xsd;string">ice hockey</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1693979218720184901 -->
+
+    <tbox:sportsperson rdf:about="#ID1693979218720184901">
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Floyd Patterson</tbox:wikipedia-name>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Floyd Patterson</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Floyd Patterson (January 4, 1935 - May 11, 2006) was an American heavyweight boxing champion.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-nationality rdf:datatype="&xsd;string">USA</tbox:wikipedia-nationality>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1733359164275090038 -->
+
+    <tbox:actor rdf:about="#ID1733359164275090038">
+        <tbox:wikipedia-location rdf:datatype="&xsd;string"
+            >Arcadia, California</tbox:wikipedia-location>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Jerry Supiran</tbox:cogito-Name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1746031317105665832 -->
+
+    <tbox:sportsperson rdf:about="#ID1746031317105665832">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Wayne Maxwell Clark (born September 19, 1953, Perth, Western Australia) is a former Australian cricketer who played in 10 Tests and 2 ODIs from 1977 to 1979.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1818496307264238140 -->
+
+    <tbox:actor rdf:about="#ID1818496307264238140">
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string"
+            >December 31, 1947</tbox:wikipedia-birthdate>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Tim Matheson (born Timothy Lewis Matthieson on December 31, 1947) is an American actor.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-birthname rdf:datatype="&xsd;string"
+            >Timothy Lewis Matthieson</tbox:wikipedia-birthname>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1858736366974001922 -->
+
+    <tbox:actor rdf:about="#ID1858736366974001922">
+        <tbox:wikipedia-birthname rdf:datatype="&xsd;string"
+            >Catherine Fabienne Dorl&#65533;&#65533;ac</tbox:wikipedia-birthname>
+        <tbox:wikipedia-location rdf:datatype="&xsd;string">Paris, France</tbox:wikipedia-location>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1886389093294063431 -->
+
+    <tbox:sportsperson rdf:about="#ID1886389093294063431">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Adrian Demain</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Adrian Demain was featured briefly in skateboarding&#39;s first video, the Bones Brigade Video show, and in 1986 was ranked as skateboarding&#39;s amateur vertical champion by the National Skateboard Association.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1907011242086670965 -->
+
+    <tbox:sportsperson rdf:about="#ID1907011242086670965">
+        <tbox:cogito-domain rdf:datatype="&xsd;string"
+            >American football</tbox:cogito-domain>
+        <tbox:wikipedia-teams rdf:datatype="&xsd;string">Dallas Cowboys</tbox:wikipedia-teams>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Guy Brown, III (born June 1, 1955 in Palestine, Texas) was an American football linebacker in the National Football League for the Dallas Cowboys.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1918275550679621700 -->
+
+    <tbox:actor rdf:about="#ID1918275550679621700">
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">James Broderick</tbox:wikipedia-name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1937453960348307393 -->
+
+    <tbox:actor rdf:about="#ID1937453960348307393">
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string"
+            >December 28, 1949</tbox:wikipedia-birthdate>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Hilton McRae</tbox:cogito-Name>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Hilton McRae</tbox:wikipedia-name>
+        <tbox:wikipedia-location rdf:datatype="&xsd;string"
+            >Scotland Dundee, Scotland, United Kingdom</tbox:wikipedia-location>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID1966815621784450256 -->
+
+    <tbox:actor rdf:about="#ID1966815621784450256">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Mademoiselle Ambroisine</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">ballet</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2066838930348889262 -->
+
+    <tbox:sportsperson rdf:about="#ID2066838930348889262">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Collie Smith</tbox:cogito-Name>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Collie Smith</tbox:wikipedia-name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >O&#39;Neil Gordon &quot;Collie&quot; Smith (born 5 May 1933 in Kingston, Jamaica - died 9 September 1959 in Stoke-on-Trent, Staffordshire, England) was a West Indian cricketer.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-nationality rdf:datatype="&xsd;string">West Indian</tbox:wikipedia-nationality>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cricket</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2111902558979965631 -->
+
+    <tbox:actor rdf:about="#ID2111902558979965631">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Eric Christmas</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Eric Cuthbert Christmas (March 19, 1916 - July 22, 2000) was a British-Canadian stage and screen actor, with over 40 films and several more television roles to his credit.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2113200301175361274 -->
+
+    <tbox:actor rdf:about="#ID2113200301175361274">
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Amanda Tapping</tbox:wikipedia-name>
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string">August 28, 1965</tbox:wikipedia-birthdate>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2131095414022512854 -->
+
+    <tbox:actor rdf:about="#ID2131095414022512854">
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Frank O&#39;Connor</tbox:wikipedia-name>
+        <tbox:wikipedia-location rdf:datatype="&xsd;string">Lorain, Ohio</tbox:wikipedia-location>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2135107966126129741 -->
+
+    <tbox:actor rdf:about="#ID2135107966126129741">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Elvira Kurt</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Elvira Kurt is a Canadian comedian and was the host of the entertainment satire/talk show PopCultured with Elvira Kurt on the Comedy Network in Canada.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2158915063577289049 -->
+
+    <tbox:sportsperson rdf:about="#ID2158915063577289049">
+        <tbox:wikipedia-nationality rdf:datatype="&xsd;string">CAN</tbox:wikipedia-nationality>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID216226081649583199 -->
+
+    <tbox:actor rdf:about="#ID216226081649583199">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Tony Scoggo is a British actor best known for his role in the television soap opera Brookside.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2199606527608459615 -->
+
+    <tbox:actor rdf:about="#ID2199606527608459615">
+        <tbox:wikipedia-birthname rdf:datatype="&xsd;string"
+            >Myles David Jeffrey</tbox:wikipedia-birthname>
+        <tbox:wikipedia-birthplace rdf:datatype="&xsd;string"
+            >Riverside County, California</tbox:wikipedia-birthplace>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2313446875454994268 -->
+
+    <tbox:actor rdf:about="#ID2313446875454994268">
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string">June 2, 1972</tbox:wikipedia-birthdate>
+        <tbox:wikipedia-birthname rdf:datatype="&xsd;string"
+            >Wentworth Earl Miller III</tbox:wikipedia-birthname>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Wentworth Earl Miller III (born June 2, 1972) is a Golden Globe-nominated American actor.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2367772082033026553 -->
+
+    <tbox:actor rdf:about="#ID2367772082033026553">
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string">1974</tbox:wikipedia-birthdate>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Misha Collins</tbox:wikipedia-name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2385890624933014199 -->
+
+    <tbox:actor rdf:about="#ID2385890624933014199"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2400050584541548333 -->
+
+    <tbox:actor rdf:about="#ID2400050584541548333">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Carroll Baker (born May 28, 1931) is a Golden Globe Award-winning and Academy Award-nominated American actress who has enjoyed popularity as both a serious dramatic actress and, particularly in the 1960s, a movie sex symbol.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string">May 28, 1931</tbox:wikipedia-birthdate>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2523406377084265808 -->
+
+    <tbox:actor rdf:about="#ID2523406377084265808">
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string">April 30, 1886</tbox:wikipedia-birthdate>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Dick Elliott</tbox:wikipedia-name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">theatre</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2526232031915859851 -->
+
+    <tbox:sportsperson rdf:about="#ID2526232031915859851">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Natalya Pechonkina</tbox:cogito-Name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2543612461481187201 -->
+
+    <tbox:actor rdf:about="#ID2543612461481187201">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Simone Lahbib</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Simone Nicole Jean Lahbib Ould Cheikl (born 6 February, 1965 in Stirling, Scotland) is a popular British television actress.</tbox:cogito-first_sentence>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2588226991800537134 -->
+
+    <tbox:sportsperson rdf:about="#ID2588226991800537134">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Roy Walton</tbox:cogito-Name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">publishing</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID259164691899464589 -->
+
+    <tbox:business_firm rdf:about="#ID259164691899464589">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Beech-Nut</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Beech-Nut Nutrition Corporation is a baby food company that is currently owned by the Swiss branded consumer-goods firm Hero group.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2648226543847124504 -->
+
+    <tbox:business_firm rdf:about="#ID2648226543847124504">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Brittany Ferries</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Brittany Ferries is a French ferry company that runs ships between France, the UK, Ireland and Spain.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">fleet</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2688302273246855760 -->
+
+    <tbox:business_firm rdf:about="#ID2688302273246855760">
+        <tbox:wikipedia-fullname rdf:datatype="&xsd;string"
+            >Albion Park White Eagles, Football Club</tbox:wikipedia-fullname>
+        <tbox:wikipedia-league rdf:datatype="&xsd;string"
+            >Illawarra Premier League</tbox:wikipedia-league>
+        <tbox:wikipedia-ground rdf:datatype="&xsd;string">Terry Reserve</tbox:wikipedia-ground>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+        <tbox:wikipedia-leftarm1 rdf:datatype="&xsd;string">ff0000</tbox:wikipedia-leftarm1>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">football</tbox:cogito-domain>
+        <tbox:wikipedia-website rdf:datatype="&xsd;string"
+            >http://www.apwe.com.au Official White Eagles Website</tbox:wikipedia-website>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2693941310544019574 -->
+
+    <tbox:actor rdf:about="#ID2693941310544019574">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >John Sylvester White</tbox:cogito-Name>
+        <tbox:wikipedia-birthplace rdf:datatype="&xsd;string"
+            >Philadelphia, Pennsylvania</tbox:wikipedia-birthplace>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2763935733020979585 -->
+
+    <tbox:actor rdf:about="#ID2763935733020979585">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">George Marshall</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2798823500496129734 -->
+
+    <tbox:business_firm rdf:about="#ID2798823500496129734">
+        <tbox:wikipedia-city rdf:datatype="&xsd;string">Pretoria</tbox:wikipedia-city>
+        <tbox:wikipedia-type rdf:datatype="&xsd;string"
+            >Private, Boarding</tbox:wikipedia-type>
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >St. Alban&#39;s College</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+        <tbox:wikipedia-website rdf:datatype="&xsd;string"
+            >http://www.stalbanscollege.com/</tbox:wikipedia-website>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2893661977841376745 -->
+
+    <tbox:actor rdf:about="#ID2893661977841376745">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Kay Siu Lim or Lim Kay Siu (born 1960) is a Singaporean character actor who has appeared in several Asian films, notably TV films since the 1980s.</tbox:cogito-first_sentence>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID29218320659197146 -->
+
+    <tbox:actor rdf:about="#ID29218320659197146">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Mansoor Ali Khan</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Mansoor Ali Khan is a South Indian actor who is prominent in Tamil films.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2958735917231200728 -->
+
+    <tbox:actor rdf:about="#ID2958735917231200728">
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string"
+            >18 February 1977</tbox:wikipedia-birthdate>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Meredith Ostrom (born 18 February 1977) is an actress/model.</tbox:cogito-first_sentence>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2973923838482972373 -->
+
+    <tbox:actor rdf:about="#ID2973923838482972373">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">James Gillan</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >James Gillan (born James Gillan Paterson 30th August, 1974 in Glasgow, Scotland) is a Scottish stage actor born in Glasgow and trained at The Arts Educational Schools in London.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2987462845856373505 -->
+
+    <tbox:sportsperson rdf:about="#ID2987462845856373505">
+        <tbox:wikipedia-height rdf:datatype="&xsd;string">154 cm</tbox:wikipedia-height>
+        <tbox:wikipedia-dateofbirth rdf:datatype="&xsd;string"
+            >December 25, 1988</tbox:wikipedia-dateofbirth>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Mari Vartmann</tbox:cogito-Name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">skating</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID2992131343992150776 -->
+
+    <tbox:sportsperson rdf:about="#ID2992131343992150776">
+        <tbox:wikipedia-years rdf:datatype="&xsd;string"
+            >1962-1968, 1969, 1970</tbox:wikipedia-years>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Charley Frazier</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Charley Frazier (born August 12, 1939 in Houston, Texas) is a former American football wide receiver in the American Football League and the NFL.</tbox:cogito-first_sentence>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3044660557807173882 -->
+
+    <tbox:sportsperson rdf:about="#ID3044660557807173882">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">James Grogan</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >James Grogan (born December 7, 1931, died July 2, 2000) was an American figure skater.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3053087386578713281 -->
+
+    <tbox:business_firm rdf:about="#ID3053087386578713281">
+        <tbox:wikipedia-coordinates rdf:datatype="&xsd;string"
+            >4502&#39;55&quot;S 16910&#39;14&quot;E</tbox:wikipedia-coordinates>
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Cromwell Racecourse Aerodrome</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Cromwell Racecourse Aerodrome is a small airport 1 Nautical Mile (1.9km) to the west of Cromwell township in Central Otago on the South Island of New Zealand.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">aeronautics</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3060139417913569804 -->
+
+    <tbox:actor rdf:about="#ID3060139417913569804">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Yu Kobayashi is a female voice actress from Tokyo, Japan, and her blood type is O. She plays guitar as a hobby.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string"
+            >musical instruments</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3072630489050571194 -->
+
+    <tbox:sportsperson rdf:about="#ID3072630489050571194">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Shin Amano</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3083955798053621104 -->
+
+    <tbox:sportsperson rdf:about="#ID3083955798053621104">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Jean Mollen</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Jean Mollen is a Swiss bobsledder who competed in the late 1920s and early 1930s.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3228281185061691768 -->
+
+    <tbox:sportsperson rdf:about="#ID3228281185061691768">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Justin Mapletoft</tbox:cogito-Name>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3232155039880292582 -->
+
+    <tbox:actor rdf:about="#ID3232155039880292582">
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3237756536784536418 -->
+
+    <tbox:business_firm rdf:about="#ID3237756536784536418">
+        <tbox:wikipedia-foundation rdf:datatype="&xsd;string">1988</tbox:wikipedia-foundation>
+        <tbox:wikipedia-industry rdf:datatype="&xsd;string"
+            >Building Automation, Home Automation, Industrial Automation, Transportation Automation, Automatic meter reading, Remote Product Service Solutions</tbox:wikipedia-industry>
+        <tbox:wikipedia-company_name rdf:datatype="&xsd;string"
+            >Echelon Corporation</tbox:wikipedia-company_name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Echelon Corporation designs control networks to connect machines and other electronic devices, for the purposes of sensing, monitoring and control.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-company_type rdf:datatype="&xsd;string">Public (ELON)</tbox:wikipedia-company_type>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">electronics</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3250793078323413437 -->
+
+    <tbox:sportsperson rdf:about="#ID3250793078323413437">
+        <tbox:wikipedia-playername rdf:datatype="&xsd;string">Eng Hian</tbox:wikipedia-playername>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Eng Hian</tbox:cogito-Name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3251592538196866170 -->
+
+    <tbox:actor rdf:about="#ID3251592538196866170">
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3299712023854668714 -->
+
+    <tbox:business_firm rdf:about="#ID3299712023854668714">
+        <tbox:wikipedia-industry rdf:datatype="&xsd;string"
+            >Food and beverage</tbox:wikipedia-industry>
+        <tbox:wikipedia-key_people rdf:datatype="&xsd;string"
+            >Indra Nooyi - Chairwoman, President &amp; CEO, John Compton - CEO PepsiCo Americas, Michael White - CEO PepsiCo International, Richard Goodman PhD - CFO</tbox:wikipedia-key_people>
+        <tbox:wikipedia-type rdf:datatype="&xsd;string">Public (PEP)</tbox:wikipedia-type>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3410964292496403219 -->
+
+    <tbox:actor rdf:about="#ID3410964292496403219">
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string">July 3, 1921</tbox:wikipedia-birthdate>
+        <tbox:wikipedia-birthplace rdf:datatype="&xsd;string"
+            >Spokane, Washington, United States</tbox:wikipedia-birthplace>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Susan Peters (July 3, 1921 - October 23, 1952) was an Academy Award-nominated United States film actress whose promising career was cut tragically short.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3420277218871478274 -->
+
+    <tbox:business_firm rdf:about="#ID3420277218871478274">
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3421795502690091420 -->
+
+    <tbox:business_firm rdf:about="#ID3421795502690091420">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">HiSoft</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">programming</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3439702782360786258 -->
+
+    <tbox:business_firm rdf:about="#ID3439702782360786258">
+        <tbox:wikipedia-format rdf:datatype="&xsd;string"
+            >Commercial; Country</tbox:wikipedia-format>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">KATO-FM</tbox:wikipedia-name>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">KATO-FM</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >KATO-FM (93.1 FM) is a radio station licensed to New Ulm, Minnesota and serving the Mankato area and the Minnesota River Valley.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3493400355529410300 -->
+
+    <tbox:sportsperson rdf:about="#ID3493400355529410300">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Randolph Benito (&quot;Johnny&quot;) Balentina (born August 8, 1971 in Willemstad, Cura&#65533;&#65533;ao) is a Dutch baseball player, who competed in three consecutive Summer Olympics for the Netherlands, starting in 1996 (Atlanta, Georgia).</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3497192043045511204 -->
+
+    <tbox:sportsperson rdf:about="#ID3497192043045511204">
+        <tbox:wikipedia-caps-goals rdf:datatype="&xsd;string"
+            >? (?), 0 (0), ? (?), ? (?), ? (?), ? (?), ? (?), ? (?), 58 (0),</tbox:wikipedia-caps-goals>
+        <tbox:wikipedia-countryofbirth rdf:datatype="&xsd;string">Czechoslovakia</tbox:wikipedia-countryofbirth>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Marek Cech</tbox:cogito-Name>
+        <tbox:wikipedia-cityofbirth rdf:datatype="&xsd;string">Ostrava</tbox:wikipedia-cityofbirth>
+        <tbox:wikipedia-clubs rdf:datatype="&xsd;string"
+            >VTJ Hranice, FC Ban&#65533;&#65533;k Ostrava, TJ VP Fr&#65533;&#65533;dek-M&#65533;&#65533;stek, FC NH Ostrava, T&#65533;&#65533; T&#65533;&#65533;inec, M&#65533;&#65533;K &#65533;&#65533;ilina, Fotbal T&#65533;&#65533;inec, FC Spartak Trnava, FC Slovan Liberec, FC Luch-Energia Vladivostok</tbox:wikipedia-clubs>
+        <tbox:wikipedia-height rdf:datatype="&xsd;string">meter=1.87</tbox:wikipedia-height>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3542965559061549256 -->
+
+    <tbox:actor rdf:about="#ID3542965559061549256">
+        <tbox:wikipedia-location rdf:datatype="&xsd;string">Butte, Montana</tbox:wikipedia-location>
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string"
+            >November 25, 1899</tbox:wikipedia-birthdate>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID368682601231984162 -->
+
+    <tbox:sportsperson rdf:about="#ID368682601231984162"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3706465125896934848 -->
+
+    <tbox:actor rdf:about="#ID3706465125896934848">
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string">17</tbox:wikipedia-birthdate>
+        <tbox:wikipedia-birthplace rdf:datatype="&xsd;string"
+            >Los Angeles County, California</tbox:wikipedia-birthplace>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3794277000395426211 -->
+
+    <tbox:actor rdf:about="#ID3794277000395426211">
+        <tbox:wikipedia-location rdf:datatype="&xsd;string"
+            >Atlanta, Georgia, United States</tbox:wikipedia-location>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string"
+            >Latanya Richardson</tbox:wikipedia-name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Latanya Richardson (born 1949 in Atlanta, Georgia) is an American actress.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3798035599076762663 -->
+
+    <tbox:sportsperson rdf:about="#ID3798035599076762663">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Peter Fill</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Peter Fill (born November 12 1982 in Kastelruth (Castelrotto) Bolzano-Bozen) is an Italian alpine skier.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3814539245481775722 -->
+
+    <tbox:business_firm rdf:about="#ID3814539245481775722">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >FINCA Afghanistan</tbox:cogito-Name>
+        <tbox:wikipedia-products rdf:datatype="&xsd;string"
+            >Financial Services, Microfinance</tbox:wikipedia-products>
+        <tbox:wikipedia-company_type rdf:datatype="&xsd;string"
+            >Nonprofit Organization</tbox:wikipedia-company_type>
+        <tbox:wikipedia-homepage rdf:datatype="&xsd;string"
+            >http://www.villagebanking.org/ www.villagebanking.org</tbox:wikipedia-homepage>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID388740650736273335 -->
+
+    <tbox:actor rdf:about="#ID388740650736273335">
+        <tbox:wikipedia-birthplace rdf:datatype="&xsd;string"
+            >Brooklyn, New York</tbox:wikipedia-birthplace>
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string">March 29, 1946</tbox:wikipedia-birthdate>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Paul Herman (born March 29, 1946) is an American actor.</tbox:cogito-first_sentence>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID3984164644485209417 -->
+
+    <tbox:business_firm rdf:about="#ID3984164644485209417">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >University Park Stadium</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >University Park Stadium is a baseball stadium located on the campus of Florida International University in Miami, Florida.</tbox:cogito-first_sentence>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID399936258228197353 -->
+
+    <tbox:business_firm rdf:about="#ID399936258228197353">
+        <tbox:wikipedia-frequency rdf:datatype="&xsd;string">96.1 (MHz)</tbox:wikipedia-frequency>
+        <tbox:wikipedia-owner rdf:datatype="&xsd;string"
+            >Beasley Broadcast Group</tbox:wikipedia-owner>
+        <tbox:wikipedia-slogan rdf:datatype="&xsd;string"
+            >GET ROCKED!
+  class     = C</tbox:wikipedia-slogan>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">WRXK-FM</tbox:cogito-Name>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">WRXK-FM</tbox:wikipedia-name>
+        <tbox:wikipedia-format rdf:datatype="&xsd;string"
+            >WRXK: Classic Rock ,  WRXK-HD2: Deep Cuts/Live Rock</tbox:wikipedia-format>
+        <tbox:wikipedia-website rdf:datatype="&xsd;string"
+            >http://www.96krock.com/ www.96krock.com</tbox:wikipedia-website>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4023829071126806654 -->
+
+    <tbox:actor rdf:about="#ID4023829071126806654">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Candi Milo</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4030288407930558160 -->
+
+    <tbox:actor rdf:about="#ID4030288407930558160">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Sheila Kennelly</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Sheila Kennelly is an Australian actress famous for several television soap opera and comedy roles starting in the 1970s.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4068796414340787359 -->
+
+    <tbox:sportsperson rdf:about="#ID4068796414340787359">
+        <tbox:wikipedia-countryofbirth rdf:datatype="&xsd;string">Australia</tbox:wikipedia-countryofbirth>
+        <tbox:wikipedia-playername rdf:datatype="&xsd;string">Chris Rogers</tbox:wikipedia-playername>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Chris Rogers</tbox:cogito-Name>
+        <tbox:wikipedia-fullname rdf:datatype="&xsd;string"
+            >Christopher John Llewellyn Rogers</tbox:wikipedia-fullname>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Christopher John Llewellyn Rogers (born August 31, 1977) is an Australian cricketer.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cricket</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4070476809132806210 -->
+
+    <tbox:sportsperson rdf:about="#ID4070476809132806210">
+        <tbox:wikipedia-teams rdf:datatype="&xsd;string"
+            >*Seattle Mariners (2006)</tbox:wikipedia-teams>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">baseball</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4200955002782424904 -->
+
+    <tbox:sportsperson rdf:about="#ID4200955002782424904">
+        <tbox:wikipedia-fullname rdf:datatype="&xsd;string"
+            >James Hampton Craig</tbox:wikipedia-fullname>
+        <tbox:wikipedia-playername rdf:datatype="&xsd;string">Jim Craig</tbox:wikipedia-playername>
+        <tbox:wikipedia-position rdf:datatype="&xsd;string">Versatile back</tbox:wikipedia-position>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4203122141821571185 -->
+
+    <tbox:actor rdf:about="#ID4203122141821571185">
+        <tbox:wikipedia-name rdf:datatype="&xsd;string"
+            >James Anthony Church</tbox:wikipedia-name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >James Anthony Church (Tony Church) (May 11, 1930 - March 25, 2008) was a British Shakespearean actor, who has appeared on stage and screen.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-birthplace rdf:datatype="&xsd;string">London</tbox:wikipedia-birthplace>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4267736254946101824 -->
+
+    <tbox:sportsperson rdf:about="#ID4267736254946101824">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Alfred Bergman</tbox:cogito-Name>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4293254561768693460 -->
+
+    <tbox:business_firm rdf:about="#ID4293254561768693460">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Substance Abuse and Mental Health Services Administration</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >The Substance Abuse and Mental Health Services Administration (SAMHSA) is the US Federal agency charged with improving the quality and availability of prevention, treatment, and rehabilitative services in order to reduce illness, death, disability, and cost to society resulting from substance abuse and mental illnesses.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">medicine</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4307144162700098544 -->
+
+    <tbox:sportsperson rdf:about="#ID4307144162700098544">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Prescott Burgess</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Prescott Ennis Burgess (born March 6 1984, Warren, Ohio) is an American football linebacker with the Baltimore Ravens.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4347722990978048986 -->
+
+    <tbox:actor rdf:about="#ID4347722990978048986">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Jeff Hayenga</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Jeff Hayenga is an American actor, who played against Matthew Modine in And the Band Played On, Danny DeVito in Other People&#39;s Money, Fred Ward in The Prince of Pennsylvania and Claire Forlani in Memro (2004).</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4353740575442373744 -->
+
+    <tbox:sportsperson rdf:about="#ID4353740575442373744">
+        <tbox:wikipedia-fullname rdf:datatype="&xsd;string">Paolo Tiralongo</tbox:wikipedia-fullname>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Paolo Tiralongo (born July 8 1977 in Avola) is an Italian professional road bicycle racer for UCI ProTeam Lampre-Fondital.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cycling</tbox:cogito-domain>
+        <tbox:wikipedia-height rdf:datatype="&xsd;string">m=1.68</tbox:wikipedia-height>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4356739870732254383 -->
+
+    <tbox:business_firm rdf:about="#ID4356739870732254383">
+        <tbox:wikipedia-location rdf:datatype="&xsd;string"
+            >465 Huntington Avenue, Boston, Massachusetts 02115</tbox:wikipedia-location>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string"
+            >Museum of Fine Arts, Boston</tbox:wikipedia-name>
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Museum of Fine Arts, Boston</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+        <tbox:wikipedia-website rdf:datatype="&xsd;string"
+            >http://www.mfa.org/ www.mfa.org</tbox:wikipedia-website>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID436899946747379536 -->
+
+    <tbox:sportsperson rdf:about="#ID436899946747379536">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Peter (&quot;Piet&quot;) Johannes Keizer (born June 14 1943 in Amsterdam) was a Dutch professional football player.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4416085805920756498 -->
+
+    <tbox:actor rdf:about="#ID4416085805920756498">
+        <tbox:wikipedia-location rdf:datatype="&xsd;string"
+            >Boulogne-Billancourt, Paris, France</tbox:wikipedia-location>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Gaspard Ulliel</tbox:cogito-Name>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Gaspard Ulliel</tbox:wikipedia-name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Gaspard Ulliel (born November 25, 1984) is a French film actor.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4437372896519414598 -->
+
+    <tbox:business_firm rdf:about="#ID4437372896519414598">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Lincoln Park Grounds also commonly known as Union Grounds is a former baseball ground located in Cincinnati, Ohio, USA.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4437587039588391375 -->
+
+    <tbox:business_firm rdf:about="#ID4437587039588391375">
+        <tbox:wikipedia-slogan rdf:datatype="&xsd;string"
+            >&quot;Rock Radio 88.3 The Buzz&quot;</tbox:wikipedia-slogan>
+        <tbox:wikipedia-frequency rdf:datatype="&xsd;string">88.3 (MHz)</tbox:wikipedia-frequency>
+        <tbox:wikipedia-format rdf:datatype="&xsd;string"
+            >Alternative Rock, Hip-hop, Classic Rock</tbox:wikipedia-format>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">WSBU</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >WSBU-FM is the nationally recognized non-commercial radio station of St. Bonaventure University in Allegany and Olean, New York.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+        <tbox:wikipedia-website rdf:datatype="&xsd;string"
+            >http://www.wsbufm.net/ WSBU-FM 88.3 The Buzz</tbox:wikipedia-website>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">radio</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4528250201943493234 -->
+
+    <tbox:actor rdf:about="#ID4528250201943493234">
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID453401031982039809 -->
+
+    <tbox:business_firm rdf:about="#ID453401031982039809">
+        <tbox:wikipedia-company_name rdf:datatype="&xsd;string">Hotel Moskva</tbox:wikipedia-company_name>
+        <tbox:wikipedia-industry rdf:datatype="&xsd;string"
+            >Hotel and Tourism</tbox:wikipedia-industry>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4572893272586905668 -->
+
+    <tbox:actor rdf:about="#ID4572893272586905668">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Jacob Christopher &quot;Jake&quot; Lloyd (born March 5, 1989) is an American actor who gained worldwide fame when he was chosen by George Lucas to play the young Anakin Skywalker in Star Wars Episode I: The Phantom Menace, the first film in the Star Wars prequel trilogy.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-birthname rdf:datatype="&xsd;string"
+            >Jacob Christopher Lloyd</tbox:wikipedia-birthname>
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string">March 5, 1989</tbox:wikipedia-birthdate>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4643590495932167408 -->
+
+    <tbox:business_firm rdf:about="#ID4643590495932167408">
+        <tbox:wikipedia-founded rdf:datatype="&xsd;string">2004</tbox:wikipedia-founded>
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >FK Khazar Lenkoran</tbox:cogito-Name>
+        <tbox:wikipedia-clubname rdf:datatype="&xsd;string"
+            >X&#65533;&#65533;z&#65533;&#65533;r-L&#65533;&#65533;nk&#65533;&#65533;ran FK</tbox:wikipedia-clubname>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4653183059378296210 -->
+
+    <tbox:business_firm rdf:about="#ID4653183059378296210">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >MacMillan Bloedel Limited</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >MacMillan Bloedel Limited, sometimes referred to as &quot;MacBlo&quot;, was a forestry company headquartered in Vancouver, British Columbia.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">commerce</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4696622776871080325 -->
+
+    <tbox:business_firm rdf:about="#ID4696622776871080325">
+        <tbox:wikipedia-fullname rdf:datatype="&xsd;string">Bamboutos FC</tbox:wikipedia-fullname>
+        <tbox:wikipedia-league rdf:datatype="&xsd;string"
+            >Cameroon Third Division</tbox:wikipedia-league>
+        <tbox:wikipedia-rightarm1 rdf:datatype="&xsd;string">ff0000</tbox:wikipedia-rightarm1>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4940151141182672931 -->
+
+    <tbox:sportsperson rdf:about="#ID4940151141182672931">
+        <tbox:wikipedia-caps-goals rdf:datatype="&xsd;string">1 (0), 4 (0)</tbox:wikipedia-caps-goals>
+        <tbox:wikipedia-dateofbirth rdf:datatype="&xsd;string">April 12, 1986</tbox:wikipedia-dateofbirth>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Josip Mikulic</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Josip Mikulic (born April 12, 1986) is a Croatian football defender, currently playing for NK Zagreb.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-cityofbirth rdf:datatype="&xsd;string">Ljubu&#65533;&#65533;ki</tbox:wikipedia-cityofbirth>
+        <tbox:wikipedia-countryofbirth rdf:datatype="&xsd;string">SFR Yugoslavia</tbox:wikipedia-countryofbirth>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID494243128125492051 -->
+
+    <tbox:business_firm rdf:about="#ID494243128125492051">
+        <tbox:wikipedia-slogan rdf:datatype="&xsd;string"
+            >B93 the Valley&#39;s Pop Alternative</tbox:wikipedia-slogan>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >KOSO (93.1 FM) is a radio station broadcasting a Hot Adult Contemporary format.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-format rdf:datatype="&xsd;string">Modern AC</tbox:wikipedia-format>
+        <tbox:wikipedia-area rdf:datatype="&xsd;string"
+            >Modesto/Stockton</tbox:wikipedia-area>
+        <tbox:wikipedia-city rdf:datatype="&xsd;string"
+            >Patterson, California</tbox:wikipedia-city>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">radio</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4942546549995326334 -->
+
+    <tbox:actor rdf:about="#ID4942546549995326334">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Karen Maruyama</tbox:cogito-Name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID495042218705856740 -->
+
+    <tbox:sportsperson rdf:about="#ID495042218705856740">
+        <tbox:wikipedia-years rdf:datatype="&xsd;string">2005-present</tbox:wikipedia-years>
+        <tbox:wikipedia-teams rdf:datatype="&xsd;string"
+            >Jacksonville Jaguars</tbox:wikipedia-teams>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4983080751363696844 -->
+
+    <tbox:sportsperson rdf:about="#ID4983080751363696844">
+        <tbox:wikipedia-years rdf:datatype="&xsd;string">2006-current</tbox:wikipedia-years>
+        <tbox:wikipedia-caps-goals rdf:datatype="&xsd;string">9 (1)</tbox:wikipedia-caps-goals>
+        <tbox:wikipedia-clubs rdf:datatype="&xsd;string">Br&#65533;&#65533;ndby IF</tbox:wikipedia-clubs>
+        <tbox:wikipedia-position rdf:datatype="&xsd;string">Defender</tbox:wikipedia-position>
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Jacob Berthelsen</tbox:cogito-Name>
+        <tbox:wikipedia-playername rdf:datatype="&xsd;string"
+            >Jacob Berthelsen</tbox:wikipedia-playername>
+        <tbox:wikipedia-dateofbirth rdf:datatype="&xsd;string">July 4, 1986</tbox:wikipedia-dateofbirth>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID4984806087439659516 -->
+
+    <tbox:business_firm rdf:about="#ID4984806087439659516">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >The Yomiuri Giants is a Nippon Professional Baseball team based at the Tokyo Dome in Bunkyo, Tokyo, Japan.</tbox:cogito-first_sentence>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Yomiuri Giants</tbox:cogito-Name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5022503077032193015 -->
+
+    <tbox:actor rdf:about="#ID5022503077032193015"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID504968993619535660 -->
+
+    <tbox:business_firm rdf:about="#ID504968993619535660">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Singapore Chinese Girls&#39; School</tbox:cogito-Name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">school</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5073370201977341520 -->
+
+    <tbox:sportsperson rdf:about="#ID5073370201977341520">
+        <tbox:cogito-domain rdf:datatype="&xsd;string"
+            >American football</tbox:cogito-domain>
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Kermit Alexander</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5075055413325636647 -->
+
+    <tbox:sportsperson rdf:about="#ID5075055413325636647">
+        <tbox:wikipedia-years rdf:datatype="&xsd;string">2001-2006</tbox:wikipedia-years>
+        <tbox:wikipedia-caps-goals rdf:datatype="&xsd;string">84 (0)</tbox:wikipedia-caps-goals>
+        <tbox:wikipedia-cityofbirth rdf:datatype="&xsd;string"
+            >Bom Jardim de Goi&#65533;&#65533;s</tbox:wikipedia-cityofbirth>
+        <tbox:wikipedia-countryofbirth rdf:datatype="&xsd;string">Brazil</tbox:wikipedia-countryofbirth>
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Emerson Bueno dos Santos</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Emerson Bueno dos Santos or simply Goiano (born June 15 1980 in Bom Jardim de Goi&#65533;&#65533;s, is a Brazilian right back for Paran&#65533;&#65533; in the Brazilian S&#65533;&#65533;rie A</tbox:cogito-first_sentence>
+        <tbox:wikipedia-playername rdf:datatype="&xsd;string">Goiano</tbox:wikipedia-playername>
+        <tbox:wikipedia-position rdf:datatype="&xsd;string">Right Back</tbox:wikipedia-position>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">football</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5114501226470674093 -->
+
+    <tbox:actor rdf:about="#ID5114501226470674093">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Max Brown</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Max Brown (born February 10, 1981) is an English actor.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5230351364020501441 -->
+
+    <tbox:sportsperson rdf:about="#ID5230351364020501441">
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Maqsood Rana</tbox:wikipedia-name>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Maqsood Rana</tbox:cogito-Name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cricket</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5367157233081758662 -->
+
+    <tbox:actor rdf:about="#ID5367157233081758662">
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string">9 April, 1911</tbox:wikipedia-birthdate>
+        <tbox:wikipedia-location rdf:datatype="&xsd;string"
+            >Fresno, California</tbox:wikipedia-location>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Spec O&#39;Donnell (9 April, 1911 - 14 October, 1986), was an American film actor.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5431550190408804211 -->
+
+    <tbox:sportsperson rdf:about="#ID5431550190408804211">
+        <tbox:wikipedia-years rdf:datatype="&xsd;string"
+            >1997-20002000-20012001-20022002-20052005-20072007-</tbox:wikipedia-years>
+        <tbox:wikipedia-caps-goals rdf:datatype="&xsd;string"
+            >45 (11)21 (17)27 (14)102 (24)63 (22)29 (5)</tbox:wikipedia-caps-goals>
+        <tbox:wikipedia-cityofbirth rdf:datatype="&xsd;string">Enugu</tbox:wikipedia-cityofbirth>
+        <tbox:wikipedia-clubs rdf:datatype="&xsd;string"
+            >Enugu RangersIsmaily SCAl-Sadd Sports ClubRC LensStade RennaisPortsmouth</tbox:wikipedia-clubs>
+        <tbox:wikipedia-dateofbirth rdf:datatype="&xsd;string">January 8, 1982</tbox:wikipedia-dateofbirth>
+        <tbox:wikipedia-playername rdf:datatype="&xsd;string">John Utaka</tbox:wikipedia-playername>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">John Utaka</tbox:cogito-Name>
+        <tbox:wikipedia-position rdf:datatype="&xsd;string">Winger, Striker</tbox:wikipedia-position>
+        <tbox:wikipedia-height rdf:datatype="&xsd;string">meters=1.79</tbox:wikipedia-height>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5437405640735328482 -->
+
+    <tbox:business_firm rdf:about="#ID5437405640735328482">
+        <tbox:wikipedia-coordinates rdf:datatype="&xsd;string"
+            >3821&#39;45&quot;N 9607&#39;00&quot;W</tbox:wikipedia-coordinates>
+        <tbox:wikipedia-frequency rdf:datatype="&xsd;string">89.7 (MHz)</tbox:wikipedia-frequency>
+        <tbox:wikipedia-class rdf:datatype="&xsd;string">A</tbox:wikipedia-class>
+        <tbox:wikipedia-city rdf:datatype="&xsd;string">Emporia, Kansas</tbox:wikipedia-city>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">KANH</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >KANH-FM (89.7 FM), is a National Public Radio-affiliated station in Emporia, Kansas.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-format rdf:datatype="&xsd;string">Public radio</tbox:wikipedia-format>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5472076986591183582 -->
+
+    <tbox:sportsperson rdf:about="#ID5472076986591183582">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Darko Lukanovic</tbox:cogito-Name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">football</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID549687223131906988 -->
+
+    <tbox:business_firm rdf:about="#ID549687223131906988">
+        <tbox:wikipedia-location rdf:datatype="&xsd;string"
+            >Milton, Brisbane, Queensland</tbox:wikipedia-location>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Suncorp Stadium</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5552425822501620804 -->
+
+    <tbox:business_firm rdf:about="#ID5552425822501620804">
+        <tbox:wikipedia-branding rdf:datatype="&xsd;string">640 WGST</tbox:wikipedia-branding>
+        <tbox:wikipedia-format rdf:datatype="&xsd;string">News/Talk radio</tbox:wikipedia-format>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">WGST</tbox:cogito-Name>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">WGST</tbox:wikipedia-name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >WGST (640 AM) is a radio station licensed in the city of Atlanta, Georgia operating at a frequency of 640 kHz with 50,000 watts of power during the daytime, and 1,000 watts of power during nighttime hours.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+        <tbox:wikipedia-website rdf:datatype="&xsd;string"
+            >http://www.640wgst.com</tbox:wikipedia-website>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5618537056847331150 -->
+
+    <tbox:actor rdf:about="#ID5618537056847331150">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Janet Brown (born December 1923, Rutherglen, South Lanarkshire) is a Scottish comedienne, actress, and impressionist.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5670981852268898151 -->
+
+    <tbox:business_firm rdf:about="#ID5670981852268898151">
+        <tbox:wikipedia-owner rdf:datatype="&xsd;string"
+            >Citadel Broadcasting</tbox:wikipedia-owner>
+        <tbox:wikipedia-branding rdf:datatype="&xsd;string">KIIM 99.5</tbox:wikipedia-branding>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">KIIM-FM</tbox:wikipedia-name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >KIIM-FM is a country music radio station broadcasting in Tucson, Arizona, United States.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-area rdf:datatype="&xsd;string"
+            >Tucson and Vicinity</tbox:wikipedia-area>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">radio</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5723903374957491797 -->
+
+    <tbox:business_firm rdf:about="#ID5723903374957491797">
+        <tbox:wikipedia-league rdf:datatype="&xsd;string"
+            >Divisi&#65533;&#65533;n de Plata</tbox:wikipedia-league>
+        <tbox:wikipedia-leftarm1 rdf:datatype="&xsd;string">FFFFFF</tbox:wikipedia-leftarm1>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5804376808907776825 -->
+
+    <tbox:actor rdf:about="#ID5804376808907776825">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Armin M&#65533;&#65533;ller-Stahl (born December 17 1930) is a German film actor.</tbox:cogito-first_sentence>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5813715760765351159 -->
+
+    <tbox:actor rdf:about="#ID5813715760765351159">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Alex Donnelley (born August 13, 19) is an American actress best known for originating the role of Diane Jenkins on the popular daytime soap opera The Young and the Restless.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-birthplace rdf:datatype="&xsd;string"
+            >Frankfurt, Germany</tbox:wikipedia-birthplace>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5827607899702714247 -->
+
+    <tbox:actor rdf:about="#ID5827607899702714247">
+        <tbox:wikipedia-birthname rdf:datatype="&xsd;string"
+            >Jason Jordan Segel</tbox:wikipedia-birthname>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Jason Jordan Segel (born January 18 1980) is an American television and film actor, known for his work with producer Judd Apatow on Freaks and Geeks and Undeclared and for the role of Marshall Eriksen in the CBS sitcom How I Met Your Mother.</tbox:cogito-first_sentence>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Jason Segel</tbox:cogito-Name>
+        <tbox:wikipedia-birthplace rdf:datatype="&xsd;string"
+            >Pacific Palisades, California, United States</tbox:wikipedia-birthplace>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5877824241300671904 -->
+
+    <tbox:sportsperson rdf:about="#ID5877824241300671904">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Dick Thornett</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5882062493417508535 -->
+
+    <tbox:business_firm rdf:about="#ID5882062493417508535">
+        <tbox:cogito-domain rdf:datatype="&xsd;string">commerce</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5909910077712014235 -->
+
+    <tbox:business_firm rdf:about="#ID5909910077712014235">
+        <tbox:wikipedia-key_people rdf:datatype="&xsd;string"
+            >George Robinson, Founder, Robert Brehm, CEO, Mery Robinson, COO, Bruce Beattie, SSWM CEO, Conrad Nagel, CFO</tbox:wikipedia-key_people>
+        <tbox:wikipedia-company_type rdf:datatype="&xsd;string"
+            >Public (OTCBB: http://finance.yahoo.com/q?s=BUGS.OB BUGS</tbox:wikipedia-company_type>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >U.S. Microbics is a biotech holding company.</tbox:cogito-first_sentence>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">US Microbics</tbox:cogito-Name>
+        <tbox:wikipedia-products rdf:datatype="&xsd;string"
+            >bioremediation, waste management, fertilizer</tbox:wikipedia-products>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">microbiology</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5967549565166636143 -->
+
+    <tbox:business_firm rdf:about="#ID5967549565166636143">
+        <tbox:cogito-domain rdf:datatype="&xsd;string">transports</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID5979930534261408117 -->
+
+    <tbox:business_firm rdf:about="#ID5979930534261408117">
+        <tbox:wikipedia-city rdf:datatype="&xsd;string">Atlanta</tbox:wikipedia-city>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Fitten Residence Hall (Number 5 on the map) is a residence hall in the Georgia Tech Freshman Experience.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string"
+            >Louise M. Fitten Hall</tbox:wikipedia-name>
+        <tbox:wikipedia-type rdf:datatype="&xsd;string">Residence Hall</tbox:wikipedia-type>
+        <tbox:wikipedia-website rdf:datatype="&xsd;string"
+            >http://www.housing.gatech.edu/assignments/undergraduate_reshalls_detail.cfm?BldgID=119 Fitten Hall Site</tbox:wikipedia-website>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6048507150439366440 -->
+
+    <tbox:actor rdf:about="#ID6048507150439366440">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Kirti Gaikwad</tbox:cogito-Name>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Kirti Gaikwad</tbox:wikipedia-name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6148074871169817460 -->
+
+    <tbox:sportsperson rdf:about="#ID6148074871169817460">
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string">29</tbox:wikipedia-birthdate>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6151652388157579508 -->
+
+    <tbox:sportsperson rdf:about="#ID6151652388157579508">
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Art Ditmar</tbox:wikipedia-name>
+        <tbox:wikipedia-position rdf:datatype="&xsd;string">Pitcher</tbox:wikipedia-position>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6155009044852792869 -->
+
+    <tbox:business_firm rdf:about="#ID6155009044852792869">
+        <tbox:wikipedia-foundation rdf:datatype="&xsd;string">October 1, 2007</tbox:wikipedia-foundation>
+        <tbox:wikipedia-key_people rdf:datatype="&xsd;string"
+            >Shigeo Kawa (CEO), Motoyuki Terasaka (COO)</tbox:wikipedia-key_people>
+        <tbox:wikipedia-homepage rdf:datatype="&xsd;string"
+            >http://www.jp-network.japanpost.jp/ www.jp-network.japanpost.jp/</tbox:wikipedia-homepage>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6180351095128020968 -->
+
+    <tbox:actor rdf:about="#ID6180351095128020968">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Gabriel Garko</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6254531824299300068 -->
+
+    <tbox:actor rdf:about="#ID6254531824299300068">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Asia Agcaoili</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Asia Agcao&#65533;&#65533;li is a Filipino actress, model, sex columnist of FHM Philippines and TV and radio host.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">electronics</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6288679199889471650 -->
+
+    <tbox:actor rdf:about="#ID6288679199889471650">
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Sneha</tbox:wikipedia-name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Sneha is a leading actress in South Indian film industry and is of Telugu and Tamil origin whose family hails from Panrutti in Tamil Nadu.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6347620895672104918 -->
+
+    <tbox:sportsperson rdf:about="#ID6347620895672104918">
+        <tbox:wikipedia-height rdf:datatype="&xsd;string">5&#39;11&quot;</tbox:wikipedia-height>
+        <tbox:wikipedia-caps-goals rdf:datatype="&xsd;string"
+            >? (?), 3 (0), 16 (0), 14 (0), 10 (0), 0 (0), 188 (0), 55 (0), 286 (0)</tbox:wikipedia-caps-goals>
+        <tbox:wikipedia-countryofbirth rdf:datatype="&xsd;string">Australia</tbox:wikipedia-countryofbirth>
+        <tbox:wikipedia-clubs rdf:datatype="&xsd;string"
+            >Brisbane Lions, Everton, &#65533;&#65533;&#65533; Stoke City (loan), &#65533;&#65533;&#65533; Blackpool (loan), &#65533;&#65533;&#65533; Notts County (loan), &#65533;&#65533;&#65533; Preston North End (loan), Crewe Alexandra, Brisbane Strikers, Career</tbox:wikipedia-clubs>
+        <tbox:wikipedia-cityofbirth rdf:datatype="&xsd;string">Ipswich</tbox:wikipedia-cityofbirth>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Jason Kearton</tbox:cogito-Name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6369046683555779090 -->
+
+    <tbox:actor rdf:about="#ID6369046683555779090">
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6374523605584569902 -->
+
+    <tbox:sportsperson rdf:about="#ID6374523605584569902">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Ioannis Chrysafis (1873 - October 12, 1932) was a Greek gymnast.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">gymnastics</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID638227869062475202 -->
+
+    <tbox:actor rdf:about="#ID638227869062475202">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Witold Pyrkosz (born January 1 1927 in Lw&#65533;&#65533;w) - polish actor.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6386161625918977820 -->
+
+    <tbox:business_firm rdf:about="#ID6386161625918977820">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >KiNEx (Kirishineftekhimexport, Russian acronym for &quot;Kirishi petroleum chemical export&quot;) is a Russian joint stock company, subsidiary of Surgutneftegaz specializing in wholesale crude and refined oil trading, especially of the refined oil production of Kinef, mostly abroad in Northern Europe.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">oil</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6405455559770502200 -->
+
+    <tbox:sportsperson rdf:about="#ID6405455559770502200">
+        <tbox:wikipedia-height rdf:datatype="&xsd;string">1,90 m</tbox:wikipedia-height>
+        <tbox:wikipedia-dateofbirth rdf:datatype="&xsd;string"
+            >February 17, 1973</tbox:wikipedia-dateofbirth>
+        <tbox:wikipedia-countryofbirth rdf:datatype="&xsd;string">GDREast Germany</tbox:wikipedia-countryofbirth>
+        <tbox:wikipedia-cityofbirth rdf:datatype="&xsd;string">Leipzig</tbox:wikipedia-cityofbirth>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6408436285387631559 -->
+
+    <tbox:sportsperson rdf:about="#ID6408436285387631559">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Joe Nieuwendyk</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Joseph Nieuwendyk (born September 10, 1966 in Oshawa, Ontario) is a former Canadian ice hockey player in the National Hockey League.</tbox:cogito-first_sentence>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6485091997749381813 -->
+
+    <tbox:business_firm rdf:about="#ID6485091997749381813">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Mahatma Gandhi University</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">university</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6527280901671063270 -->
+
+    <tbox:business_firm rdf:about="#ID6527280901671063270">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Saaremaa Laevakompanii (Estonian for Saaremaa Shipping Company) is the company servicing main sea routes between Estonia&#39;s continent and two major islands, Saaremaa and Hiiumaa.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6607775521383176519 -->
+
+    <tbox:actor rdf:about="#ID6607775521383176519">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >George Hackathorne</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6665877978693382770 -->
+
+    <tbox:sportsperson rdf:about="#ID6665877978693382770">
+        <tbox:wikipedia-caps-goals rdf:datatype="&xsd;string"
+            >45 (15), 4 (0),  20 (0),</tbox:wikipedia-caps-goals>
+        <tbox:wikipedia-countryofbirth rdf:datatype="&xsd;string">England</tbox:wikipedia-countryofbirth>
+        <tbox:wikipedia-playername rdf:datatype="&xsd;string"
+            >Kasali Yinka Casal</tbox:wikipedia-playername>
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Kasali Yinka Casal</tbox:cogito-Name>
+        <tbox:wikipedia-cityofbirth rdf:datatype="&xsd;string">London</tbox:wikipedia-cityofbirth>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">football</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6697552590429710018 -->
+
+    <tbox:actor rdf:about="#ID6697552590429710018">
+        <tbox:wikipedia-birthplace rdf:datatype="&xsd;string"
+            >Ireland Gorey, County Wexford, Ireland</tbox:wikipedia-birthplace>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Rachel Rath</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6751957740678648098 -->
+
+    <tbox:sportsperson rdf:about="#ID6751957740678648098">
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6814133777961932489 -->
+
+    <tbox:business_firm rdf:about="#ID6814133777961932489"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6866837001528330233 -->
+
+    <tbox:actor rdf:about="#ID6866837001528330233">
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string">1984</tbox:wikipedia-birthdate>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Andrew Moss</tbox:wikipedia-name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Andrew Moss (born 1984) is an English television actor.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string"
+            >broadcasting events</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6905824296375938863 -->
+
+    <tbox:sportsperson rdf:about="#ID6905824296375938863">
+        <tbox:wikipedia-height rdf:datatype="&xsd;string"
+            >5 ft 10 ins (1.78 m)</tbox:wikipedia-height>
+        <tbox:wikipedia-countryofbirth rdf:datatype="&xsd;string">England</tbox:wikipedia-countryofbirth>
+        <tbox:wikipedia-fullname rdf:datatype="&xsd;string">George Chuter</tbox:wikipedia-fullname>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">George Chuter</tbox:cogito-Name>
+        <tbox:wikipedia-position rdf:datatype="&xsd;string">Hooker</tbox:wikipedia-position>
+        <tbox:wikipedia-dateofbirth rdf:datatype="&xsd;string">July 9, 1976</tbox:wikipedia-dateofbirth>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">rugby</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6970774585143974003 -->
+
+    <tbox:sportsperson rdf:about="#ID6970774585143974003">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Jennifer Louise Gunn (born 9 May 1986 at Nottingham) is an English cricketer and a member of the current England women&#39;s team.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cricket</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6980646817415485925 -->
+
+    <tbox:sportsperson rdf:about="#ID6980646817415485925">
+        <tbox:wikipedia-years rdf:datatype="&xsd;string"
+            >1957-1958, 1959-1962, 1963, 1964, 1965</tbox:wikipedia-years>
+        <tbox:wikipedia-teams rdf:datatype="&xsd;string"
+            >Cleveland Browns, Green Bay Packers, Philadelphia Eagles, Detroit Lions, Washington Redskins</tbox:wikipedia-teams>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >William David Quinlan (born June 9, 1932 in Lawrence, Massachusetts) was an American football defensive end in the National Football League for the Cleveland Browns, Green Bay Packers, Philadelphia Eagles, Detroit Lions, and the Washington Redskins.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID6986831320819558072 -->
+
+    <tbox:actor rdf:about="#ID6986831320819558072">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">David Griffin</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >David Griffin (born May 13, 1977) is an actor known for voicing the character of Jimmy Barclay and others in the radio drama Adventures in Odyssey.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID699821155006603719 -->
+
+    <tbox:sportsperson rdf:about="#ID699821155006603719">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Katie Compton</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID700051384661097927 -->
+
+    <tbox:actor rdf:about="#ID700051384661097927">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Robert Charles Durman Mitchum (August 6, 1917 - July 1, 1997) was an Academy Award nominated American film actor and singer.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID704245009868354626 -->
+
+    <tbox:sportsperson rdf:about="#ID704245009868354626">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Randall Byron Clark (born July 27, 1957 in Chicago, Illinois) was a tackle who played eight seasons in the National Football League for the St. Louis Cardinals and the Atlanta Falcons.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-teams rdf:datatype="&xsd;string"
+            >St. Louis Cardinals, Atlanta Falcons</tbox:wikipedia-teams>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7097853423315457115 -->
+
+    <tbox:business_firm rdf:about="#ID7097853423315457115">
+        <tbox:wikipedia-foundation rdf:datatype="&xsd;string"
+            >Austin, Texas (1999)</tbox:wikipedia-foundation>
+        <tbox:wikipedia-industry rdf:datatype="&xsd;string"
+            >Distributed computing, Grid computing, Computer software</tbox:wikipedia-industry>
+        <tbox:wikipedia-products rdf:datatype="&xsd;string"
+            >Grid MP, Insight, Synergy, Reliance</tbox:wikipedia-products>
+        <tbox:wikipedia-company_type rdf:datatype="&xsd;string">Private</tbox:wikipedia-company_type>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">United Devices</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >United Devices, Inc. was a privately held, commercial distributed computing company that focused on the use of grid computing to manage HPC infrastructures and enterprise cluster management.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string"
+            >computer science</tbox:cogito-domain>
+        <tbox:wikipedia-homepage rdf:datatype="&xsd;string"
+            >http://www.ud.com/ www.ud.com</tbox:wikipedia-homepage>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7136991318521018047 -->
+
+    <tbox:actor rdf:about="#ID7136991318521018047">
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7140237531340276026 -->
+
+    <tbox:business_firm rdf:about="#ID7140237531340276026">
+        <tbox:wikipedia-coordinates rdf:datatype="&xsd;string"
+            >4451&#39;56&quot;N 9129&#39;03&quot;W</tbox:wikipedia-coordinates>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Chippewa Valley Regional Airport is a public airport located in Chippewa County, Wisconsin, USA, three miles (4.8 km) north of the city of Eau Claire.</tbox:cogito-first_sentence>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7161693815134032489 -->
+
+    <tbox:sportsperson rdf:about="#ID7161693815134032489">
+        <tbox:wikipedia-height rdf:datatype="&xsd;string">176 cm</tbox:wikipedia-height>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Andrei Griazev</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Andrei Griazev (Russian: born July 26, 1985, in Perm, Russian SFSR, Soviet Union) is a Russian figure skater.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7166054099825396844 -->
+
+    <tbox:actor rdf:about="#ID7166054099825396844">
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID716957947929655117 -->
+
+    <tbox:sportsperson rdf:about="#ID716957947929655117"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7350923266395666413 -->
+
+    <tbox:sportsperson rdf:about="#ID7350923266395666413">
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7356747897847809911 -->
+
+    <tbox:actor rdf:about="#ID7356747897847809911">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Jared Robinson</tbox:cogito-Name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7406557457738973420 -->
+
+    <tbox:sportsperson rdf:about="#ID7406557457738973420">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Gary Anthony Voce (born November 24, 1965 in Bridgeport, Connecticut) is a former American NBA player.</tbox:cogito-first_sentence>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Gary Voce</tbox:cogito-Name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">basketball</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7425435304030416879 -->
+
+    <tbox:business_firm rdf:about="#ID7425435304030416879">
+        <tbox:wikipedia-location rdf:datatype="&xsd;string"
+            >India TCS House, Raveline Street, Fort, Mumbai - 400 001</tbox:wikipedia-location>
+        <tbox:wikipedia-company_type rdf:datatype="&xsd;string">Public 532540</tbox:wikipedia-company_type>
+        <tbox:wikipedia-key_people rdf:datatype="&xsd;string"
+            >Ratan Tata, (Chairman of the Board, Tata Group) S Ramadorai, (CEO &amp; Managing Director) K Ananthkrishnan, (CTO) S Mahalingam, (Executive Director and CFO) N Chandrasekaran, (Executive Director and COO) Phiroz Vandrevala,(Executive Director and Head, Global Corporate Affairs),  Ajoyendra Mukherjee, (Vice President and Head, Global Human Resources)</tbox:wikipedia-key_people>
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Tata Consultancy Services</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Tata Consultancy Services Limited (TCS) is an Indian software services and consulting company.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">commerce</tbox:cogito-domain>
+        <tbox:wikipedia-homepage rdf:datatype="&xsd;string"
+            >http://www.tcs.com</tbox:wikipedia-homepage>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7440629678755153405 -->
+
+    <tbox:sportsperson rdf:about="#ID7440629678755153405">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Daniel Abraham (Abe) Yanofsky (March 25, 1925 - March 5, 2000) was Canada&#39;s first chess grandmaster, an eight-time Canadian Chess Champion, a chess writer, a chess arbiter, and a lawyer.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">chess</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7537886746605165797 -->
+
+    <tbox:sportsperson rdf:about="#ID7537886746605165797">
+        <tbox:wikipedia-caps-goals rdf:datatype="&xsd;string">, , 183 (0)</tbox:wikipedia-caps-goals>
+        <tbox:wikipedia-cityofbirth rdf:datatype="&xsd;string"
+            >Cambuslang, Lanarkshire</tbox:wikipedia-cityofbirth>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >James &quot;Jimmy&quot; Jackson (September 15, 1875 -) was a Scottish-Australian football (soccer) player.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-fullname rdf:datatype="&xsd;string">James Jackson</tbox:wikipedia-fullname>
+        <tbox:wikipedia-playername rdf:datatype="&xsd;string">Jimmy Jackson</tbox:wikipedia-playername>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Jimmy Jackson</tbox:cogito-Name>
+        <tbox:wikipedia-countryofbirth rdf:datatype="&xsd;string">Scotland</tbox:wikipedia-countryofbirth>
+        <tbox:wikipedia-dateofbirth rdf:datatype="&xsd;string"
+            >September 15, 1875</tbox:wikipedia-dateofbirth>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7547716866808661009 -->
+
+    <tbox:actor rdf:about="#ID7547716866808661009">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Julito McCullum</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Julito McCullum (born December 19, 1990) is an actor of Afro-Latino descent best known for his role as Namond Brice on the HBO series The Wire.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7570454519297293873 -->
+
+    <tbox:sportsperson rdf:about="#ID7570454519297293873">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Brodie Merrill</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Brodie Merrill (born November 5, 1981 in Orangeville, Ontario) is a professional lacrosse player.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-position rdf:datatype="&xsd;string">Defense</tbox:wikipedia-position>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7653586598171404730 -->
+
+    <tbox:actor rdf:about="#ID7653586598171404730">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Tero Jartti</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Tero Jartti (16 March 1962, Valtimo, Finland) is a Finnish actor, director and screenwriter.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7700140316425725006 -->
+
+    <tbox:actor rdf:about="#ID7700140316425725006">
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string">2 April, 1871</tbox:wikipedia-birthdate>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string"
+            >Joseph W. Girard</tbox:wikipedia-name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Joseph W. Girard (2 April, 1871 - 21 August, 1949), was an American film actor.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7811797115683297466 -->
+
+    <tbox:actor rdf:about="#ID7811797115683297466">
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Jason Lewis</tbox:wikipedia-name>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7844994777170757276 -->
+
+    <tbox:business_firm rdf:about="#ID7844994777170757276">
+        <tbox:cogito-domain rdf:datatype="&xsd;string">aeronautics</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+        <tbox:wikipedia-type rdf:datatype="&xsd;string">public</tbox:wikipedia-type>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7865431086927205582 -->
+
+    <tbox:business_firm rdf:about="#ID7865431086927205582">
+        <tbox:wikipedia-coordinates rdf:datatype="&xsd;string"
+            >3652&#39;30.13&quot;S 17444&#39;41.16&quot;E</tbox:wikipedia-coordinates>
+        <tbox:wikipedia-owner rdf:datatype="&xsd;string"
+            >Eden Park Trust Board</tbox:wikipedia-owner>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Eden Park is the main sports ground in Auckland, New Zealand for both rugby union during winter, and cricket in summer.</tbox:cogito-first_sentence>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7981328075018206977 -->
+
+    <tbox:business_firm rdf:about="#ID7981328075018206977">
+        <tbox:wikipedia-frequency rdf:datatype="&xsd;string">96.7 MHz</tbox:wikipedia-frequency>
+        <tbox:wikipedia-branding rdf:datatype="&xsd;string">Eagle 96.7</tbox:wikipedia-branding>
+        <tbox:wikipedia-city rdf:datatype="&xsd;string"
+            >McMillan, Michigan</tbox:wikipedia-city>
+        <tbox:wikipedia-format rdf:datatype="&xsd;string">Variety Hits</tbox:wikipedia-format>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">WMJT</tbox:wikipedia-name>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">WMJT</tbox:cogito-Name>
+        <tbox:wikipedia-slogan rdf:datatype="&xsd;string"
+            >We Play Everything</tbox:wikipedia-slogan>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">radio</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7984137033384983298 -->
+
+    <tbox:actor rdf:about="#ID7984137033384983298">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Joe MacLeod (born January 29, 1980) is a Canadian actor and TV host.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7990989367024724573 -->
+
+    <tbox:actor rdf:about="#ID7990989367024724573">
+        <tbox:wikipedia-birthname rdf:datatype="&xsd;string"
+            >Jonathan Daniel Charasuchin</tbox:wikipedia-birthname>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Jonathan Harris</tbox:wikipedia-name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Jonathan Harris (November 6, 1914 - November 3, 2002), was an American stage and character actor.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string"
+            >November 6, 1914</tbox:wikipedia-birthdate>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7991546402960777761 -->
+
+    <tbox:sportsperson rdf:about="#ID7991546402960777761">
+        <tbox:wikipedia-height rdf:datatype="&xsd;string">175 cm</tbox:wikipedia-height>
+        <tbox:wikipedia-dateofbirth rdf:datatype="&xsd;string"
+            >October 31, 1979</tbox:wikipedia-dateofbirth>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID7994164923156936045 -->
+
+    <tbox:sportsperson rdf:about="#ID7994164923156936045">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Kim Yong-hyun</tbox:cogito-Name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8009634154445746712 -->
+
+    <tbox:actor rdf:about="#ID8009634154445746712">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Cara Fawn</tbox:cogito-Name>
+        <tbox:wikipedia-birthname rdf:datatype="&xsd;string"
+            >Cara Fawn Ballou</tbox:wikipedia-birthname>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8032623458641946958 -->
+
+    <tbox:business_firm rdf:about="#ID8032623458641946958">
+        <tbox:wikipedia-industry rdf:datatype="&xsd;string"
+            >Aerospace and defence</tbox:wikipedia-industry>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">BAE Systems</tbox:cogito-Name>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">BAE Systems plc</tbox:wikipedia-name>
+        <tbox:wikipedia-products rdf:datatype="&xsd;string"
+            >Civil and military aerospace, Defence electronics, Naval vessels, Munitions, Land warfare systems</tbox:wikipedia-products>
+        <tbox:wikipedia-key_people rdf:datatype="&xsd;string"
+            >Dick Olver, Chairman, Mike Turner, CEO</tbox:wikipedia-key_people>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8035852983586321806 -->
+
+    <tbox:business_firm rdf:about="#ID8035852983586321806">
+        <tbox:wikipedia-frequency rdf:datatype="&xsd;string">102.3 (MHz)</tbox:wikipedia-frequency>
+        <tbox:wikipedia-city rdf:datatype="&xsd;string"
+            >Brownsville, Oregon</tbox:wikipedia-city>
+        <tbox:wikipedia-owner rdf:datatype="&xsd;string">Cumulus Media</tbox:wikipedia-owner>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">KEHK</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >KEHK is a commercial hot adult contemporary music radio station in Brownsville, Oregon, broadcasting to the Eugene-Springfield, Oregon area on 102.3 FM.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">radio</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8067527595322649054 -->
+
+    <tbox:sportsperson rdf:about="#ID8067527595322649054">
+        <tbox:wikipedia-height rdf:datatype="&xsd;string">6&#39;2&quot;</tbox:wikipedia-height>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Kentaro Shiga is a Japanese professional wrestler, currently performing for Pro Wrestling NOAH.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">heavy athletics</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8092533497413734730 -->
+
+    <tbox:actor rdf:about="#ID8092533497413734730">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Dorothy Devore</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Dorothy Devore (June 22, 1899 {though some sources say 1901} - September 10, 1976) was a leading and popular American silent-film actor and comedian in her time.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8122144300010849048 -->
+
+    <tbox:actor rdf:about="#ID8122144300010849048">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Gerald Home</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8269605483421584386 -->
+
+    <tbox:sportsperson rdf:about="#ID8269605483421584386">
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Tom Brandi</tbox:wikipedia-name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Tom Brandi (born July 9, 1966 in Philadelphia, Pennsylvania) is a professional wrestler known for his work in World Wrestling Federation as Salvatore Sincere.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">heavy athletics</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8304333650469924756 -->
+
+    <tbox:business_firm rdf:about="#ID8304333650469924756">
+        <tbox:wikipedia-coordinates rdf:datatype="&xsd;string"
+            >5120&#39;32&quot;N 00120&#39;46&quot;E</tbox:wikipedia-coordinates>
+        <tbox:wikipedia-owner rdf:datatype="&xsd;string">Infratil</tbox:wikipedia-owner>
+        <tbox:wikipedia-location rdf:datatype="&xsd;string">Kent</tbox:wikipedia-location>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string"
+            >Kent International Airport</tbox:wikipedia-name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8312172888181637224 -->
+
+    <tbox:business_firm rdf:about="#ID8312172888181637224">
+        <tbox:wikipedia-industry rdf:datatype="&xsd;string">Aerospace</tbox:wikipedia-industry>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Saab</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Saab AB is an aviation and defense company based in Sweden.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-location rdf:datatype="&xsd;string"
+            >Sweden Stockholm, Sweden</tbox:wikipedia-location>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8327360203849075873 -->
+
+    <tbox:business_firm rdf:about="#ID8327360203849075873">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Dagon (2) High School, Yangon was founded in 1929 when national schools opened across Myanmar during British Empire period.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">school</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8448920026793178950 -->
+
+    <tbox:actor rdf:about="#ID8448920026793178950">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Marjorie Estiano (b March 8 1982, Curitiba, Paran&#65533;&#65533; Brazil) is a Brazilian popular actress and singer who rose to prominence in 2004 playing Natasha in the Brazilian teen series Malha&#65533;&#65533;&#65533;&#65533;o.</tbox:cogito-first_sentence>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8510212536233215062 -->
+
+    <tbox:business_firm rdf:about="#ID8510212536233215062">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Mandalay International Airport, located 35 km south of Mandalay in Tada-U, is one of only two international airports in all of Burma.</tbox:cogito-first_sentence>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8523274742551437907 -->
+
+    <tbox:actor rdf:about="#ID8523274742551437907">
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Kevin Durand</tbox:wikipedia-name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Kevin Durand (born January 14, 1974) is a Canadian actor known for his role as Joshua in Dark Angel (2001-2002) and as Keamy in Lost.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-birthname rdf:datatype="&xsd;string"
+            >Kevin Serge Durand</tbox:wikipedia-birthname>
+        <tbox:wikipedia-location rdf:datatype="&xsd;string"
+            >Thunder Bay, Ontario, Canada</tbox:wikipedia-location>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8536029109013303176 -->
+
+    <tbox:business_firm rdf:about="#ID8536029109013303176">
+        <tbox:wikipedia-type rdf:datatype="&xsd;string"
+            >International defense organization</tbox:wikipedia-type>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">politics</tbox:cogito-domain>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8588711146817872699 -->
+
+    <tbox:business_firm rdf:about="#ID8588711146817872699">
+        <tbox:wikipedia-location rdf:datatype="&xsd;string">Hertfordshire</tbox:wikipedia-location>
+        <tbox:wikipedia-key_people rdf:datatype="&xsd;string"
+            >Sir Alan Sugar,Bordan Tkachuk</tbox:wikipedia-key_people>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Viglen</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Viglen Ltd provides IT products and services, including storage systems, servers, workstations and data/voice communications equipment and services.</tbox:cogito-first_sentence>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8593071722719206160 -->
+
+    <tbox:actor rdf:about="#ID8593071722719206160">
+        <tbox:wikipedia-name rdf:datatype="&xsd;string"
+            >Mukhya Mantri Chandru</tbox:wikipedia-name>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8623006821051283530 -->
+
+    <tbox:actor rdf:about="#ID8623006821051283530">
+        <tbox:wikipedia-birthname rdf:datatype="&xsd;string"
+            >Valerie Anne Bertinelli</tbox:wikipedia-birthname>
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Valerie Bertinelli</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">television</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID864267870479381002 -->
+
+    <tbox:actor rdf:about="#ID864267870479381002">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Blane Wheatley (born November 11, 1963) is an American film actor.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID866402289976850876 -->
+
+    <tbox:actor rdf:about="#ID866402289976850876">
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string">July 25, 1963</tbox:wikipedia-birthdate>
+        <tbox:wikipedia-birthplace rdf:datatype="&xsd;string">Rome, Italy</tbox:wikipedia-birthplace>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Sabina Guzzanti (born July 25, 1963) is an Italian actress devoted to comedy and satire.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8715130142359616035 -->
+
+    <tbox:sportsperson rdf:about="#ID8715130142359616035">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Kevin Wauthy</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Kevin Wauthy (born 25 August, 1983) is a Belgian football goalkeeper who currently plays for Royal Antwerp FC.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">football</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8730477054158897168 -->
+
+    <tbox:sportsperson rdf:about="#ID8730477054158897168">
+        <tbox:wikipedia-nationality rdf:datatype="&xsd;string">Sri Lankan</tbox:wikipedia-nationality>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Susil Fernando</tbox:cogito-Name>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Susil Fernando</tbox:wikipedia-name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8740285988600564159 -->
+
+    <tbox:actor rdf:about="#ID8740285988600564159">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Linda Dano</tbox:cogito-Name>
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string">May 12, 1943</tbox:wikipedia-birthdate>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8755226719982416843 -->
+
+    <tbox:sportsperson rdf:about="#ID8755226719982416843">
+        <tbox:wikipedia-nationality rdf:datatype="&xsd;string">Canada</tbox:wikipedia-nationality>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Guy Dufour</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Guy Dufour (born February 9, 1946 in La Tuque, Quebec) is a retired Canadian professional ice hockey player.</tbox:cogito-first_sentence>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8756803761710107563 -->
+
+    <tbox:actor rdf:about="#ID8756803761710107563">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Abigail Fisher</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8772691335944922641 -->
+
+    <tbox:actor rdf:about="#ID8772691335944922641">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Dax Kelly (sometimes credited as Dax Kelley) was an American pornographic actor (porn star) who appeared in gay pornography movies from 1996 to 1999.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID878486870617027225 -->
+
+    <tbox:actor rdf:about="#ID878486870617027225">
+        <tbox:wikipedia-birthname rdf:datatype="&xsd;string"
+            >LeRoy Melvin Radabaugh</tbox:wikipedia-birthname>
+        <tbox:wikipedia-birthplace rdf:datatype="&xsd;string"
+            >Long Beach, California</tbox:wikipedia-birthplace>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Richard Cromwell (January 08, 1910 - October 11, 1960) was an American actor, born LeRoy Melvin Radabaugh.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8823711890463950559 -->
+
+    <tbox:actor rdf:about="#ID8823711890463950559">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Grazyna Wolszczak</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">show</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID883531359044579951 -->
+
+    <tbox:actor rdf:about="#ID883531359044579951">
+        <tbox:wikipedia-birthplace rdf:datatype="&xsd;string"
+            >Chicago, Illinois, USA</tbox:wikipedia-birthplace>
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string"
+            >December 3, 1965</tbox:wikipedia-birthdate>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Steve Harris</tbox:wikipedia-name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8885305199572473857 -->
+
+    <tbox:business_firm rdf:about="#ID8885305199572473857">
+        <tbox:wikipedia-foundation rdf:datatype="&xsd;string">1998</tbox:wikipedia-foundation>
+        <tbox:wikipedia-company_name rdf:datatype="&xsd;string">CZ.NIC</tbox:wikipedia-company_name>
+        <tbox:wikipedia-company_type rdf:datatype="&xsd;string">association</tbox:wikipedia-company_type>
+        <tbox:wikipedia-homepage rdf:datatype="&xsd;string"
+            >http://www.nic.cz/en/</tbox:wikipedia-homepage>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">internet</tbox:cogito-domain>
+        <tbox:wikipedia-products rdf:datatype="&xsd;string"
+            >registration in .cz, registration in .0.2.4.e164.arpa</tbox:wikipedia-products>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8960455807402082348 -->
+
+    <tbox:sportsperson rdf:about="#ID8960455807402082348">
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Bobby Davison</tbox:cogito-Name>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8972564512857462341 -->
+
+    <tbox:actor rdf:about="#ID8972564512857462341">
+        <tbox:wikipedia-birthdate rdf:datatype="&xsd;string">August 2, 1933</tbox:wikipedia-birthdate>
+        <tbox:wikipedia-location rdf:datatype="&xsd;string"
+            >Liverpool, England</tbox:wikipedia-location>
+        <tbox:wikipedia-name rdf:datatype="&xsd;string">Tom Bell</tbox:wikipedia-name>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Tom Bell</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Tom Bell (August 2 1933 - October 4 2006) was an English actor on stage, film and television.</tbox:cogito-first_sentence>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">cinema</tbox:cogito-domain>
+    </tbox:actor>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID8980822407889543109 -->
+
+    <tbox:business_firm rdf:about="#ID8980822407889543109">
+        <tbox:wikipedia-founded rdf:datatype="&xsd;string">1922</tbox:wikipedia-founded>
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Cinderford Town F.C.</tbox:cogito-Name>
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Cinderford Town F.C. are a football club based in Cinderford in Gloucestershire, England.</tbox:cogito-first_sentence>
+        <tbox:wikipedia-fullname rdf:datatype="&xsd;string"
+            >Cinderford Town Football Club</tbox:wikipedia-fullname>
+        <tbox:wikipedia-leftarm1 rdf:datatype="&xsd;string">FFFFFF</tbox:wikipedia-leftarm1>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID9100971857179997713 -->
+
+    <tbox:sportsperson rdf:about="#ID9100971857179997713">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Luigi Taveri (born 19 August 1929) is a Swiss former motorcycle road racer.</tbox:cogito-first_sentence>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID91457636902898982 -->
+
+    <tbox:business_firm rdf:about="#ID91457636902898982">
+        <tbox:wikipedia-name rdf:datatype="&xsd;string"
+            >Blessed George Napier Roman Catholic School and Sports College</tbox:wikipedia-name>
+        <tbox:wikipedia-type rdf:datatype="&xsd;string"
+            >Secondary school</tbox:wikipedia-type>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">business firm</tbox:cogito-tag>
+    </tbox:business_firm>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID9155999832872002354 -->
+
+    <tbox:sportsperson rdf:about="#ID9155999832872002354">
+        <tbox:cogito-first_sentence rdf:datatype="&xsd;string"
+            >Viktor Engelbrekt Hackberg (August 13, 1891 - November 5, 1968) was a Swedish track and field athlete who competed in the 1912 Summer Olympics.</tbox:cogito-first_sentence>
+        <tbox:cogito-Name rdf:datatype="&xsd;string">Viktor Hackberg</tbox:cogito-Name>
+        <tbox:cogito-domain rdf:datatype="&xsd;string">sport</tbox:cogito-domain>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">sportsperson</tbox:cogito-tag>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID959921552449872211 -->
+
+    <tbox:business_firm rdf:about="#ID959921552449872211"/>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID991024978381221144 -->
+
+    <tbox:sportsperson rdf:about="#ID991024978381221144">
+        <tbox:wikipedia-caps-goals rdf:datatype="&xsd;string"
+            >153 (32), 17 (2), 8 (1)</tbox:wikipedia-caps-goals>
+        <tbox:wikipedia-years rdf:datatype="&xsd;string"
+            >1955-1966, 1966-1967, 1967, 1968, 1968-1969, 1969-1970, 1971-1972, 1973, 1975-1976</tbox:wikipedia-years>
+        <tbox:cogito-domain rdf:datatype="&xsd;string"
+            >American football</tbox:cogito-domain>
+        <tbox:wikipedia-fullname rdf:datatype="&xsd;string"
+            >Dragoslav &#65533;&#65533;ekularac</tbox:wikipedia-fullname>
+        <tbox:wikipedia-playername rdf:datatype="&xsd;string"
+            >Dragoslav &#65533;&#65533;ekularac</tbox:wikipedia-playername>
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Dragoslav &#65533;&#65533;ekularac</tbox:cogito-Name>
+        <tbox:wikipedia-countryofbirth rdf:datatype="&xsd;string"
+            >Kingdom of Yugoslavia</tbox:wikipedia-countryofbirth>
+        <tbox:wikipedia-dateofbirth rdf:datatype="&xsd;string"
+            >November 30, 1937</tbox:wikipedia-dateofbirth>
+        <tbox:wikipedia-clubs rdf:datatype="&xsd;string"
+            >Red Star Belgrade, Karlsruher SC, St. Louis Stars, TSV 1860 M&#65533;&#65533;nchen, OFK Beograd, Independiente Santa Fe, Millonarios, Am&#65533;&#65533;rica de Cali, Paris FC</tbox:wikipedia-clubs>
+    </tbox:sportsperson>
+    
+
+
+    <!-- http://islab.dico.unimi.it/iimb/abox.owl#ID992768970802988626 -->
+
+    <tbox:actor rdf:about="#ID992768970802988626">
+        <tbox:cogito-Name rdf:datatype="&xsd;string"
+            >Toritseju Okorodudu</tbox:cogito-Name>
+        <tbox:cogito-tag rdf:datatype="&xsd;string">actor</tbox:cogito-tag>
+    </tbox:actor>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.${svn.Revision}) http://owlapi.sourceforge.net -->
+

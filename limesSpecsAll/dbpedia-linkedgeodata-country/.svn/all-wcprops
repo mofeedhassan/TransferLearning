@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-linkedgeodata-country
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-linkedgeodata-country/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-linkedgeodata-country/positive.nt
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-linkedgeodata-country/spec.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-linkedgeodata-country/README.txt
+END

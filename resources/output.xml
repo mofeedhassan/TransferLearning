@@ -1,0 +1,67 @@
+<LIMES>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/1999/02/22-rdf-syntax-ns#</NAMESPACE>
+      <LABEL>rdf</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://xmlns.com/foaf/0.1/</NAMESPACE>
+      <LABEL>foaf</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://purl.org/collections/nl/am/</NAMESPACE>
+      <LABEL>am</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://purl.org/collections/nl/stadsarchief/</NAMESPACE>
+      <LABEL>stads</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://purl.org/collections/nl/rijksmonumenten/</NAMESPACE>
+      <LABEL>rmon</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/2002/07/owl#</NAMESPACE>
+      <LABEL>owl</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/2000/01/rdf-schema#</NAMESPACE>
+      <LABEL>rdfs</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://dbpedia.org/ontology/</NAMESPACE>
+      <LABEL>dbpedia-owl</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://dbpedia.org/class/yago/</NAMESPACE>
+      <LABEL>yago</LABEL>
+   </PREFIX>
+   <SOURCE>
+      <ENDPOINT>http://semanticweb.cs.vu.nl/europeana/sparql/</ENDPOINT>
+      <PAGESIZE>1000</PAGESIZE>
+      <TYPE>sparql</TYPE>
+      <VAR>?a</VAR>
+      <RESTRICTION>?a rdf:type am:Person.</RESTRICTION>
+      <PROPERTY>am:name</PROPERTY>
+   </SOURCE>
+   <TARGET>
+      <ENDPOINT>http://dbpedia.org/sparql/</ENDPOINT>
+      <PAGESIZE>1000</PAGESIZE>
+      <TYPE>sparql</TYPE>
+      <VAR>?b</VAR>
+      <RESTRICTION>{?b rdf:type dbpedia-owl:Person} UNION {?b rdf:type yago:Person100007846} UNION {?b rdf:type foaf:Person}</RESTRICTION>
+      <PROPERTY>foaf:name</PROPERTY>
+   </TARGET>
+   <METRIC>trigrams(a.an:name, b.foaf:name)
+   <ACCEPTANCE>
+      <THRESHOLD>0.97</THRESHOLD>
+      <FILE>accepted_links3.nt</FILE>
+      <RELATION/>
+   </ACCEPTANCE>
+   <REVIEW>
+         <THRESHOLD>0.97</THRESHOLD>
+         <FILE>accepted_links3.nt</FILE>
+         <RELATION/>
+   </REVIEW>
+   <EXECUTION>Simple</EXECUTION>
+   <OUTPUT>N3</OUTPUT>
+</LIMES>

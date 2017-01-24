@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-gutendata-texts
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/sources/!svn/ver/1242/TransferLearning/specs/dbpedia-gutendata-texts/README.txt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-gutendata-texts/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-gutendata-texts/positive.nt
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/sources/!svn/ver/1242/TransferLearning/specs/dbpedia-gutendata-texts/spec.xml
+END

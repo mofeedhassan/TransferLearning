@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-openei-places
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/sources/!svn/ver/1242/TransferLearning/specs/dbpedia-openei-places/spec.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/sources/!svn/ver/1242/TransferLearning/specs/dbpedia-openei-places/README.txt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-openei-places/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-openei-places/positive.nt
+END

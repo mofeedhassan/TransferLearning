@@ -1,0 +1,101 @@
+13.06.2012 14:52:54 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: rkb-explorer-crime
+Var: ?a
+Prefixes: {climb=http://climb.dataincubator.org/vocabs/climb/, ov=http://open.vocab.org/terms/, dgadmingeo=http://statistics.data.gov.uk/def/administrative-geography/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, spatial=http://data.ordnancesurvey.co.uk/ontology/spatialrelations/, yago=http://dbpedia.org/class/yago/, geonames=http://www.geonames.org/ontology#, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpp=http://dbpedia.org/property/, traffic=http://transport.data.gov.uk/def/traffic/, crime=http://crime.rkbexplorer.com/id/, gazetteer=http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/, naptan=http://transport.data.gov.uk/def/naptan/, rail=http://ontologi.es/rail/vocab#, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, admingeo=http://data.ordnancesurvey.co.uk/ontology/admingeo/, skos=http://www.w3.org/2004/02/skos/core#}
+Endpoint: http://crime.rkbexplorer.com/sparql/
+Graph: null
+Restrictions: [?a rdf:type crime:PoliceAuthority]
+Properties: [rdfs:label]
+Functions: {rdfs:label=lowercase}
+Page size: 1000
+Type: sparql
+
+13.06.2012 14:52:54 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: dbpedia
+Var: ?b
+Prefixes: {climb=http://climb.dataincubator.org/vocabs/climb/, ov=http://open.vocab.org/terms/, dgadmingeo=http://statistics.data.gov.uk/def/administrative-geography/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, spatial=http://data.ordnancesurvey.co.uk/ontology/spatialrelations/, yago=http://dbpedia.org/class/yago/, geonames=http://www.geonames.org/ontology#, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpp=http://dbpedia.org/property/, traffic=http://transport.data.gov.uk/def/traffic/, crime=http://crime.rkbexplorer.com/id/, gazetteer=http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/, naptan=http://transport.data.gov.uk/def/naptan/, rail=http://ontologi.es/rail/vocab#, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, admingeo=http://data.ordnancesurvey.co.uk/ontology/admingeo/, skos=http://www.w3.org/2004/02/skos/core#}
+Endpoint: http://dbpedia.org/sparql
+Graph: null
+Restrictions: [?b rdf:type yago:PoliceForcesOfEngland ]
+Properties: [rdfs:label]
+Functions: {rdfs:label=lowercase}
+Page size: 1000
+Type: sparql
+
+13.06.2012 14:52:54 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+13.06.2012 14:52:54 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:194): Found cached data. Loading data from file E:\Work\Java\LIMES\cache\1415913489.ser
+13.06.2012 14:52:54 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:206): No cached data found for rkb-explorer-crime
+13.06.2012 14:52:54 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+13.06.2012 14:52:54 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:81): Properties are [rdfs:label]
+13.06.2012 14:52:54 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:126): Query issued is 
+PREFIX climb: <http://climb.dataincubator.org/vocabs/climb/>
+PREFIX ov: <http://open.vocab.org/terms/>
+PREFIX dgadmingeo: <http://statistics.data.gov.uk/def/administrative-geography/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX spatial: <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/>
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX geonames: <http://www.geonames.org/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpp: <http://dbpedia.org/property/>
+PREFIX traffic: <http://transport.data.gov.uk/def/traffic/>
+PREFIX crime: <http://crime.rkbexplorer.com/id/>
+PREFIX gazetteer: <http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/>
+PREFIX naptan: <http://transport.data.gov.uk/def/naptan/>
+PREFIX rail: <http://ontologi.es/rail/vocab#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?a ?v0
+WHERE {
+?a rdf:type crime:PoliceAuthority .
+?a rdfs:label ?v0 .
+}
+13.06.2012 14:52:54 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Querying the endpoint.
+13.06.2012 14:52:54 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 0 to 1000
+13.06.2012 14:52:55 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 1000 to 2000
+13.06.2012 14:52:55 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:223): Retrieved 43 triples and 43 entities.
+13.06.2012 14:52:55 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:224): Retrieving statements took 0.662 seconds.
+13.06.2012 14:52:55 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.saveToFile(HybridCache.java:155): Serializing 43 objects to E:\Work\Java\LIMES\cache\1415913489.ser
+13.06.2012 14:52:55 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:140): Loading target data ...
+13.06.2012 14:52:55 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:194): Found cached data. Loading data from file E:\Work\Java\LIMES\cache\-560970839.ser
+13.06.2012 14:52:55 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:206): No cached data found for dbpedia
+13.06.2012 14:52:55 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+13.06.2012 14:52:55 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:81): Properties are [rdfs:label]
+13.06.2012 14:52:55 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:126): Query issued is 
+PREFIX climb: <http://climb.dataincubator.org/vocabs/climb/>
+PREFIX ov: <http://open.vocab.org/terms/>
+PREFIX dgadmingeo: <http://statistics.data.gov.uk/def/administrative-geography/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX spatial: <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/>
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX geonames: <http://www.geonames.org/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpp: <http://dbpedia.org/property/>
+PREFIX traffic: <http://transport.data.gov.uk/def/traffic/>
+PREFIX crime: <http://crime.rkbexplorer.com/id/>
+PREFIX gazetteer: <http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/>
+PREFIX naptan: <http://transport.data.gov.uk/def/naptan/>
+PREFIX rail: <http://ontologi.es/rail/vocab#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?b ?v0
+WHERE {
+?b rdf:type yago:PoliceForcesOfEngland .
+?b rdfs:label ?v0 .
+}
+13.06.2012 14:52:55 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Querying the endpoint.
+13.06.2012 14:52:55 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 0 to 1000
+13.06.2012 14:52:57 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 1000 to 2000
+13.06.2012 14:52:57 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:223): Retrieved 111 triples and 52 entities.
+13.06.2012 14:52:57 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:224): Retrieving statements took 2.175 seconds.
+13.06.2012 14:52:57 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.saveToFile(HybridCache.java:155): Serializing 52 objects to E:\Work\Java\LIMES\cache\-560970839.ser
+13.06.2012 14:52:57 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:153): Getting links ...
+13.06.2012 14:52:57 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:156): Got links in 14ms.
+13.06.2012 14:52:57 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:21): Getting serializer with name NT
+13.06.2012 14:52:57 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:27): Serializer with name NT not found. Using .nt as default format.
+13.06.2012 14:52:57 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:160): Using N3Serializer to serialize
+13.06.2012 14:52:57 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:179): Returned 3 links above acceptance threshold.
+13.06.2012 14:52:57 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:180): Returned 0 links to review.
+13.06.2012 14:52:57 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:187): Mapping carried out in 3.112 seconds
+13.06.2012 14:52:57 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:188): Done.

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-datagovUK-city
+END
+review.nt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-datagovUK-city/review.nt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-datagovUK-city/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-datagovUK-city/positive.nt
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/sources/!svn/ver/1514/TransferLearning/finalSpecs/dbpedia-datagovUK-city/spec.xml
+END
+spec.log
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-datagovUK-city/spec.log
+END
+accept.nt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/sources/!svn/ver/1514/TransferLearning/finalSpecs/dbpedia-datagovUK-city/accept.nt
+END

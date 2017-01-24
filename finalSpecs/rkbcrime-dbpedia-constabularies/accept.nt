@@ -1,0 +1,3 @@
+<http://crime.rkbexplorer.com/id/city-of-london-police> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/City_of_London_Police> .
+<http://crime.rkbexplorer.com/id/metropolitan-police> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Metropolitan_Police_Service> .
+<http://crime.rkbexplorer.com/id/south-yorkshire> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/South_Yorkshire_Police> .

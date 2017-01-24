@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/sources/!svn/ver/1261/TransferLearning/specs/linkedct-pubmed-country/intervals/0.8500000000000001-0.9000000000000001
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/sources/!svn/ver/1242/TransferLearning/specs/linkedct-pubmed-country/intervals/0.8500000000000001-0.9000000000000001/README.txt
+END
+0.8500000000000001-0.9000000000000001.nt
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/sources/!svn/ver/1261/TransferLearning/specs/linkedct-pubmed-country/intervals/0.8500000000000001-0.9000000000000001/0.8500000000000001-0.9000000000000001.nt
+END
+unsure.nt
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/sources/!svn/ver/1261/TransferLearning/specs/linkedct-pubmed-country/intervals/0.8500000000000001-0.9000000000000001/unsure.nt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/sources/!svn/ver/1261/TransferLearning/specs/linkedct-pubmed-country/intervals/0.8500000000000001-0.9000000000000001/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/sources/!svn/ver/1261/TransferLearning/specs/linkedct-pubmed-country/intervals/0.8500000000000001-0.9000000000000001/positive.nt
+END

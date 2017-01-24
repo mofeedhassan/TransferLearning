@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/sources/!svn/ver/1551/TransferLearning/limesSpecsAll/dbpedia-linkedct-condition
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-linkedct-condition/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-linkedct-condition/positive.nt
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/sources/!svn/ver/1551/TransferLearning/limesSpecsAll/dbpedia-linkedct-condition/spec.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-linkedct-condition/README.txt
+END

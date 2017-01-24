@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/sources/!svn/ver/1261/TransferLearning/specs/geonames-linkedgeodata-park
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/sources/!svn/ver/1242/TransferLearning/specs/geonames-linkedgeodata-park/spec.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/sources/!svn/ver/1242/TransferLearning/specs/geonames-linkedgeodata-park/README.txt
+END
+unsure.nt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/sources/!svn/ver/1261/TransferLearning/specs/geonames-linkedgeodata-park/unsure.nt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sources/!svn/ver/1261/TransferLearning/specs/geonames-linkedgeodata-park/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sources/!svn/ver/1261/TransferLearning/specs/geonames-linkedgeodata-park/positive.nt
+END

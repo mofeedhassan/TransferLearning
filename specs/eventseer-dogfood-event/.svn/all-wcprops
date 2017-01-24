@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/sources/!svn/ver/1261/TransferLearning/specs/eventseer-dogfood-event
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/sources/!svn/ver/1242/TransferLearning/specs/eventseer-dogfood-event/spec.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/sources/!svn/ver/1242/TransferLearning/specs/eventseer-dogfood-event/README.txt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/sources/!svn/ver/1261/TransferLearning/specs/eventseer-dogfood-event/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/sources/!svn/ver/1261/TransferLearning/specs/eventseer-dogfood-event/positive.nt
+END

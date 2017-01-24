@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/sources/!svn/ver/1550/TransferLearning/src/org/aksw/saim/transfer/properties
+END
+UriBasedPropertySimilarity.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/sources/!svn/ver/1513/TransferLearning/src/org/aksw/saim/transfer/properties/UriBasedPropertySimilarity.java
+END
+PropertySimilarity.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/sources/!svn/ver/1278/TransferLearning/src/org/aksw/saim/transfer/properties/PropertySimilarity.java
+END
+SamplingBasedPropertySimilarity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/sources/!svn/ver/1550/TransferLearning/src/org/aksw/saim/transfer/properties/SamplingBasedPropertySimilarity.java
+END

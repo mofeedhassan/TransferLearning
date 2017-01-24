@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-linkedmdb-movies
+END
+fixme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-linkedmdb-movies/fixme.txt
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/sources/!svn/ver/1503/TransferLearning/finalSpecs/dbpedia-linkedmdb-movies/spec.xml
+END
+spec.log
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-linkedmdb-movies/spec.log
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-linkedmdb-movies/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-linkedmdb-movies/positive.nt
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-openei-organisation
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-openei-organisation/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-openei-organisation/positive.nt
+END
+still_needs_improvement.txt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-openei-organisation/still_needs_improvement.txt
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-openei-organisation/spec.xml
+END

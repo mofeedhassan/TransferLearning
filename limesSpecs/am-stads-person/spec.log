@@ -1,0 +1,45 @@
+22.05.2012 08:58:39 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: source_a
+Var: ?a
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, foaf=http://xmlns.com/foaf/0.1/, am=http://purl.org/collections/nl/am/, owl=http://www.w3.org/2002/07/owl#, stads=http://purl.org/collections/nl/stadsarchief/, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, rmon=http://purl.org/collections/nl/rijksmonumenten/}
+Endpoint: http://semanticweb.cs.vu.nl/europeana/sparql/
+Graph: 0
+Restrictions: [?a rdf:type stads:Person]
+Properties: [foaf:name]
+Functions: {foaf:name=}
+Page size: 1000
+Type: sparql
+
+22.05.2012 08:58:39 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: source_b
+Var: ?b
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, foaf=http://xmlns.com/foaf/0.1/, am=http://purl.org/collections/nl/am/, owl=http://www.w3.org/2002/07/owl#, stads=http://purl.org/collections/nl/stadsarchief/, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, rmon=http://purl.org/collections/nl/rijksmonumenten/}
+Endpoint: http://semanticweb.cs.vu.nl/europeana/sparql/
+Graph: 0
+Restrictions: [?b rdf:type am:Person.]
+Properties: [am:name]
+Functions: {am:name=}
+Page size: 1000
+Type: sparql
+
+22.05.2012 08:58:39 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+22.05.2012 08:58:39 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:205): No cached data found for source_a
+22.05.2012 08:58:39 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+22.05.2012 08:58:39 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:64): Query Graph: 0
+22.05.2012 08:58:39 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:85): Properties are [foaf:name]
+22.05.2012 08:58:39 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:130): Query issued is 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX am: <http://purl.org/collections/nl/am/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX stads: <http://purl.org/collections/nl/stadsarchief/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rmon: <http://purl.org/collections/nl/rijksmonumenten/>
+SELECT DISTINCT ?a ?v0
+FROM <0>
+WHERE {
+?a rdf:type stads:Person .
+?a foaf:name ?v0 .
+}
+22.05.2012 08:58:39 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:132): Querying the endpoint.
+22.05.2012 08:58:39 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:140): Getting statements 0 to 1000
+22.05.2012 08:58:40 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:140): Getting statements 1000 to 2000
+22.05.2012 08:58:41 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:140): Getting statements 2000 to 3000

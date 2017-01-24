@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-linkedgeodata-university
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sources/!svn/ver/1518/TransferLearning/finalSpecs/dbpedia-linkedgeodata-university/spec.xml
+END
+spec.log
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-linkedgeodata-university/spec.log
+END
+accept.nt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/sources/!svn/ver/1518/TransferLearning/finalSpecs/dbpedia-linkedgeodata-university/accept.nt
+END
+review.nt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-linkedgeodata-university/review.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-linkedgeodata-university/positive.nt
+END

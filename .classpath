@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/annotations-7.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/arq-2.8.1.jar"/>
+	<classpathentry kind="lib" path="lib/BorderFlow.jar"/>
+	<classpathentry kind="lib" path="lib/collections-generic-4.01.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.3.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/conja-1.06-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/dsutils-1.04-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/google-collections-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/icu4j-3.4.4.jar"/>
+	<classpathentry kind="lib" path="lib/iri-0.7.jar"/>
+	<classpathentry kind="lib" path="lib/java-getopt-1.0.9.jar"/>
+	<classpathentry kind="lib" path="lib/jena-2.6.2-tests.jar"/>
+	<classpathentry kind="lib" path="lib/jena-2.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/jgap-examples.jar"/>
+	<classpathentry kind="lib" path="lib/jgap.jar"/>
+	<classpathentry kind="lib" path="lib/jlibsvm-0.91-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/JSAP-2.0a-ds1.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.5.jar"/>
+	<classpathentry kind="lib" path="lib/LBJ2.jar"/>
+	<classpathentry kind="lib" path="lib/LBJ2Library.jar"/>
+	<classpathentry kind="lib" path="lib/LbjNerTagger.jar"/>
+	<classpathentry kind="lib" path="lib/LIMES.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.13.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="lib/log4j.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-core-2.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/ml-0.911-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/runutils-0.91-20111226.060632-23.jar"/>
+	<classpathentry kind="lib" path="lib/saxon9he.jar"/>
+	<classpathentry kind="lib" path="lib/simmetrics_jar_v1_6_2_d07_02_07.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.5.6.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.5.6.jar"/>
+	<classpathentry kind="lib" path="lib/SSJoinJava.jar"/>
+	<classpathentry kind="lib" path="lib/stats-0.93-20111226.060130-6.jar"/>
+	<classpathentry kind="lib" path="lib/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/trees-1.023-20111226.060448-9.jar"/>
+	<classpathentry kind="lib" path="lib/wstx-asl-3.2.9.jar"/>
+	<classpathentry kind="lib" path="lib/xercesImpl-2.7.1.jar"/>
+	<classpathentry kind="lib" path="/home/mofeed/.m2/repository/org/apache/commons/commons-jexl/2.1.1/commons-jexl-2.1.1.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.apache.commons"/>
+			<attribute name="maven.artifactId" value="commons-jexl"/>
+			<attribute name="maven.version" value="2.1.1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/mofeed/.m2/repository/tw/edu/ntu/csie/libsvm/3.17/libsvm-3.17.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

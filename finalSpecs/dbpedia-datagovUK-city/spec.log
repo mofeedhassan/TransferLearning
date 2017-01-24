@@ -1,0 +1,81 @@
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: dbpedia
+Var: ?a
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-owl=http://dbpedia.org/ontology/, yago=http://dbpedia.org/class/yago/, owl=http://www.w3.org/2002/07/owl#, dbpedia=http://dbpedia.org/ontology/, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, administrative-geography=http://statistics.data.gov.uk/def/administrative-geography/, opencyc=http://sw.opencyc.org/2008/06/10/concept/}
+Endpoint: http://live.dbpedia.org/sparql
+Graph: null
+Restrictions: [?a rdf:type yago:EconomiesByCityInEngland]
+Properties: [rdfs:label]
+Functions: {rdfs:label=lowercase}
+Page size: 1000
+Type: sparql
+
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: datagovuk
+Var: ?b
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-owl=http://dbpedia.org/ontology/, yago=http://dbpedia.org/class/yago/, owl=http://www.w3.org/2002/07/owl#, dbpedia=http://dbpedia.org/ontology/, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, administrative-geography=http://statistics.data.gov.uk/def/administrative-geography/, opencyc=http://sw.opencyc.org/2008/06/10/concept/}
+Endpoint: http://services.data.gov.uk/statistics/sparql
+Graph: null
+Restrictions: [?b rdf:type administrative-geography:LocalAuthorityDistrict]
+Properties: [rdfs:label]
+Functions: {rdfs:label=lowercase}
+Page size: 1000
+Type: sparql
+
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:206): No cached data found for dbpedia
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:81): Properties are [rdfs:label]
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:126): Query issued is 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX dbpedia: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX administrative-geography: <http://statistics.data.gov.uk/def/administrative-geography/>
+PREFIX opencyc: <http://sw.opencyc.org/2008/06/10/concept/>
+SELECT DISTINCT ?a ?v0
+WHERE {
+?a rdf:type yago:EconomiesByCityInEngland .
+?a rdfs:label ?v0 .
+}
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Querying the endpoint.
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 0 to 1000
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 1000 to 2000
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:223): Retrieved 5 triples and 4 entities.
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:224): Retrieving statements took 0.415 seconds.
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.saveToFile(HybridCache.java:155): Serializing 4 objects to E:\Work\Java\LIMES\cache\-457661236.ser
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:140): Loading target data ...
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:194): Found cached data. Loading data from file E:\Work\Java\LIMES\cache\-683823472.ser
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:206): No cached data found for datagovuk
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:81): Properties are [rdfs:label]
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:126): Query issued is 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX dbpedia: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX administrative-geography: <http://statistics.data.gov.uk/def/administrative-geography/>
+PREFIX opencyc: <http://sw.opencyc.org/2008/06/10/concept/>
+SELECT DISTINCT ?b ?v0
+WHERE {
+?b rdf:type administrative-geography:LocalAuthorityDistrict .
+?b rdfs:label ?v0 .
+}
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Querying the endpoint.
+13.06.2012 14:38:31 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 0 to 1000
+13.06.2012 14:38:32 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 1000 to 2000
+13.06.2012 14:38:33 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 2000 to 3000
+13.06.2012 14:38:34 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:223): Retrieved 1185 triples and 444 entities.
+13.06.2012 14:38:34 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:224): Retrieving statements took 2.472 seconds.
+13.06.2012 14:38:34 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.saveToFile(HybridCache.java:155): Serializing 444 objects to E:\Work\Java\LIMES\cache\-683823472.ser
+13.06.2012 14:38:34 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:153): Getting links ...
+13.06.2012 14:38:34 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:156): Got links in 79ms.
+13.06.2012 14:38:34 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:21): Getting serializer with name NT
+13.06.2012 14:38:34 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:27): Serializer with name NT not found. Using .nt as default format.
+13.06.2012 14:38:34 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:160): Using N3Serializer to serialize
+13.06.2012 14:38:34 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:179): Returned 4 links above acceptance threshold.
+13.06.2012 14:38:34 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:180): Returned 0 links to review.
+13.06.2012 14:38:34 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:187): Mapping carried out in 3.239 seconds
+13.06.2012 14:38:34 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:188): Done.

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-geonames-island
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-geonames-island/spec.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-geonames-island/README.txt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-geonames-island/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-geonames-island/positive.nt
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-stich-proteinorganism
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/sources/!svn/ver/1242/TransferLearning/specs/dbpedia-stich-proteinorganism/spec.xml
+END
+stitch_dbpedia_verify_links.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/sources/!svn/ver/1242/TransferLearning/specs/dbpedia-stich-proteinorganism/stitch_dbpedia_verify_links.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/sources/!svn/ver/1242/TransferLearning/specs/dbpedia-stich-proteinorganism/README.txt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-stich-proteinorganism/positive.nt
+END

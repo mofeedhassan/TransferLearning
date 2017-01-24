@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/eventseer-dblp_l3s-person
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sources/!svn/ver/1523/TransferLearning/finalSpecs/eventseer-dblp_l3s-person/spec.xml
+END
+spec.log
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/eventseer-dblp_l3s-person/spec.log
+END
+accept.nt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/sources/!svn/ver/1523/TransferLearning/finalSpecs/eventseer-dblp_l3s-person/accept.nt
+END
+review.nt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/sources/!svn/ver/1523/TransferLearning/finalSpecs/eventseer-dblp_l3s-person/review.nt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/eventseer-dblp_l3s-person/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/eventseer-dblp_l3s-person/positive.nt
+END

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE LIMES
+  SYSTEM "limes.dtd">
+<LIMES>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/1999/02/22-rdf-syntax-ns#</NAMESPACE>
+      <LABEL>rdf</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/2000/01/rdf-schema#</NAMESPACE>
+      <LABEL>rdfs</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://purl.org/ontology/mo/</NAMESPACE>
+      <LABEL>mo</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://dbpedia.org/ontology/</NAMESPACE>
+      <LABEL>dbpedia-owl</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/2002/07/owl#</NAMESPACE>
+      <LABEL>owl</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://purl.org/dc/elements/1.1/</NAMESPACE>
+      <LABEL>dc</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://xmlns.com/foaf/0.1/</NAMESPACE>
+      <LABEL>foaf</LABEL>
+   </PREFIX>
+   <SOURCE>
+      <ID>dbtune</ID>
+      <ENDPOINT>http://dbtune.org/musicbrainz/sparql</ENDPOINT>
+      <GRAPH>0</GRAPH>
+      <VAR>?a</VAR>
+      <PAGESIZE>1000</PAGESIZE>
+      <RESTRICTION>?a rdf:type mo:Record</RESTRICTION>
+      <PROPERTY>dc:title</PROPERTY>
+   </SOURCE>
+   <TARGET>
+      <ID>dbpedia</ID>
+      <ENDPOINT>http://live.dbpedia.org/sparql/</ENDPOINT>
+      <GRAPH>0</GRAPH>
+      <VAR>?b</VAR>
+      <PAGESIZE>1000</PAGESIZE>
+      <RESTRICTION>?b rdf:type dbpedia-owl:Album</RESTRICTION>
+      <PROPERTY>foaf:name</PROPERTY>
+   </TARGET>
+   <METRIC>MAX(Jaro(a.dc:title, b.foaf:name))</METRIC>
+   <ACCEPTANCE>
+      <THRESHOLD>0.90</THRESHOLD>
+      <FILE>recorddbtunedbpedia_links_accepted.nt</FILE>
+      <RELATION/>
+   </ACCEPTANCE>
+   <REVIEW>
+      <THRESHOLD>0.90</THRESHOLD>
+      <FILE>recorddbtunedbpedia_links_accepted.nt</FILE>
+      <RELATION/>
+   </REVIEW>
+   <EXECUTION>Simple</EXECUTION>
+   <OUTPUT>NT</OUTPUT>
+</LIMES>

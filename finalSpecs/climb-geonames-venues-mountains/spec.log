@@ -1,0 +1,49 @@
+25.05.2012 00:04:28 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: data-incubator-climb
+Var: ?a
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, climb=http://climb.dataincubator.org/vocabs/climb/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#, dcterms=http://purl.org/dc/terms/}
+Endpoint: http://api.talis.com/stores/climb/services/sparql
+Graph: null
+Restrictions: [?a rdf:type climb:Venue ]
+Properties: [rdfs:label, geo:lat]
+Functions: {rdfs:label=, geo:lat=}
+Page size: 1000
+Type: sparql
+
+25.05.2012 00:04:28 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: geonames-semantic-web
+Var: ?b
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, climb=http://climb.dataincubator.org/vocabs/climb/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#, dcterms=http://purl.org/dc/terms/}
+Endpoint: http://api.talis.com/stores/geonames/services/sparql
+Graph: null
+Restrictions: [?b rdf:type geonames:Feature ; geonames:inCountry <http://www.geonames.org/countries/#GB> ; geonames:featureClass geonames:T ]
+Properties: [geonames:name, geo:lat]
+Functions: {geonames:name=, geo:lat=}
+Page size: 1000
+Type: sparql
+
+25.05.2012 00:04:28 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+25.05.2012 00:04:28 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:193): Found cached data. Loading data from file E:\Work\Java\LIMES\cache\-1618103745.ser
+25.05.2012 00:04:28 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:199): Cached data loaded successfully from file E:\Work\Java\LIMES\cache\-1618103745.ser
+25.05.2012 00:04:28 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:200): Size = 1307
+25.05.2012 00:04:28 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:140): Loading target data ...
+25.05.2012 00:04:28 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:205): No cached data found for geonames-semantic-web
+25.05.2012 00:04:28 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+25.05.2012 00:04:28 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:81): Properties are [geonames:name, geo:lat]
+25.05.2012 00:04:28 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:126): Query issued is 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX climb: <http://climb.dataincubator.org/vocabs/climb/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX geonames: <http://www.geonames.org/ontology#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT DISTINCT ?b ?v0 ?v1
+WHERE {
+?b rdf:type geonames:Feature ; geonames:inCountry <http://www.geonames.org/countries/#GB> ; geonames:featureClass geonames:T .
+?b geonames:name ?v0 .
+?b geo:lat ?v1 .
+}
+25.05.2012 00:04:28 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Querying the endpoint.
+25.05.2012 00:04:28 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 0 to 1000
+25.05.2012 00:06:03 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 1000 to 2000
+25.05.2012 00:07:18 WARN  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:215): Exception while handling query
+25.05.2012 00:07:18 WARN  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:216): com.hp.hpl.jena.sparql.resultset.ResultSetException: XMLStreamException: Premature EOF

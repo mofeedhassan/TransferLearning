@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sources/!svn/ver/1261/TransferLearning/specs/gho-linkedct-disease/intervals/0.1-0.15
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/sources/!svn/ver/1242/TransferLearning/specs/gho-linkedct-disease/intervals/0.1-0.15/README.txt
+END
+0.1-0.15.nt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/sources/!svn/ver/1261/TransferLearning/specs/gho-linkedct-disease/intervals/0.1-0.15/0.1-0.15.nt
+END
+unsure.nt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/sources/!svn/ver/1261/TransferLearning/specs/gho-linkedct-disease/intervals/0.1-0.15/unsure.nt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/sources/!svn/ver/1261/TransferLearning/specs/gho-linkedct-disease/intervals/0.1-0.15/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/sources/!svn/ver/1261/TransferLearning/specs/gho-linkedct-disease/intervals/0.1-0.15/positive.nt
+END

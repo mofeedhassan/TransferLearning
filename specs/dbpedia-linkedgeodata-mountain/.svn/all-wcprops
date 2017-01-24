@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-linkedgeodata-mountain
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/sources/!svn/ver/1242/TransferLearning/specs/dbpedia-linkedgeodata-mountain/README.txt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-linkedgeodata-mountain/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-linkedgeodata-mountain/positive.nt
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sources/!svn/ver/1242/TransferLearning/specs/dbpedia-linkedgeodata-mountain/spec.xml
+END

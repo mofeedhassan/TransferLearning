@@ -1,0 +1,631 @@
+10
+
+dir
+1655
+http://svn.aksw.org/sources/TransferLearning/specs
+http://svn.aksw.org/sources
+
+
+
+2012-06-14T21:07:17.549045Z
+1545
+AxelNgonga
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fca87399-8c28-4e81-8cf3-0e7093d816ff
+
+rail-geonames-ukplaces
+dir
+
+keep_only_specs.sh~
+file
+
+
+
+
+2013-02-27T15:45:18.317878Z
+d41d8cd98f00b204e9800998ecf8427e
+2012-05-01T13:49:33.230060Z
+1261
+JensLehmann
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
+geonames-linkedgeodata-glacier
+dir
+
+pbac-dbpedia-17thcanglicanbishops
+dir
+
+dbpedia-linkedgeodata-school
+dir
+
+dbpedia-drugbank-target
+dir
+
+linkedct-pubmed-country
+dir
+
+geonames-linkedgeodata-farm
+dir
+
+geonames-linkedgeodata-river
+dir
+
+dbpedia-musicbrainz-soloArtist
+dir
+
+dbpedia-linkedmdb-movies
+dir
+
+drugbank-dailymed-inactiveIngredients
+dir
+
+dbpedia-linkedgeodata-stadium
+dir
+
+metoffice-geonames-locations
+dir
+
+dbpedia-linkedgeodata-city
+dir
+
+dbpedia-sider-drug
+dir
+
+geonames-linkedgeodata-petrol station
+dir
+
+cordis-dbpedia-projects
+dir
+
+dbpedia-eunis-species
+dir
+
+dbpedia-geonames-airport
+dir
+
+linkedgeodata-airportdata
+dir
+
+dbtune-dbpedia-album
+dir
+
+dbpedia-drugbank-drugs
+dir
+
+dbpedia-linkedgeodata-river
+dir
+
+dbpedia-geonames-mountain
+dir
+
+geonames-linkedgeodata-restaurant
+dir
+
+geonames-linkedgeodata-guest_house
+dir
+
+transport-ontologi.es-rail-stations
+dir
+
+citeseer-dblp-author
+dir
+
+dbpedia-linkedgeodata-country
+dir
+
+geonames-linkedgeodata-medical_centre
+dir
+
+eventseer-dogfood-person
+dir
+
+geonames-linkedgeodata-pier
+dir
+
+geonames-linkedgeodata-bus stop
+dir
+
+transport-ordnancesurvey-roads-within-place
+dir
+
+dbpedia-geonames-city
+dir
+
+climb-dbpedia-venues-mountains
+dir
+
+dbpedia-linkedgeodata-lake
+dir
+
+linkedmanchester-dbpedia-busoperators
+dir
+
+geonames-linkedgeodata-city
+dir
+
+geonames-linkedgeodata-golf course
+dir
+
+linkedgeodata-fao
+dir
+
+geonames-linkedgeodata-island
+dir
+
+eunis-geospecies-species
+dir
+
+geonames-linkedgeodata-airport
+dir
+
+dbpedia-geospecies-species
+dir
+
+geonames-linkedgeodata-police_post
+dir
+
+am-rmon-person
+dir
+
+transport-ordnancesurvey-localauthorities
+dir
+
+dbpedia-diseasome-disease
+dir
+
+dbpedia-musicbrainz-album
+dir
+
+climb-rail-venues
+dir
+
+dogfood-ckan-person-dataset
+dir
+
+schema_org-foaf-class
+dir
+
+drugbank-dailymed-activeMoiety
+dir
+
+transport-ordnancesurvey-trafficcountpoints
+dir
+
+climb-ordnancesurvey-areas
+dir
+
+geonames-linkedgeodata-post_office
+dir
+
+gho-pubmed-country
+dir
+
+dbpedia-geonames-lake
+dir
+
+geonames-linkedgeodata-shop
+dir
+
+bnb-openlibrary-books
+dir
+
+geonames-linkedgeodata-museum
+dir
+
+rkbcrime-dbpedia-constabularies
+dir
+
+climb-geonames-venues-mountains
+dir
+
+dbpedia-linkedct-state
+dir
+
+trafficscotland-dbpedia-roads
+dir
+
+bnb-dbpedia-books
+dir
+
+geonames-linkedgeodata-cliff
+dir
+
+run.sh~
+file
+
+
+
+
+2013-02-27T15:45:18.317878Z
+d41d8cd98f00b204e9800998ecf8427e
+2012-05-01T13:49:33.230060Z
+1261
+JensLehmann
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
+dbpedia-stich-proteinorganism
+dir
+
+eventseer-dblp_l3s-event
+dir
+
+rail-dbpedia-scottishmonuments
+dir
+
+linkedgeodata-factbook-country
+dir
+
+dbpedia-geonames-country
+dir
+
+geonames-linkedgeodata-stadium
+dir
+
+geonames-linkedgeodata-petrol_station
+dir
+
+clean.sh
+file
+
+
+
+
+2013-02-27T15:45:18.317878Z
+b17c4ea4c9f85fd4d827667ff10dde26
+2012-05-01T13:46:50.343976Z
+1259
+JensLehmann
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+206
+
+dbpedia-geonames-island
+dir
+
+dbpedia-cordis-organizations
+dir
+
+dblp_rkb-dblp_rkb-person
+dir
+
+dbpedia-linkedct-keyword
+dir
+
+geonames-linkedgeodata-police post
+dir
+
+geonames-linkedgeodata-university
+dir
+
+dbpedia-linkedct-condition
+dir
+
+stad-rmon-person
+dir
+
+dbpedia-linkedgeodata-mountain
+dir
+
+dbtune-dbpedia-band
+dir
+
+geonames-linkedgeodata-place of worship
+dir
+
+geonames-linkedgeodata-memorial2
+dir
+
+geonames-linkedgeodata-parking
+dir
+
+geonames-linkedgeodata-guest house
+dir
+
+gho-linkedct-disease
+dir
+
+dbpedia-linkedmdb-actor
+dir
+
+dbpedia-openlibrary-bookauthor
+dir
+
+am-dbpedia-person
+dir
+
+dbpedia-linkedmdb-director
+dir
+
+geonames-linkedgeodata-country
+dir
+
+dbpedia-linkedgeodata-island
+dir
+
+dbpedia-geonames-mountainRange
+dir
+
+dbpedia-sider-sideEffect
+dir
+
+metoffice-ordnancesurvey-locations
+dir
+
+dbpedia-openei-organisation
+dir
+
+geonames-linkedgeodata-castle
+dir
+
+climb-linkedgeodata-venues-near-trainstations
+dir
+
+dbpedia-gutendata-person
+dir
+
+dbpedia-gutendata-texts
+dir
+
+geonames-linkedgeodata-hospital
+dir
+
+dbpedia-geonames-river
+dir
+
+geonames-linkedgeodata-school
+dir
+
+am-stads-person
+dir
+
+geonames-linkedgeodata-mountain
+dir
+
+pbac-pbac-books
+dir
+
+dbpedia-linkedct-sponsor
+dir
+
+dbpedia-linkedct-country
+dir
+
+geonames-linkedgeodata-medical centre
+dir
+
+drugbank-dailymed-activeIngredients
+dir
+
+dbpedia-drugbank-enzyme
+dir
+
+geonames-linkedgeodata-library
+dir
+
+climb-geonames-spatialthings
+dir
+
+eumida-euelections-countries
+dir
+
+dblp-datasemanticweb-researcher
+dir
+
+geonames-linkedgeodata-shelter
+dir
+
+drugbank-dailymed-ingredients
+dir
+
+geonames-linkedgeodata-golf_course
+dir
+
+ourairports-ordnancesurvey
+dir
+
+dbpedia-linkedmdb-producer
+dir
+
+geonames-linkedgeodata-bay
+dir
+
+geonames-linkedgeodata-hotel
+dir
+
+dbpedia-linkedct-intervention
+dir
+
+dbpedia-openei-country
+dir
+
+climb-metoffice-venues-near-forecast-locations
+dir
+
+geonames-linkedgeodata-graveyard
+dir
+
+climb-linkedgeodata-venues-near-hospitals
+dir
+
+gho-linkedct-country
+dir
+
+dbpedia-openei-places
+dir
+
+bnb-dbpedia-novelists
+dir
+
+dbpedia-diseasome-gene
+dir
+
+dbpedia-musicbrainz-artist
+dir
+
+metoffice-dbpedia-locations
+dir
+
+dbpedia-lobid-organization
+dir
+
+dbpedia-linkedgeodata-embassy
+dir
+
+geonames-linkedgeodata-park
+dir
+
+linkedct-pubmed-disease
+dir
+
+geonames-linkedgeodata-garden
+dir
+
+dbpedia-BBCwildLife-species
+dir
+
+geonames-linkedgeodata-post office
+dir
+
+geonames-linkedgeodata-beach
+dir
+
+climb-linkedgeodata-venues-near-supermarkets
+dir
+
+dbpedia-linkedct-city
+dir
+
+geonames-linkedgeodata-memorial
+dir
+
+eventseer-dblp_l3s-publications
+dir
+
+eventseer-dblp_rkb-event
+dir
+
+climb-ordnancesurvey-venues
+dir
+
+eventseer-dogfood-event
+dir
+
+dbpedia-factbook-language
+dir
+
+dbpedia-linkedgeodata-airport
+dir
+
+dbpedia-linkedgeodata-university
+dir
+
+schema_rdfs_org-foaf-class
+dir
+
+eventseer-dblp_l3s-person
+dir
+
+geonames-linkedgeodata-place_of_worship
+dir
+
+dbpedia-geonames-school
+dir
+
+metoffice-ordnancesurvey-othersettlements
+dir
+
+geonames-linkedgeodata-veterinary
+dir
+
+eventseer-dblp_fu-person
+dir
+
+climb-bnb-guidebooks
+dir
+
+eventseer-dblp_rkb-person
+dir
+
+dbpedia-datagovUK-city
+dir
+
+geonames-linkedgeodata-bus_stop
+dir
+
+climb-geonames-venues
+dir
+

@@ -1,0 +1,47 @@
+12.06.2012 02:06:39 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: dbpedia
+Var: ?a
+Prefixes: {dc=http://purl.org/dc/terms/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-owl=http://dbpedia.org/ontology/, foaf=http://xmlns.com/foaf/0.1/, linkedmdb=http://data.linkedmdb.org/resource/movie/, dbpedia-prop=http://dbpedia.org/property/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#}
+Endpoint: http://dbpedia.org/sparql
+Graph: null
+Restrictions: [?a rdf:type dbpedia-owl:Film]
+Properties: [rdfs:label, dbpedia-owl:director/rdfs:label, dbpedia-owl:releaseDate]
+Functions: {rdfs:label=lowercase, dbpedia-owl:director/rdfs:label=lowercase, dbpedia-owl:releaseDate=}
+Page size: 1000
+Type: sparql
+
+12.06.2012 02:06:39 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: linkedmdb
+Var: ?b
+Prefixes: {dc=http://purl.org/dc/terms/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-owl=http://dbpedia.org/ontology/, foaf=http://xmlns.com/foaf/0.1/, linkedmdb=http://data.linkedmdb.org/resource/movie/, dbpedia-prop=http://dbpedia.org/property/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#}
+Endpoint: http://data.linkedmdb.org/sparql
+Graph: null
+Restrictions: [?b rdf:type linkedmdb:film]
+Properties: [rdfs:label, linkedmdb:director/rdfs:label, linkedmdb:initial_release_date]
+Functions: {rdfs:label=lowercase, linkedmdb:initial_release_date=, linkedmdb:director/rdfs:label=lowercase}
+Page size: 1000
+Type: sparql
+
+12.06.2012 02:06:39 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+12.06.2012 02:06:39 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:206): No cached data found for dbpedia
+12.06.2012 02:06:39 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+12.06.2012 02:06:39 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:81): Properties are [rdfs:label, dbpedia-owl:director/rdfs:label, dbpedia-owl:releaseDate]
+12.06.2012 02:06:39 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:126): Query issued is 
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX linkedmdb: <http://data.linkedmdb.org/resource/movie/>
+PREFIX dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?a ?v0 ?v1 ?v2
+WHERE {
+?a rdf:type dbpedia-owl:Film .
+?a rdfs:label ?v0 .
+?a dbpedia-owl:director ?w1 .
+?w1 rdfs:label ?v1 .
+?a dbpedia-owl:releaseDate ?v2 .
+}
+12.06.2012 02:06:39 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Querying the endpoint.
+12.06.2012 02:06:39 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 0 to 1000
+12.06.2012 02:06:40 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 1000 to 2000
+12.06.2012 02:06:41 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 2000 to 3000

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-openei-country
+END
+review.nt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/sources/!svn/ver/1519/TransferLearning/finalSpecs/dbpedia-openei-country/review.nt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-openei-country/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-openei-country/positive.nt
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/sources/!svn/ver/1519/TransferLearning/finalSpecs/dbpedia-openei-country/spec.xml
+END
+spec.log
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-openei-country/spec.log
+END
+accept.nt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/sources/!svn/ver/1519/TransferLearning/finalSpecs/dbpedia-openei-country/accept.nt
+END

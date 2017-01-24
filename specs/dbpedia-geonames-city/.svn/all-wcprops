@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-geonames-city
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-geonames-city/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/sources/!svn/ver/1261/TransferLearning/specs/dbpedia-geonames-city/positive.nt
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/sources/!svn/ver/1242/TransferLearning/specs/dbpedia-geonames-city/spec.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/sources/!svn/ver/1242/TransferLearning/specs/dbpedia-geonames-city/README.txt
+END

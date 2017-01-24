@@ -1,0 +1,38 @@
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: data-incubator-climb
+Var: ?a
+Prefixes: {climb=http://climb.dataincubator.org/vocabs/climb/, ov=http://open.vocab.org/terms/, dgadmingeo=http://statistics.data.gov.uk/def/administrative-geography/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, yago=http://dbpedia.org/class/yago/, geonames=http://www.geonames.org/ontology#, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpp=http://dbpedia.org/property/, traffic=http://transport.data.gov.uk/def/traffic/, gazetteer=http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/, naptan=http://transport.data.gov.uk/def/naptan/, rail=http://ontologi.es/rail/vocab#, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, admingeo=http://data.ordnancesurvey.co.uk/ontology/admingeo/, skos=http://www.w3.org/2004/02/skos/core#}
+Endpoint: http://api.talis.com/stores/climb/services/sparql
+Graph: null
+Restrictions: [?a a climb:Venue ]
+Properties: [geo:lat, geo:long]
+Functions: {geo:long=number, geo:lat=number}
+Page size: 1000
+Type: sparql
+
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: linked-railway-data-project
+Var: ?b
+Prefixes: {climb=http://climb.dataincubator.org/vocabs/climb/, ov=http://open.vocab.org/terms/, dgadmingeo=http://statistics.data.gov.uk/def/administrative-geography/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, yago=http://dbpedia.org/class/yago/, geonames=http://www.geonames.org/ontology#, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpp=http://dbpedia.org/property/, traffic=http://transport.data.gov.uk/def/traffic/, gazetteer=http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/, naptan=http://transport.data.gov.uk/def/naptan/, rail=http://ontologi.es/rail/vocab#, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, admingeo=http://data.ordnancesurvey.co.uk/ontology/admingeo/, skos=http://www.w3.org/2004/02/skos/core#}
+Endpoint: http://sparql.sindice.com/sparql
+Graph: null
+Restrictions: [?b a rail:Station ]
+Properties: [geo:lat, geo:long]
+Functions: {geo:long=number, geo:lat=number}
+Page size: 1000
+Type: sparql
+
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:193): Found cached data. Loading data from file E:\Work\Java\LIMES\cache\635247384.ser
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:199): Cached data loaded successfully from file E:\Work\Java\LIMES\cache\635247384.ser
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:200): Size = 1307
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:140): Loading target data ...
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:193): Found cached data. Loading data from file E:\Work\Java\LIMES\cache\-891230430.ser
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:199): Cached data loaded successfully from file E:\Work\Java\LIMES\cache\-891230430.ser
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:200): Size = 592
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:153): Getting links ...
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:156): Got links in 113ms.
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:21): Getting serializer with name TAB
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:160): Using TabSeparatedSerializer to serialize
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:179): Returned 197 links above acceptance threshold.
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:180): Returned 0 links to review.
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:187): Mapping carried out in 0.568 seconds
+25.05.2012 00:32:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:188): Done.

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/sources/!svn/ver/1545/TransferLearning/specs
+END
+keep_only_specs.sh~
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/sources/!svn/ver/1261/TransferLearning/specs/keep_only_specs.sh~
+END
+clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/sources/!svn/ver/1259/TransferLearning/specs/clean.sh
+END
+run.sh~
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/sources/!svn/ver/1261/TransferLearning/specs/run.sh~
+END

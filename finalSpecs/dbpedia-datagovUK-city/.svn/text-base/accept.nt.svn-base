@@ -1,0 +1,4 @@
+<http://dbpedia.org/resource/Liverpool> <http://www.w3.org/2002/07/owl#sameAs> <http://statistics.data.gov.uk/id/local-authority-district/00BY> .
+<http://dbpedia.org/resource/Birmingham> <http://www.w3.org/2002/07/owl#sameAs> <http://statistics.data.gov.uk/id/local-authority-district/00CN> .
+<http://dbpedia.org/resource/Leeds> <http://www.w3.org/2002/07/owl#sameAs> <http://statistics.data.gov.uk/id/local-authority-district/00DA> .
+<http://dbpedia.org/resource/Bristol> <http://www.w3.org/2002/07/owl#sameAs> <http://statistics.data.gov.uk/id/local-authority-district/00HB> .

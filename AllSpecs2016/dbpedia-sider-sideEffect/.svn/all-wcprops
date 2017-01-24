@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-sider-sideEffect
+END
+fixme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-sider-sideEffect/fixme.txt
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/sources/!svn/ver/1505/TransferLearning/finalSpecs/dbpedia-sider-sideEffect/spec.xml
+END
+spec.log
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-sider-sideEffect/spec.log
+END
+accept.nt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-sider-sideEffect/accept.nt
+END
+review.nt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-sider-sideEffect/review.nt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-sider-sideEffect/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-sider-sideEffect/positive.nt
+END

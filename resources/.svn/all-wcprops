@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/sources/!svn/ver/1356/TransferLearning/resources
+END
+output.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/sources/!svn/ver/1329/TransferLearning/resources/output.xml
+END
+dailymed-dbpedia.limes.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/sources/!svn/ver/1329/TransferLearning/resources/dailymed-dbpedia.limes.xml
+END
+silk2limes.xslt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/sources/!svn/ver/1327/TransferLearning/resources/silk2limes.xslt
+END
+silk2limes2.xslt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/sources/!svn/ver/1356/TransferLearning/resources/silk2limes2.xslt
+END

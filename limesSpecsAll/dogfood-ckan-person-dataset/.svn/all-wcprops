@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dogfood-ckan-person-dataset
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dogfood-ckan-person-dataset/spec.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dogfood-ckan-person-dataset/README.txt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dogfood-ckan-person-dataset/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dogfood-ckan-person-dataset/positive.nt
+END

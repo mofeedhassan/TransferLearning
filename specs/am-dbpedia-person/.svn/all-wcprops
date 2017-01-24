@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/sources/!svn/ver/1355/TransferLearning/specs/am-dbpedia-person
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/sources/!svn/ver/1261/TransferLearning/specs/am-dbpedia-person/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/sources/!svn/ver/1261/TransferLearning/specs/am-dbpedia-person/positive.nt
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/sources/!svn/ver/1355/TransferLearning/specs/am-dbpedia-person/spec.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/sources/!svn/ver/1242/TransferLearning/specs/am-dbpedia-person/README.txt
+END

@@ -1,0 +1,75 @@
+<Silk>
+  <Prefixes>
+    <Prefix namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" id="rdf"></Prefix>
+    <Prefix namespace="http://dbpedia.org/property/" id="dbpp"></Prefix>
+    <Prefix namespace="http://data.ordnancesurvey.co.uk/ontology/spatialrelations/" id="spatial"></Prefix>
+    <Prefix namespace="http://climb.dataincubator.org/vocabs/climb/" id="climb"></Prefix>
+    <Prefix namespace="http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/" id="gazetteer"></Prefix>
+    <Prefix namespace="http://transport.data.gov.uk/def/naptan/" id="naptan"></Prefix>
+    <Prefix namespace="http://www.geonames.org/ontology#" id="geonames"></Prefix>
+    <Prefix namespace="http://open.vocab.org/terms/" id="ov"></Prefix>
+    <Prefix namespace="http://www.w3.org/2003/01/geo/wgs84_pos#" id="geo"></Prefix>
+    <Prefix namespace="http://statistics.data.gov.uk/def/administrative-geography/" id="dgadmingeo"></Prefix>
+    <Prefix namespace="http://www.w3.org/2002/07/owl#" id="owl"></Prefix>
+    <Prefix namespace="http://dbpedia.org/class/yago/" id="yago"></Prefix>
+    <Prefix namespace="http://www.w3.org/2004/02/skos/core#" id="skos"></Prefix>
+    <Prefix namespace="http://www.w3.org/2000/01/rdf-schema#" id="rdfs"></Prefix>
+    <Prefix namespace="http://data.ordnancesurvey.co.uk/ontology/admingeo/" id="admingeo"></Prefix>
+    <Prefix namespace="http://transport.data.gov.uk/def/traffic/" id="traffic"></Prefix>
+    <Prefix namespace="http://metoffice.dataincubator.org/vocabs/metoffice/" id="metoffice"></Prefix>
+    <Prefix namespace="http://ontologi.es/rail/vocab#" id="rail"></Prefix>
+  </Prefixes>
+  <DataSources>
+    <DataSource type="sparqlEndpoint" id="data-incubator-metoffice">
+      <Param value="http://api.talis.com/stores/metoffice/services/sparql" name="endpointURI"></Param>
+      <Param value="5" name="retryCount"></Param>
+      <Param value="1000" name="retryPause"></Param>
+    </DataSource>
+    <DataSource type="sparqlEndpoint" id="ordnance-survey-linked-data">
+      <Param value="http://kwijibo.talis.com/ordnance-survey-linked-data-places/sparql" name="endpointURI"></Param>
+      <Param value="15" name="retryCount"></Param>
+      <Param value="300000" name="retryPause"></Param>
+    </DataSource>
+  </DataSources>
+  <Interlinks>
+    <Interlink id="metoffice-to-ordnancesurvey">
+      <LinkType>owl:sameAs</LinkType>
+      <SourceDataset var="a" dataSource="data-incubator-metoffice">
+        <RestrictTo>?a rdf:type metoffice:MetOfficeLocation .</RestrictTo>
+      </SourceDataset>
+      <TargetDataset var="b" dataSource="ordnance-survey-linked-data">
+        <RestrictTo>?b rdf:type gazetteer:NamedPlace ; geo:lat ?lat ; geo:long ?long . { ?b gazetteer:featureType gazetteer:Town  } UNION {  ?b gazetteer:featureType gazetteer:City } </RestrictTo>
+      </TargetDataset>
+      <LinkCondition>
+        <Aggregate type="average" required="true" weight="2">
+          <Compare required="true" metric="equality" weight="2">
+            <Input path="?a/rdfs:label"></Input>
+            <Input path="?b/rdfs:label"></Input>
+          </Compare>
+          <Compare required="true" metric="wgs84" weight="1">
+            <TransformInput function="concat">
+              <Input path="?a/geo:lat"></Input>
+              <Input path="?a/geo:long"></Input>
+              <Param value=" " name="glue"></Param>
+            </TransformInput>
+            <TransformInput function="concat">
+              <Input path="?b/geo:lat"></Input>
+              <Input path="?b/geo:long"></Input>
+              <Param value=" " name="glue"></Param>
+            </TransformInput>
+            <Param value="50" name="threshold"></Param>
+            <Param value="km" name="unit"></Param>
+            <Param value="linear" name="curveStyle"></Param>
+          </Compare>
+        </Aggregate>
+      </LinkCondition>
+      <Filter threshold="0.80" limit="1"></Filter>
+      <Outputs>
+        <Output minConfidence="0.80" type="file">
+          <Param name="file" value="metoffice_ordnance_survey_cities_and_towns.nt"/>
+          <Param name="format" value="ntriples"/>
+        </Output>
+      </Outputs>
+    </Interlink>
+  </Interlinks>
+</Silk>

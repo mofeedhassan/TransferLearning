@@ -1,0 +1,39 @@
+22.05.2012 09:03:11 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: bibbase
+Var: ?a
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, akt=http://www.aktors.org/ontology/portal#, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, BibTeX=http://data.bibbase.org/ontology/#}
+Endpoint: http://data.bibbase.org:2020/sparql
+Graph: 0
+Restrictions: [?a rdf:type BibTeX:Author]
+Properties: [rdfs:label]
+Functions: {rdfs:label=}
+Page size: 1000
+Type: sparql
+
+22.05.2012 09:03:11 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: citeseer
+Var: ?b
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, akt=http://www.aktors.org/ontology/portal#, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, BibTeX=http://data.bibbase.org/ontology/#}
+Endpoint: http://citeseer.rkbexplorer.com/sparql/
+Graph: 0
+Restrictions: [?b rdf:type akt:Person]
+Properties: [akt:full-name]
+Functions: {akt:full-name=}
+Page size: 1000
+Type: sparql
+
+22.05.2012 09:03:11 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+22.05.2012 09:03:11 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:205): No cached data found for bibbase
+22.05.2012 09:03:11 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+22.05.2012 09:03:11 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:85): Properties are [rdfs:label]
+22.05.2012 09:03:11 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:130): Query issued is 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX akt: <http://www.aktors.org/ontology/portal#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX BibTeX: <http://data.bibbase.org/ontology/#>
+SELECT DISTINCT ?a ?v0
+WHERE {
+?a rdf:type BibTeX:Author .
+?a rdfs:label ?v0 .
+}
+22.05.2012 09:03:11 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:132): Querying the endpoint.
+22.05.2012 09:03:11 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:140): Getting statements 0 to 1000

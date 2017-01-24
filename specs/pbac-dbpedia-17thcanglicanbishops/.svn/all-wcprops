@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/sources/!svn/ver/1261/TransferLearning/specs/pbac-dbpedia-17thcanglicanbishops
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/sources/!svn/ver/1261/TransferLearning/specs/pbac-dbpedia-17thcanglicanbishops/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/sources/!svn/ver/1261/TransferLearning/specs/pbac-dbpedia-17thcanglicanbishops/positive.nt
+END
+negative.ttl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sources/!svn/ver/1242/TransferLearning/specs/pbac-dbpedia-17thcanglicanbishops/negative.ttl
+END
+positive.ttl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sources/!svn/ver/1242/TransferLearning/specs/pbac-dbpedia-17thcanglicanbishops/positive.ttl
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/sources/!svn/ver/1242/TransferLearning/specs/pbac-dbpedia-17thcanglicanbishops/spec.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/sources/!svn/ver/1242/TransferLearning/specs/pbac-dbpedia-17thcanglicanbishops/README.txt
+END

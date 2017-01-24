@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-sider-drug
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-sider-drug/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-sider-drug/positive.nt
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/dbpedia-sider-drug/spec.xml
+END

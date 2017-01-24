@@ -1,0 +1,90 @@
+13.06.2012 14:53:51 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: transport-data-gov-uk
+Var: ?a
+Prefixes: {climb=http://climb.dataincubator.org/vocabs/climb/, dgadmingeo=http://statistics.data.gov.uk/def/administrative-geography/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, geonames=http://www.geonames.org/ontology#, rdfs=http://www.w3.org/2000/01/rdf-schema#, traffic=http://transport.data.gov.uk/def/traffic/, gazetteer=http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/, naptan=http://transport.data.gov.uk/def/naptan/, owl=http://www.w3.org/2002/07/owl#, rail=http://ontologi.es/rail/vocab#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, admingeo=http://data.ordnancesurvey.co.uk/ontology/admingeo/, skos=http://www.w3.org/2004/02/skos/core#}
+Endpoint: http://api.talis.com/stores/transport/services/sparql
+Graph: null
+Restrictions: [?a rdf:type naptan:Station ]
+Properties: [naptan:crsRef]
+Functions: {naptan:crsRef=lowercase}
+Page size: 1000
+Type: sparql
+
+13.06.2012 14:53:51 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: linked-railway-data-project
+Var: ?b
+Prefixes: {climb=http://climb.dataincubator.org/vocabs/climb/, dgadmingeo=http://statistics.data.gov.uk/def/administrative-geography/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, geonames=http://www.geonames.org/ontology#, rdfs=http://www.w3.org/2000/01/rdf-schema#, traffic=http://transport.data.gov.uk/def/traffic/, gazetteer=http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/, naptan=http://transport.data.gov.uk/def/naptan/, owl=http://www.w3.org/2002/07/owl#, rail=http://ontologi.es/rail/vocab#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, admingeo=http://data.ordnancesurvey.co.uk/ontology/admingeo/, skos=http://www.w3.org/2004/02/skos/core#}
+Endpoint: http://sparql.sindice.com/sparql
+Graph: null
+Restrictions: [?b rdf:type rail:Station ]
+Properties: [rail:crs]
+Functions: {rail:crs=lowercase}
+Page size: 1000
+Type: sparql
+
+13.06.2012 14:53:51 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+13.06.2012 14:53:51 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:206): No cached data found for transport-data-gov-uk
+13.06.2012 14:53:51 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+13.06.2012 14:53:51 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:81): Properties are [naptan:crsRef]
+13.06.2012 14:53:51 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:126): Query issued is 
+PREFIX climb: <http://climb.dataincubator.org/vocabs/climb/>
+PREFIX dgadmingeo: <http://statistics.data.gov.uk/def/administrative-geography/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX geonames: <http://www.geonames.org/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX traffic: <http://transport.data.gov.uk/def/traffic/>
+PREFIX gazetteer: <http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/>
+PREFIX naptan: <http://transport.data.gov.uk/def/naptan/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rail: <http://ontologi.es/rail/vocab#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?a ?v0
+WHERE {
+?a rdf:type naptan:Station .
+?a naptan:crsRef ?v0 .
+}
+13.06.2012 14:53:51 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Querying the endpoint.
+13.06.2012 14:53:51 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 0 to 1000
+13.06.2012 14:53:54 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 1000 to 2000
+13.06.2012 14:53:56 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 2000 to 3000
+13.06.2012 14:54:02 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 3000 to 4000
+13.06.2012 14:54:03 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:223): Retrieved 2567 triples and 2567 entities.
+13.06.2012 14:54:03 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:224): Retrieving statements took 11.991 seconds.
+13.06.2012 14:54:03 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.saveToFile(HybridCache.java:155): Serializing 2567 objects to E:\Work\Java\LIMES\cache\1554081096.ser
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:140): Loading target data ...
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:206): No cached data found for linked-railway-data-project
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:81): Properties are [rail:crs]
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:126): Query issued is 
+PREFIX climb: <http://climb.dataincubator.org/vocabs/climb/>
+PREFIX dgadmingeo: <http://statistics.data.gov.uk/def/administrative-geography/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX geonames: <http://www.geonames.org/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX traffic: <http://transport.data.gov.uk/def/traffic/>
+PREFIX gazetteer: <http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/>
+PREFIX naptan: <http://transport.data.gov.uk/def/naptan/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rail: <http://ontologi.es/rail/vocab#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?b ?v0
+WHERE {
+?b rdf:type rail:Station .
+?b rail:crs ?v0 .
+}
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Querying the endpoint.
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Getting statements 0 to 1000
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:223): Retrieved 0 triples and 0 entities.
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:224): Retrieving statements took 0.363 seconds.
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.saveToFile(HybridCache.java:155): Serializing 0 objects to E:\Work\Java\LIMES\cache\1155715711.ser
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:153): Getting links ...
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:156): Got links in 50ms.
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:21): Getting serializer with name NT
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:27): Serializer with name NT not found. Using .nt as default format.
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:160): Using N3Serializer to serialize
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:179): Returned 0 links above acceptance threshold.
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:180): Returned 0 links to review.
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:187): Mapping carried out in 13.113 seconds
+13.06.2012 14:54:04 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:188): Done.

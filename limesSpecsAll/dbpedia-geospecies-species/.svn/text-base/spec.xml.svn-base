@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE LIMES
+  SYSTEM "limes.dtd">
+<LIMES>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/1999/02/22-rdf-syntax-ns#</NAMESPACE>
+      <LABEL>rdf</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://purl.org/dc/terms/</NAMESPACE>
+      <LABEL>dcterms</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/2002/07/owl#</NAMESPACE>
+      <LABEL>owl</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://www.w3.org/2000/01/rdf-schema#</NAMESPACE>
+      <LABEL>rdfs</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://dbpedia.org/ontology/</NAMESPACE>
+      <LABEL>dbpedia-owl</LABEL>
+   </PREFIX>
+   <PREFIX>
+      <NAMESPACE>http://rdf.geospecies.org/ont/geospecies#</NAMESPACE>
+      <LABEL>geospecies</LABEL>
+   </PREFIX>
+   <SOURCE>
+      <ID>DBpedia</ID>
+      <ENDPOINT>http://dbpedia.org/sparql</ENDPOINT>
+      <GRAPH/>
+      <VAR>?a</VAR>
+      <PAGESIZE>1000</PAGESIZE>
+      <RESTRICTION>?a rdf:type dbpedia-owl:Species</RESTRICTION>
+      <PROPERTY>&lt;http://dbpedia.org/property/binomial&gt;</PROPERTY>
+      <PROPERTY>&lt;http://xmlns.com/foaf/0.1/page&gt;</PROPERTY>
+   </SOURCE>
+   <TARGET>
+      <ID>GeoSpecies</ID>
+      <ENDPOINT>http://lod.openlinksw.com/sparql</ENDPOINT>
+      <GRAPH>0</GRAPH>
+      <VAR>?b</VAR>
+      <PAGESIZE>1000</PAGESIZE>
+      <RESTRICTION>?b rdf:type geospecies:SpeciesConcept</RESTRICTION>
+      <PROPERTY>geospecies:hasCanonicalName</PROPERTY>
+      <PROPERTY>geospecies:hasWikipediaArticle</PROPERTY>
+   </TARGET>
+   <METRIC>ADD(0.5*MAX(trigrams(a.&lt;http:..dbpedia.org.property.binomial&gt;, b.geospecies:hasCanonicalName)), 0.5*MAX(trigrams(b.geospecies:hasWikipediaArticle, a.&lt;http:..xmlns.com.foaf.0.1.page&gt;)))</METRIC>
+   <ACCEPTANCE>
+      <THRESHOLD>0.96</THRESHOLD>
+      <FILE>dbpedia_geospecies_species.nt</FILE>
+      <RELATION/>
+   </ACCEPTANCE>
+   <REVIEW>
+      <THRESHOLD>0.96</THRESHOLD>
+      <FILE>dbpedia_geospecies_species.nt</FILE>
+      <RELATION/>
+   </REVIEW>
+   <EXECUTION>Simple</EXECUTION>
+   <OUTPUT>TAB</OUTPUT>
+</LIMES>

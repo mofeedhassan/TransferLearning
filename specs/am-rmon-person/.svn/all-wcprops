@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/sources/!svn/ver/1261/TransferLearning/specs/am-rmon-person
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/sources/!svn/ver/1242/TransferLearning/specs/am-rmon-person/spec.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/sources/!svn/ver/1242/TransferLearning/specs/am-rmon-person/README.txt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/sources/!svn/ver/1261/TransferLearning/specs/am-rmon-person/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/sources/!svn/ver/1261/TransferLearning/specs/am-rmon-person/positive.nt
+END

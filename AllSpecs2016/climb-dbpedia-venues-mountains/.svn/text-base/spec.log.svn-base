@@ -1,0 +1,83 @@
+24.05.2012 23:59:51 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:129): ID: data-incubator-climb
+Var: ?a
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, climb=http://climb.dataincubator.org/vocabs/climb/, dbpp=http://dbpedia.org/property/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#, dcterms=http://purl.org/dc/terms/}
+Endpoint: http://api.talis.com/stores/climb/services/sparql
+Graph: null
+Restrictions: [?a rdf:type climb:Venue ]
+Properties: [rdfs:label, geo:lat, geo:long]
+Functions: {rdfs:label=lowercase, geo:long=, geo:lat=}
+Page size: 1000
+Type: sparql
+
+24.05.2012 23:59:51 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): ID: dbpedia
+Var: ?b
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, climb=http://climb.dataincubator.org/vocabs/climb/, dbpp=http://dbpedia.org/property/, geo=http://www.w3.org/2003/01/geo/wgs84_pos#, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#, dcterms=http://purl.org/dc/terms/}
+Endpoint: http://dbpedia.org/sparql
+Graph: null
+Restrictions: [?b dcterms:subject <http://dbpedia.org/resource/Category:Marilyns_of_Scotland> ; dbpp:name ?name ; geo:lat ?lat ]
+Properties: [dbpp:name, geo:lat, geo:long]
+Functions: {dbpp:name=lowercase, geo:long=, geo:lat=}
+Page size: 1000
+Type: sparql
+
+24.05.2012 23:59:51 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading source data ...
+24.05.2012 23:59:51 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:205): No cached data found for data-incubator-climb
+24.05.2012 23:59:51 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+24.05.2012 23:59:51 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:87): Properties are [rdfs:label, geo:lat, geo:long]
+24.05.2012 23:59:51 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:132): Query issued is 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX climb: <http://climb.dataincubator.org/vocabs/climb/>
+PREFIX dbpp: <http://dbpedia.org/property/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX geonames: <http://www.geonames.org/ontology#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT DISTINCT ?a ?v0 ?v1 ?v2
+WHERE {
+?a rdf:type climb:Venue .
+?a rdfs:label ?v0 .
+?a geo:lat ?v1 .
+?a geo:long ?v2 .
+}
+24.05.2012 23:59:51 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:134): Querying the endpoint.
+24.05.2012 23:59:51 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:142): Getting statements 0 to 1000
+25.05.2012 00:00:07 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:142): Getting statements 1000 to 2000
+25.05.2012 00:00:11 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:142): Getting statements 2000 to 3000
+25.05.2012 00:00:13 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:229): Retrieved 1310 triples and 1307 entities.
+25.05.2012 00:00:13 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:230): Retrieving statements took 21.728 seconds.
+25.05.2012 00:00:13 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.saveToFile(HybridCache.java:154): Serializing 1307 objects to E:\Work\Java\LIMES\cache\-1878886654.ser
+25.05.2012 00:00:13 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:140): Loading target data ...
+25.05.2012 00:00:13 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:205): No cached data found for dbpedia
+25.05.2012 00:00:13 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+25.05.2012 00:00:13 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:87): Properties are [dbpp:name, geo:lat, geo:long]
+25.05.2012 00:00:13 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:132): Query issued is 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX climb: <http://climb.dataincubator.org/vocabs/climb/>
+PREFIX dbpp: <http://dbpedia.org/property/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX geonames: <http://www.geonames.org/ontology#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT DISTINCT ?b ?v0 ?v1 ?v2
+WHERE {
+?b dcterms:subject <http://dbpedia.org/resource/Category:Marilyns_of_Scotland> ; dbpp:name ?name ; geo:lat ?lat .
+?b dbpp:name ?v0 .
+?b geo:lat ?v1 .
+?b geo:long ?v2 .
+}
+25.05.2012 00:00:13 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:134): Querying the endpoint.
+25.05.2012 00:00:13 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:142): Getting statements 0 to 1000
+25.05.2012 00:00:14 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:142): Getting statements 1000 to 2000
+25.05.2012 00:00:14 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:229): Retrieved 291 triples and 222 entities.
+25.05.2012 00:00:14 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:230): Retrieving statements took 1.676 seconds.
+25.05.2012 00:00:14 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.saveToFile(HybridCache.java:154): Serializing 222 objects to E:\Work\Java\LIMES\cache\1776179813.ser
+25.05.2012 00:00:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:153): Getting links ...
+25.05.2012 00:00:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:156): Got links in 233ms.
+25.05.2012 00:00:15 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:21): Getting serializer with name TAB
+25.05.2012 00:00:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:160): Using TabSeparatedSerializer to serialize
+25.05.2012 00:00:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:179): Returned 84 links above acceptance threshold.
+25.05.2012 00:00:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:180): Returned 0 links to review.
+25.05.2012 00:00:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:187): Mapping carried out in 24.068 seconds
+25.05.2012 00:00:15 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:188): Done.

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-linkedgeodata-airport
+END
+spec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/sources/!svn/ver/1516/TransferLearning/finalSpecs/dbpedia-linkedgeodata-airport/spec.xml
+END
+spec.log
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/sources/!svn/ver/1545/TransferLearning/finalSpecs/dbpedia-linkedgeodata-airport/spec.log
+END
+accept.nt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/sources/!svn/ver/1517/TransferLearning/finalSpecs/dbpedia-linkedgeodata-airport/accept.nt
+END
+review.nt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-linkedgeodata-airport/review.nt
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-linkedgeodata-airport/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sources/!svn/ver/1504/TransferLearning/finalSpecs/dbpedia-linkedgeodata-airport/positive.nt
+END

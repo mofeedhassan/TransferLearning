@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/gho-pubmed-country/intervals/0.05-0.1
+END
+negative.nt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/gho-pubmed-country/intervals/0.05-0.1/negative.nt
+END
+positive.nt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/gho-pubmed-country/intervals/0.05-0.1/positive.nt
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/gho-pubmed-country/intervals/0.05-0.1/README.txt
+END
+0.05-0.1.nt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/gho-pubmed-country/intervals/0.05-0.1/0.05-0.1.nt
+END
+unsure.nt
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/sources/!svn/ver/1545/TransferLearning/limesSpecsAll/gho-pubmed-country/intervals/0.05-0.1/unsure.nt
+END
